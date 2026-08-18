@@ -1,13 +1,20 @@
 """Loudness, true-peak, and spectral balance analysis."""
 from __future__ import annotations
 
-import json
-from pathlib import Path
-from typing import Optional
-
 import numpy as np
 import pyloudnorm as pyln
 from scipy import signal
+
+# Re-export spectral helpers
+from analysis_spectral import (  # noqa: F401
+    REFERENCE_SPECTRUM,
+    PROFILE_JSON,
+    load_devine_profile,
+    band_energy,
+    spectral_balance,
+    suggest_eq_from_spectrum,
+    match_reference,
+)
 
 
 def measure_true_peak(audio: np.ndarray, sr: int, overs: int = 4) -> float:
@@ -34,10 +41,10 @@ def true_peak_limit(
     overs: int = 4,
     max_iterations: int = 6,
     margin_db: float = 0.12,
-) -> tuple[np.ndarray, dict]:
+):
     """Strict true-peak limiter: final TP must be <= target_tp."""
     audio = np.nan_to_num(audio.astype(np.float32), nan=0.0, posinf=0.0, neginf=0.0)
-    report: dict = {
+    report = {
         "iterations": [],
         "final_tp": None,
         "method": "measure_then_ceiling_strict",
