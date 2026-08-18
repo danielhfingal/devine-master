@@ -1,0 +1,10 @@
+numpy>=1.24
+soundfile>=0.12
+pyloudnorm>=0.1.1
+pedalboard>=0.8.7
+click>=8.1
+scipy>=1.11
+librosa>=0.10.1
+openai>=1.40.0
+requests>=2.31.0
+gradio>=4.44.0

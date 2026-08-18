@@ -1,0 +1,19 @@
+{
+  "x_star_source": "STRONG-eligible only",
+  "note": "Canonical STRONG prior for D.Devine path. Full detail in Grok project tracks/cold_gravity_strong_prior.json if this stub is incomplete.",
+  "x_star": {
+    "lufs": -9.440767981507385,
+    "crest": 10.140067406261066,
+    "side_mid_db": -76.42718640218264,
+    "b_sub": 11.836691585684356,
+    "b_bass": 15.602926567636388,
+    "b_low_mid": 7.6256096816292,
+    "b_mid": -2.061918533264027,
+    "b_presence": -12.538835144279417,
+    "b_air": -20.266811890067537
+  },
+  "crest_q25": 10.02910436855871,
+  "crest_min_allowed": 9.52910436855871,
+  "lambda_map": {"Baseline": 0.35, "Gentle": 0.65, "Strong": 1.0},
+  "V_crest": {"below_median_coef": 2.5, "below_floor_coef": 12.0, "floor": 9.52910436855871}
+}
