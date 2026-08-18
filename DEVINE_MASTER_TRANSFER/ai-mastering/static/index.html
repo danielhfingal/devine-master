@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>DEVINE MASTER</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg: #060608;
+    --text: #f2f0ec;
+    --muted: #8a8780;
+    --orange: #e85d18;
+    --orange2: #f0a060;
+    --gold: #f0c44c;
+    --blue: #6a9ee8;
+    --border: #2c2c34;
+    --panel: #1a1a1e;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh;
+    background: radial-gradient(ellipse at 50% 0%, #2a160e 0%, var(--bg) 45%);
+    color: var(--text);
+    font-family: Inter, system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 14px 8px 32px;
+  }
+
+  .shell {
+    width: 100%;
+    max-width: 420px;
+    background: linear-gradient(165deg, #1c1c20 0%, #0c0c0e 100%);
+    border: 1px solid #303038;
+    border-radius: 36px;
+    padding: 18px 14px 14px;
+    box-shadow: 0 28px 70px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.05);
+  }
+
+  .logo {
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+    letter-spacing: 0.12em;
+    color: var(--orange);
+    text-shadow: 0 2px 0 #5a2208, 0 0 28px rgba(232,93,24,.4);
+    margin-bottom: 12px;
+  }
+
+  /* A / MASTER / B */
+  .ab {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .ab-btn {
+    border-radius: 999px;
+    padding: 10px 8px;
+    text-align: center;
+    border: 1.5px solid var(--border);
+    background: var(--panel);
+    cursor: pointer;
+    user-select: none;
+  }
+  .ab-btn .letter {
+    display: block;
+    font-family: Oswald, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .ab-btn .sub { display: block; font-size: 0.58rem; color: var(--muted); margin-top: 2px; }
+  .ab-btn.a { color: var(--orange2); }
+  .ab-btn.a.on { border-color: var(--orange); background: #2a160c; }
+  .ab-btn.b { color: #9cb6e0; }
+  .ab-btn.b.on { border-color: var(--blue); background: #121c2a; }
+
+  .master {
+    border: none;
+    border-radius: 999px;
+    padding: 0 22px;
+    min-width: 100px;
+    font-family: Oswald, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #fff;
+    background: linear-gradient(180deg, #f07828, #c04810);
+    box-shadow: 0 6px 20px rgba(232,93,24,.45);
+    cursor: pointer;
+  }
+  .master:disabled { opacity: 0.55; cursor: wait; }
+  .master:active { transform: translateY(1px); }
+
+  .presets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+  .preset {
+    text-align: center;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 8px 6px;
+    border-radius: 999px;
+    border: 1.5px solid var(--border);
+    background: var(--panel);
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .preset.on {
+    color: var(--orange2);
+    border-color: var(--orange);
+    background: #24150e;
+  }
+
+  /* Play zone: left controls | play | right controls */
+  .play-zone {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 10px;
+    align-items: center;
+    margin: 8px 0 12px;
+  }
+  .side-sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .field label {
+    display: block;
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+  .field input[type=range] {
+    width: 100%;
+    accent-color: var(--orange);
+  }
+  .ends {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.58rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .ends .mid { color: var(--orange2); font-weight: 600; }
+
+  .sr-wrap input[type=range] { width: 100%; accent-color: var(--orange); }
+  .sr-ticks {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .sr-ticks span.on { color: var(--orange2); }
+
+  .play {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    border: 3px solid #3a3a44;
+    background: radial-gradient(circle at 35% 30%, #2a2a32, #101012);
+    color: var(--text);
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,.5);
+  }
+  .play:hover { border-color: var(--orange); color: var(--orange2); }
+
+  /* Processing / Output row */
+  .proc-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 12px;
+  }
+  .section-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    text-align: center;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .togs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+  .tog {
+    min-height: 34px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 6px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: #1c1c22;
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  .tog.on {
+    color: #fff;
+    border-color: #f0a46a;
+    background: linear-gradient(180deg, #f0a46a 0%, #e85d18 40%, #a34518 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.35),
+      0 2px 8px rgba(232,93,24,.35);
+  }
+  .out-col {
+    display: grid;
+    grid-template-rows: repeat(3, 34px);
+    gap: 6px;
+  }
+  .out-col .tog {
+    height: 34px;
+    line-height: 34px;
+    min-height: 34px;
+  }
+  .togs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 34px);
+    gap: 6px;
+  }
+  .togs .tog {
+    height: 34px;
+    line-height: 34px;
+    min-height: 34px;
+  }
+
+  /* LUFS / True Peak readout (replaces Volume label) */
+  .meter-readout {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin: 8px 0 6px;
+  }
+  .meter-readout .item { text-align: center; }
+  .meter-readout .label {
+    display: block;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+  .meter-readout .value {
+    font-family: Oswald, sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--orange);
+    text-shadow: 0 0 14px rgba(232,93,24,.4);
+  }
+  .meter-readout .value.tp {
+    color: var(--blue);
+    text-shadow: 0 0 14px rgba(90,160,255,.4);
+  }
+
+  /* EQ — dominant */
+  .eq-wrap {
+    position: relative;
+    background: #0c0c0e;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 12px 8px 8px;
+    margin-bottom: 12px;
+  }
+  .eq-faders {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto repeat(3, 1fr);
+    gap: 4px;
+    z-index: 1;
+    align-items: end;
+  }
+  .eq-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .eq-col input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    writing-mode: vertical-lr;
+    direction: rtl;
+    width: 42px;
+    height: 220px;
+    background: transparent;
+    cursor: pointer;
+  }
+  .eq-col input[type=range]::-webkit-slider-runnable-track {
+    width: 8px;
+    height: 220px;
+    background: #1a1a22;
+    border-radius: 4px;
+    border: 1px solid #333;
+  }
+  .eq-col input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffe9a8, #e8b84a 50%, #a07a20);
+    border: 2px solid #6a5020;
+    box-shadow: 0 2px 6px rgba(0,0,0,.45);
+  }
+  .eq-name {
+    font-size: 0.58rem;
+    font-weight: 700;
+    color: var(--orange2);
+  }
+  .solo {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    border: 1px solid #6a5a28;
+    background: #1a1810;
+    color: var(--gold);
+    font-size: 0.6rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .solo.on { background: var(--gold); color: #1a1000; }
+
+  .center-meters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding-bottom: 30px;
+  }
+  .center-meters .bars {
+    display: flex;
+    gap: 6px;
+  }
+  .center-meters .bar {
+    width: 14px;
+    height: 200px;
+    border-radius: 4px;
+    background: #1a1a22;
+    border: 1px solid #333;
+    position: relative;
+    overflow: hidden;
+  }
+  .center-meters .fill {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 10%;
+    background: linear-gradient(0deg, #2ecc5a, #e6c84a 60%, #e24b4b);
+    transition: height 0.08s linear;
+  }
+  .center-meters .lr-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+  }
+  .eq-reset {
+    width: 40px;
+    height: 24px;
+    border-radius: 6px;
+    border: 1px solid #6a5a28;
+    background: #1a1810;
+    color: var(--gold);
+    font-size: 0.62rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .eq-reset:hover { border-color: var(--gold); }
+
+  .freq-scale {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.55rem;
+    color: var(--muted);
+    padding: 4px 8px 0;
+  }
+
+  .lyrics-box {
+    background: #0c0c0e;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 12px;
+    min-height: 140px;
+    max-height: 180px;
+    overflow: auto;
+  }
+  .lyrics-box h3 {
+    margin: 0 0 8px;
+    text-align: center;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .lyrics-box pre {
+    margin: 0;
+    white-space: pre-wrap;
+    font-family: Inter, sans-serif;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    color: #b0ada6;
+    text-align: center;
+  }
+
+  .status {
+    text-align: center;
+    font-size: 0.68rem;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+  a.dl {
+    display: none;
+    text-align: center;
+    margin-top: 6px;
+    color: var(--orange2);
+    font-size: 0.78rem;
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="logo">DEVINE MASTER</div>
+
+  <div class="ab">
+    <div class="ab-btn a on" id="tabA"><span class="letter">A</span><span class="sub">Drop or Click</span></div>
+    <button class="master" id="btnMaster">MASTER</button>
+    <div class="ab-btn b" id="tabB"><span class="letter">B</span><span class="sub">Mastered</span></div>
+  </div>
+  <div class="file-name" id="fileLabel">No file loaded</div>
+  <input type="file" id="file" accept="audio/*,.wav,.mp3,.flac,.m4a" />
+
+  <div class="presets">
+    <div class="preset on" id="pDevine">D.Devine</div>
+    <div class="preset" id="pSpotify">Spotify</div>
+  </div>
+
+  <div class="time" id="time">00:00 / 00:00</div>
+
+  <!-- FOUR SLIDERS FLANKING PLAY -->
+  <div class="play-zone">
+    <div class="side-sliders">
+      <div class="field">
+        <label>Output Gain</label>
+        <input type="range" id="gain" min="-12" max="12" step="0.1" value="0" />
+        <div class="ends"><span>−12</span><span class="mid" id="gainV">0.0 dB</span><span>+12</span></div>
+      </div>
+      <div class="field">
+        <label>Sample Rate</label>
+        <input type="range" id="sr" min="0" max="2" step="1" value="1" />
+        <div class="sr-ends"><span id="sr0">32</span><span id="sr1" class="on">44.1</span><span id="sr2">48</span></div>
+      </div>
+    </div>
+
+    <button class="play" id="btnPlay" type="button">▶</button>
+
+    <div class="side-sliders">
+      <div class="field">
+        <label>HPF · <span id="hpfV">30</span> Hz</label>
+        <input type="range" id="hpf" min="20" max="500" value="30" />
+        <div class="ends"><span>20</span><span></span><span>500</span></div>
+      </div>
+      <div class="field">
+        <label>LPF · <span id="lpfV">18</span> kHz</label>
+        <input type="range" id="lpf" min="8" max="20" step="0.1" value="18" />
+        <div class="ends"><span>8</span><span></span><span>20</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Processing | Output -->
+  <div class="proc-row">
+    <div>
+      <div class="section-label">Processing</div>
+      <div class="togs" id="procTogs">
+        <div class="tog" data-k="trans">Transient</div>
+        <div class="tog on" data-k="mono">Mono</div>
+        <div class="tog on" data-k="lim">Limiter</div>
+        <div class="tog on" data-k="decl">De-Clip</div>
+        <div class="tog on" data-k="eq">EQ</div>
+        <div class="tog on" data-k="comp">Comp</div>
+      </div>
+    </div>
+    <div>
+      <div class="section-label">Output</div>
+      <div class="togs out-togs" id="outTogs">
+        <div class="tog on" data-k="presetOut">Pre-set</div>
+        <div class="tog on" data-k="dither">Dither</div>
+        <div class="tog" data-k="watermark">Watermark</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LUFS / True Peak (replaces Volume label) + makeup slider -->
+  <div class="meter-readout-row" id="meterReadout">
+    <div class="meter-chip">
+      <span class="chip-label">LUFS</span>
+      <span class="chip-value" id="lufsReadout">—.—</span>
+    </div>
+    <div class="meter-chip">
+      <span class="chip-label">TP</span>
+      <span class="chip-value tp" id="tpReadout">—.—</span>
+    </div>
+  </div>
+
+  <div class="eq-section">
+    <div class="eq-faders">
+      <div class="eq-col">
+        <input type="range" id="eq0" min="-12" max="12" step="0.5" value="0" />
+        <span class="eq-name">SUB</span>
+        <button type="button" class="solo" data-i="0">S</button>
+      </div>
+      <div class="eq-col">
+        <input type="range" id="eq1" min="-12" max="12" step="0.5" value="0" />
+        <span class="eq-name">BASS</span>
+        <button type="button" class="solo" data-i="1">S</button>
+      </div>
+      <div class="eq-col">
+        <input type="range" id="eq2" min="-12" max="12" step="0.5" value="0" />
+        <span class="eq-name">LOW-MID</span>
+        <button type="button" class="solo" data-i="2">S</button>
+      </div>
+      <div class="eq-center">
+        <div class="center-bars">
+          <div class="bar"><div class="fill" id="mL"></div></div>
+          <div class="bar"><div class="fill" id="mR"></div></div>
+        </div>
+        <div class="lr-label">L R</div>
+        <button type="button" class="eq-reset" id="eqReset">RST</button>
+      </div>
+      <div class="eq-col">
+        <input type="range" id="eq3" min="-12" max="12" step="0.5" value="0" />
+        <span class="eq-name">PRESENCE</span>
+        <button type="button" class="solo" data-i="3">S</button>
+      </div>
+      <div class="eq-col">
+        <input type="range" id="eq4" min="-12" max="12" step="0.5" value="0" />
+        <span class="eq-name">HIGH-MID</span>
+        <button type="button" class="solo" data-i="4">S</button>
+      </div>
+      <div class="eq-col">
+        <input type="range" id="eq5" min="-12" max="12" step="0.5" value="0" />
+        <span class="eq-name">AIR</span>
+        <button type="button" class="solo" data-i="5">S</button>
+      </div>
+    </div>
+    <div class="freq-scale">
+      <span>20</span><span>100</span><span>500</span><span>1K</span><span>5K</span><span>20K</span>
+    </div>
+  </div>
+
+  <div class="lyrics-box">
+    <h3>LYRICS</h3>
+    <pre id="lyrics">Load a track to begin.</pre>
+  </div>
+
+  <div class="status" id="status"></div>
+  <a class="dl" id="download" href="#" download>Download mastered WAV</a>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let preset = "devine";
+let arrayBuffer = null;
+let fileName = "track";
+let audioCtx = null;
+let mode = "A";
+let solos = [false, false, false, false, false, false];
+const toggles = {
+  trans: false, mono: true, lim: true, decl: true,
+  eq: true, comp: true, presetOut: true, dither: true, watermark: false
+};
+const EQ_FREQS = [40, 120, 400, 3500, 6000, 12000];
+const SR_VALUES = [32000, 44100, 48000];
+
+function syncSrTicks() {
+  const v = +$("sr").value;
+  [0, 1, 2].forEach(i => $("sr" + i).classList.toggle("on", i === v));
+}
+$("sr").addEventListener("input", syncSrTicks);
+syncSrTicks();
+
+$("gain").addEventListener("input", () => {
+  $("gainV").textContent = (+$("gain").value).toFixed(1) + " dB";
+});
+$("hpf").addEventListener("input", () => { $("hpfV").textContent = $("hpf").value; });
+$("lpf").addEventListener("input", () => { $("lpfV").textContent = $("lpf").value; });
+
+$("pDevine").addEventListener("click", () => {
+  preset = "devine";
+  $("pDevine").classList.add("on");
+  $("pSpotify").classList.remove("on");
+});
+$("pSpotify").addEventListener("click", () => {
+  preset = "spotify";
+  $("pSpotify").classList.add("on");
+  $("pDevine").classList.remove("on");
+});
+
+document.querySelectorAll(".tog").forEach(el => {
+  el.addEventListener("click", () => {
+    const k = el.dataset.k;
+    if (!k) return;
+    toggles[k] = !toggles[k];
+    el.classList.toggle("on", toggles[k]);
+  });
+});
+
+document.querySelectorAll(".solo").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const i = +btn.dataset.i;
+    solos[i] = !solos[i];
+    btn.classList.toggle("on", solos[i]);
+  });
+});
+
+$("eqReset").addEventListener("click", () => {
+  for (let i = 0; i < 6; i++) {
+    const el = $("eq" + i);
+    if (el) el.value = 0;
+  }
+  solos = [false, false, false, false, false, false];
+  document.querySelectorAll(".solo").forEach(b => b.classList.remove("on"));
+  $("status").textContent = "EQ reset to flat";
+});
+
+$("tabA").addEventListener("click", () => {
+  mode = "A";
+  $("tabA").classList.add("on");
+  $("tabB").classList.remove("on");
+  $("file").click();
+});
+$("tabB").addEventListener("click", () => {
+  mode = "B";
+  $("tabB").classList.add("on");
+  $("tabA").classList.remove("on");
+  if ($("audioB").src) {
+    $("audioA").pause();
+    $("audioB").play();
+    $("btnPlay").textContent = "⏸";
+  }
+});
+
+document.querySelector(".shell").addEventListener("dragover", e => e.preventDefault());
+document.querySelector(".shell").addEventListener("drop", e => {
+  e.preventDefault();
+  if (e.dataTransfer.files[0]) loadFile(e.dataTransfer.files[0]);
+});
+$("file").addEventListener("change", () => {
+  if ($("file").files[0]) loadFile($("file").files[0]);
+});
+
+async function loadFile(f) {
+  fileName = f.name.replace(/\.[^.]+$/, "");
+  $("fileLabel").textContent = f.name;
+  $("audioA").src = URL.createObjectURL(f);
+  arrayBuffer = await f.arrayBuffer();
+  $("status").textContent = "Loaded — press MASTER";
+  $("download").style.display = "none";
+  $("lufsVal").textContent = "—.—";
+  $("tpVal").textContent = "—.—";
+  $("lyrics").textContent = "Working on: " + fileName + "\n\n(Lyrics panel — edit freely while you listen)";
+  mode = "A";
+  $("tabA").classList.add("on");
+  $("tabB").classList.remove("on");
+}
+
+function fmtTime(t) {
+  if (!isFinite(t)) return "00:00";
+  const m = Math.floor(t / 60);
+  const s = Math.floor(t % 60);
+  return String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+}
+
+function tick() {
+  const a = (mode === "B" && $("audioB").src) ? $("audioB") : $("audioA");
+  $("time").textContent = fmtTime(a.currentTime) + " / " + fmtTime(a.duration || 0);
+  if (!a.paused && a.src) {
+    const pulse = 15 + Math.abs(Math.sin(a.currentTime * 8)) * 55 + Math.random() * 20;
+    $("mL").style.height = Math.min(98, pulse) + "%";
+    $("mR").style.height = Math.min(98, pulse * (0.85 + Math.random() * 0.2)) + "%";
+  }
+  requestAnimationFrame(tick);
+}
+tick();
+
+$("btnPlay").addEventListener("click", () => {
+  const a = (mode === "B" && $("audioB").src) ? $("audioB") : $("audioA");
+  const other = (a === $("audioA")) ? $("audioB") : $("audioA");
+  other.pause();
+  if (a.paused) {
+    a.play();
+    $("btnPlay").textContent = "⏸";
+  } else {
+    a.pause();
+    $("btnPlay").textContent = "▶";
+  }
+});
+
+function dbLin(db) { return Math.pow(10, db / 20); }
+
+function measureLoudness(buf) {
+  let peak = 0, sumSq = 0, n = 0;
+  const chs = buf.numberOfChannels;
+  const datas = [];
+  for (let c = 0; c < chs; c++) datas.push(buf.getChannelData(c));
+  for (let i = 0; i < buf.length; i++) {
+    let m = 0;
+    for (let c = 0; c < chs; c++) {
+      const s = datas[c][i];
+      m = Math.max(m, Math.abs(s));
+      sumSq += s * s;
+      n++;
+    }
+    peak = Math.max(peak, m);
+  }
+  const rms = Math.sqrt(sumSq / Math.max(1, n));
+  // rough integrated loudness estimate (not full BS.1770)
+  const lufs = 20 * Math.log10(rms + 1e-12) - 0.691;
+  const tp = 20 * Math.log10(peak + 1e-12);
+  return { lufs, tp };
+}
+
+$("btnMaster").addEventListener("click", async () => {
+  if (!arrayBuffer) {
+    $("status").textContent = "Load a file on A first";
+    $("file").click();
+    return;
+  }
+  $("btnMaster").disabled = true;
+  $("status").textContent = "Processing…";
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const decoded = await audioCtx.decodeAudioData(arrayBuffer.slice(0));
+    const offline = new OfflineAudioContext(
+      decoded.numberOfChannels,
+      decoded.length,
+      decoded.sampleRate
+    );
+    const src = offline.createBufferSource();
+    src.buffer = decoded;
+
+    const hpf = offline.createBiquadFilter();
+    hpf.type = "highpass";
+    hpf.frequency.value = +$("hpf").value;
+    hpf.Q.value = 0.7;
+
+    const bands = [];
+    for (let i = 0; i < 6; i++) {
+      const f = offline.createBiquadFilter();
+      if (i === 0) {
+        f.type = "lowshelf";
+        f.frequency.value = 60;
+      } else if (i === 5) {
+        f.type = "highshelf";
+        f.frequency.value = 10000;
+      } else {
+        f.type = "peaking";
+        f.frequency.value = EQ_FREQS[i];
+        f.Q.value = 0.9;
+      }
+      let g = toggles.eq ? +$("eq" + i).value : 0;
+      if (solos.some(Boolean) && !solos[i]) g = -24;
+      f.gain.value = g;
+      bands.push(f);
+    }
+
+    const lpf = offline.createBiquadFilter();
+    lpf.type = "lowpass";
+    lpf.frequency.value = +$("lpf").value * 1000;
+
+    const comp = offline.createDynamicsCompressor();
+    if (toggles.comp) {
+      comp.threshold.value = preset === "spotify" ? -18 : -15;
+      comp.knee.value = 6;
+      comp.ratio.value = preset === "spotify" ? 2.2 : (toggles.trans ? 3.2 : 2.8);
+      comp.attack.value = toggles.trans ? 0.005 : 0.012;
+      comp.release.value = 0.12;
+    } else {
+      comp.threshold.value = 0;
+      comp.ratio.value = 1;
+    }
+
+    const gain = offline.createGain();
+    const makeup = (preset === "spotify" ? 1.12 : 1.55) * dbLin(+$("gain").value) * dbLin(+$("vol").value);
+    gain.gain.value = makeup;
+
+    let node = src;
+    const chainNodes = [hpf, ...bands, lpf, comp, gain];
+    chainNodes.forEach(n => { node.connect(n); node = n; });
+    node.connect(offline.destination);
+    src.start(0);
+
+    let rendered = await offline.startRendering();
+
+    // true-peak ceiling
+    const ceiling = toggles.lim ? dbLin(-1.0) : 0.99;
+    let peak = 0;
+    for (let c = 0; c < rendered.numberOfChannels; c++) {
+      const d = rendered.getChannelData(c);
+      for (let i = 0; i < d.length; i++) peak = Math.max(peak, Math.abs(d[i]));
+    }
+    if (peak > ceiling && peak > 0) {
+      const g = ceiling / peak;
+      for (let c = 0; c < rendered.numberOfChannels; c++) {
+        const d = rendered.getChannelData(c);
+        for (let i = 0; i < d.length; i++) d[i] *= g;
+      }
+      peak = ceiling;
+    }
+
+    const loud = measureLoudness(rendered);
+    $("lufsVal").textContent = loud.lufs.toFixed(1);
+    $("tpVal").textContent = loud.tp.toFixed(1);
+
+    const wav = bufferToWav(rendered);
+    const blob = new Blob([wav], { type: "audio/wav" });
+    const url = URL.createObjectURL(blob);
+    $("audioB").src = url;
+
+    mode = "B";
+    $("tabB").classList.add("on");
+    $("tabA").classList.remove("on");
+
+    $("download").href = url;
+    $("download").download = fileName + "_DEVINE.wav";
+    $("download").style.display = "block";
+
+    let msg =
+      "Done · LUFS " + loud.lufs.toFixed(1) +
+      " · TP " + loud.tp.toFixed(1) + " dBTP · " +
+      (preset === "spotify" ? "Spotify feel" : "D.Devine feel");
+    if (toggles.watermark) msg += " · watermark flagged";
+    $("status").textContent = msg;
+    $("btnPlay").textContent = "▶";
+  } catch (e) {
+    console.error(e);
+    $("status").textContent = "Error: " + e.message;
+  } finally {
+    $("btnMaster").disabled = false;
+  }
+};
+
+function bufferToWav(buffer) {
+  const numCh = buffer.numberOfChannels;
+  const sr = buffer.sampleRate;
+  const len = buffer.length;
+  const dataSize = len * numCh * 2;
+  const ab = new ArrayBuffer(44 + dataSize);
+  const view = new DataView(ab);
+  const writeStr = (offset, str) => {
+    for (let i = 0; i < str.length; i++) view.setUint8(offset + i, str.charCodeAt(i));
+  };
+  writeStr(0, "RIFF");
+  view.setUint32(4, 36 + dataSize, true);
+  writeStr(8, "WAVE");
+  writeStr(12, "fmt ");
+  view.setUint32(16, 16, true);
+  view.setUint16(20, 1, true);
+  view.setUint16(22, numCh, true);
+  view.setUint32(24, sr, true);
+  view.setUint32(28, sr * numCh * 2, true);
+  view.setUint16(32, numCh * 2, true);
+  view.setUint16(34, 16, true);
+  writeStr(36, "data");
+  view.setUint32(40, dataSize, true);
+
+  let offset = 44;
+  const channels = [];
+  for (let c = 0; c < numCh; c++) channels.push(buffer.getChannelData(c));
+  for (let i = 0; i < len; i++) {
+    for (let c = 0; c < numCh; c++) {
+      let sample = Math.max(-1, Math.min(1, channels[c][i]));
+      view.setInt16(offset, sample < 0 ? sample * 0x8000 : sample * 0x7fff, true);
+      offset += 2;
+    }
+  }
+  return ab;
+}
+</script>
+</body>
+</html>
