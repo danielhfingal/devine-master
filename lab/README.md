@@ -18,14 +18,17 @@ lab/
 2. **Transport** — still inline (vinyl, A/B, play, MASTER)
 3. **StudioDraft** — **this module** (Craft. Sync. Create)
 
-## Run
+## Features (lab)
 
-Open `DEVINE_MASTER_Beta.html` via local server or file://  
-(relative paths `css/` and `js/` must sit next to the HTML).
+- Clean sheet + notes/versions below fold (newline repair)
+- Block follow with Neon-Jesus startSec map
+- Desk INFO hover on StudioDraft controls (center over vinyl)
+- No native `title` tooltips on StudioDraft buttons
+
+## Run
 
 ```powershell
 cd lab
-# optional simple server
 python -m http.server 8080
 # browser → http://localhost:8080/DEVINE_MASTER_Beta.html
 ```
@@ -40,4 +43,4 @@ python -m http.server 8080
 
 ## Build
 
-`APP_BUILD = v20260820lab-mod`
+`APP_BUILD = v20260820lab-no-title`
