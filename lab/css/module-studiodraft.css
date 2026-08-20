@@ -1,0 +1,331 @@
+/* module-studiodraft.css — StudioDraft: Craft. Sync. Create.
+ * Lab extract from DEVINE MASTER desk. Depends on shared tokens:
+ * --edge, --muted, --led-amber, Oswald/Inter, .sbtn
+ * Build: v20260820lab-sd-fix
+ */
+  /* ===== StudioDraft (lyrics column) ===== */
+  .draft {
+    grid-area: draft;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    min-width: 0;
+    background: linear-gradient(180deg, #101218 0%, #0a0b0e 100%);
+    border: 1px solid var(--edge);
+    border-radius: 14px;
+    padding: 12px 12px 10px;
+    box-shadow: 0 12px 40px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.03);
+    overflow: hidden;
+  }
+  .draft-brand {
+    text-align: center;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+  }
+  .draft-title {
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.14em;
+    color: #f07820;
+  }
+  .draft-tag {
+    font-family: Oswald, sans-serif;
+    font-size: 0.55rem;
+    letter-spacing: 0.16em;
+    color: #e8a030;
+    margin-top: 2px;
+  }
+  .draft-body-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,.28);
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .draft-template-label {
+    font-family: Oswald, sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    color: #f07820;
+    text-align: center;
+    padding: 10px 8px 4px;
+    flex-shrink: 0;
+    text-shadow: 0 0 12px rgba(240,120,32,.25);
+  }
+  .draft-lyrics {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: auto;
+    padding: 8px 12px 16px;
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: rgba(230,228,220,.88);
+    white-space: pre-wrap;
+    word-break: break-word;
+    outline: none;
+    caret-color: #f07820;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(240,120,32,.55) rgba(0,0,0,.35);
+  }
+  .draft-lyrics:empty:before {
+    content: attr(data-placeholder);
+    color: rgba(160,160,150,.45);
+  }
+  .draft-lyrics .sd-line { min-height: 1.35em; }
+  .draft-lyrics .sd-rule {
+    display: block; height: 0; margin: 0.55em 0 0.65em; padding: 0;
+    border: none; border-top: 1px solid rgba(200, 198, 190, 0.35);
+    width: 100%; overflow: hidden; line-height: 0; font-size: 0;
+  }
+  .draft-lyrics .sd-section {
+    display: block; margin: 0.35em 0; white-space: normal; line-height: 1.5;
+  }
+  .draft-lyrics .sd-section.is-active {
+    color: #ffe0a8;
+    background: rgba(240, 120, 32, 0.14);
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin: 0.4em -4px;
+    border: 1px solid rgba(240, 120, 32, 0.35);
+    box-shadow: 0 0 0 1px rgba(240, 120, 32, 0.12), inset 0 0 20px rgba(240, 120, 32, 0.06);
+  }
+  .draft-lyrics .sd-section.is-active .sd-line:first-child {
+    color: #f07820; font-weight: 600; letter-spacing: 0.02em;
+  }
+  .draft-lyrics .sd-section:not(.is-active) { opacity: 0.55; }
+  .draft-lyrics.sd-following .sd-section:not(.is-active) { opacity: 0.5; }
+  .draft-lyrics.sd-following .sd-section.is-active { opacity: 1; }
+  .draft-lyrics[contenteditable="true"] {
+    box-shadow: inset 0 0 0 1px rgba(240,120,32,.35);
+    background: rgba(240,120,32,.04);
+  }
+
+  .draft-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10px;
+    flex-shrink: 0;
+  }
+  .draft-ctrl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .draft-ctrl-label {
+    font-family: Oswald, sans-serif;
+    font-size: 0.5rem;
+    letter-spacing: 0.08em;
+    color: rgba(180,178,170,.55);
+    text-transform: uppercase;
+  }
+  .draft-ctrl .info-toggle,
+  .draft-info-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.5rem;
+    color: rgba(180,178,170,.55);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-family: Oswald, sans-serif;
+    cursor: pointer;
+    padding: 0;
+    min-width: 0;
+  }
+  .draft-info-toggle input {
+    accent-color: var(--orange, #f07820);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  .draft-meta {
+    text-align: center;
+    font-size: 0.55rem;
+    color: rgba(160,158,150,.5);
+    margin-top: 4px;
+    min-height: 1em;
+  }
+
+  .draft-save-row,
+  .draft-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    flex-shrink: 0;
+  }
+  .draft-save,
+  .draft-export {
+    font-family: Oswald, sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    min-width: 88px;
+    border-radius: 12px;
+    border: 1px solid rgba(240,120,32,.55);
+    background:
+      radial-gradient(ellipse at 30% 20%, rgba(255,180,60,.35), transparent 55%),
+      linear-gradient(180deg, #f08828 0%, #c85810 100%);
+    color: #1a1008;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow:
+      0 0 14px rgba(240,120,32,.45),
+      0 0 28px rgba(240,120,32,.18),
+      inset 0 1px 0 rgba(255,220,160,.45);
+    transition: box-shadow .15s ease, transform .1s ease, filter .15s ease;
+  }
+  .draft-save:hover,
+  .draft-export:hover {
+    filter: brightness(1.08);
+    box-shadow:
+      0 0 18px rgba(240,120,32,.6),
+      0 0 36px rgba(240,120,32,.28),
+      inset 0 1px 0 rgba(255,220,160,.55);
+  }
+  .draft-save:active,
+  .draft-export:active {
+    transform: translateY(1px);
+  }
+  .draft-save:disabled,
+  .draft-export:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    filter: grayscale(0.4);
+  }
+
+  .sd-below-wrap {
+    margin-top: 8px;
+    flex-shrink: 0;
+  }
+  .sd-below-toggle {
+    width: 100%;
+    font-family: Oswald, sans-serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(0,0,0,.25);
+    color: rgba(200,198,190,.65);
+    cursor: pointer;
+  }
+  .sd-below-toggle:hover,
+  .sd-below-toggle.open {
+    color: #f07820;
+    border-color: rgba(240,120,32,.4);
+    background: rgba(240,120,32,.08);
+  }
+  .sd-below-panel {
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 8px 10px 12px;
+  }
+  .sd-below-panel[hidden] {
+    display: none !important;
+  }
+
+  .sd-status-block {
+    margin-bottom: 10px;
+  }
+  .sd-status-title {
+    font-family: Oswald, sans-serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #f07820;
+    margin-bottom: 6px;
+  }
+  .sd-status-ticks {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .sd-status-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.72rem;
+    color: rgba(220,218,210,.88);
+    cursor: pointer;
+    user-select: none;
+  }
+  .sd-status-row input.sd-status-cb {
+    accent-color: var(--orange, #f07820);
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .sd-edit-note {
+    width: 100%;
+    margin-top: 8px;
+    min-height: 56px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(240,120,32,.25);
+    background: rgba(0,0,0,.35);
+    color: rgba(230,228,220,.9);
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    resize: vertical;
+    outline: none;
+  }
+  .sd-edit-note:focus {
+    border-color: rgba(240,120,32,.5);
+    box-shadow: 0 0 0 1px rgba(240,120,32,.2);
+  }
+
+  #sdBelowBody {
+    display: block !important;
+    white-space: pre-wrap !important;
+    line-height: 1.5;
+    padding: 6px 2px 10px;
+    max-height: min(36vh, 320px);
+    overflow: auto;
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.72rem;
+    color: rgba(220, 218, 210, 0.9);
+  }
+  #sdBelowBody .sd-line {
+    display: block; white-space: pre-wrap; word-break: break-word; min-height: 1.35em;
+  }
+  #sdBelowBody .sd-blank { min-height: 0.6em; }
+  #sdBelowBody .sd-below-banner {
+    display: block; margin: 0.75em 0 0.35em; font-family: Oswald, sans-serif;
+    font-size: 0.72rem; letter-spacing: 0.1em; color: #f07820;
+  }
+  #sdBelowBody hr.sd-rule-hr {
+    display: block; border: none; border-top: 1px solid rgba(200,198,190,0.4);
+    margin: 0.55em 0; height: 0;
+  }
+
+  /* Main desk info panel — When text in orange */
+  .info-panel .info-need,
+  .info-need {
+    color: #f07820 !important;
+    opacity: 1 !important;
+  }
+  .info-panel .info-need .info-hl,
+  .info-need .info-hl {
+    color: #ffb040;
+    font-weight: 600;
+  }
