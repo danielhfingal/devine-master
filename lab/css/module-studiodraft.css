@@ -1,0 +1,256 @@
+/* module-studiodraft.css — StudioDraft: Craft. Sync. Create.
+ * Lab extract from DEVINE MASTER desk. Depends on shared tokens:
+ * --edge, --muted, --led-amber, Oswald/Inter, .sbtn
+ */
+  /* ===== StudioDraft (lyrics column) ===== */
+  .draft {
+    grid-area: draft;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    min-width: 0;
+    background: linear-gradient(180deg, #101218 0%, #0a0b0e 100%);
+    border: 1px solid var(--edge);
+    border-radius: 14px;
+    padding: 12px 12px 10px;
+    box-shadow: 0 12px 40px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.03);
+    overflow: hidden;
+  }
+  .draft-brand {
+    text-align: center;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+  }
+  .draft-title {
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.14em;
+    color: #f07820;
+  }
+  .draft-tag {
+    font-family: Oswald, sans-serif;
+    font-size: 0.55rem;
+    letter-spacing: 0.16em;
+    color: #e8a030;
+    margin-top: 2px;
+  }
+  .draft-body-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,.28);
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .draft-template-label {
+    font-family: Oswald, sans-serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    color: rgba(200,198,190,.55);
+    text-align: center;
+    padding: 10px 8px 4px;
+    flex-shrink: 0;
+  }
+  .draft-lyrics {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: auto;
+    padding: 8px 12px 16px;
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.72rem;
+    line-height: 1.45;
+    color: rgba(230,228,220,.88);
+    white-space: pre-wrap;
+    word-break: break-word;
+    outline: none;
+    caret-color: #f07820;
+  }
+  .draft-lyrics:empty:before {
+    content: attr(data-placeholder);
+    color: rgba(160,160,150,.45);
+  }
+  .draft-lyrics .sd-section {
+    display: block;
+    margin: 0.35em 0;
+  }
+  .draft-lyrics .sd-section.is-active {
+    color: #ffc060;
+    background: rgba(240,120,32,.08);
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+  .draft-lyrics[contenteditable="true"] {
+    box-shadow: inset 0 0 0 1px rgba(240,120,32,.25);
+  }
+  .draft-controls {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 10px;
+  }
+  .draft-ctrl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 4px 2px;
+  }
+  .draft-ctrl-label {
+    font-family: Oswald, sans-serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    color: rgba(210,208,200,.75);
+  }
+  .draft-ctrl .sbtn {
+    width: 26px;
+    height: 26px;
+  }
+  .draft-ctrl .sbtn.on::after {
+    background: var(--led-amber);
+  }
+  .draft-meta {
+    font-size: 0.55rem;
+    color: var(--muted);
+    text-align: center;
+    min-height: 1.1em;
+    margin-top: 4px;
+  }
+
+  .draft-save-row {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0 4px;
+  }
+  .draft-save {
+    font-family: Oswald, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #1a1008;
+    background: linear-gradient(180deg, #ffb048 0%, #f07820 55%, #c05810 100%);
+    border: 1px solid rgba(255,200,120,.35);
+    border-radius: 8px;
+    padding: 10px 28px;
+    min-width: 120px;
+    cursor: pointer;
+    box-shadow:
+      0 0 16px rgba(240,120,32,.35),
+      0 4px 12px rgba(0,0,0,.4),
+      inset 0 1px 0 rgba(255,255,255,.35);
+  }
+  .draft-save:hover {
+    filter: brightness(1.06);
+  }
+  .draft-save:active {
+    transform: translateY(1px);
+    box-shadow:
+      0 0 10px rgba(240,120,32,.3),
+      inset 0 2px 4px rgba(0,0,0,.25);
+  }
+  .draft-save:disabled {
+    opacity: 0.4;
+    cursor: default;
+    filter: none;
+    box-shadow: none;
+  }
+  /* Lyrics scrollbar — dark rail, amber thumb */
+  .draft-lyrics {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(240,120,32,.55) rgba(0,0,0,.35);
+  }
+  .draft-lyrics::-webkit-scrollbar {
+    width: 8px;
+  }
+  .draft-lyrics::-webkit-scrollbar-track {
+    background: rgba(0,0,0,.35);
+    border-radius: 8px;
+    margin: 4px 0;
+  }
+  .draft-lyrics::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ffb048 0%, #f07820 50%, #a84808 100%);
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.35);
+  }
+  .draft-lyrics::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #ffc060 0%, #ff9020 50%, #c05810 100%);
+  }
+
+
+  .draft-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    padding: 6px 0 2px;
+    flex-shrink: 0;
+  }
+  .draft-export {
+    font-family: Oswald, sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(230,220,200,.9);
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 8px;
+    padding: 8px 14px;
+    cursor: pointer;
+  }
+  .draft-export:hover {
+    border-color: rgba(240,120,32,.45);
+    color: #ffc060;
+  }
+  .draft-ctrl .sbtn:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+  .draft-lyrics {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .sd-below-wrap {
+    flex-shrink: 0;
+    margin-top: 8px;
+    border-top: 1px solid rgba(255,255,255,.06);
+    padding-top: 6px;
+  }
+  .sd-below-toggle {
+    font-family: Oswald, sans-serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(200,190,170,.65);
+    background: transparent;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .sd-below-toggle:hover { color: #ffc060; border-color: rgba(240,120,32,.35); }
+  .sd-below-panel {
+    margin-top: 6px;
+    max-height: 22vh;
+    overflow: auto;
+    background: rgba(0,0,0,.35);
+    border: 1px solid rgba(255,255,255,.05);
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.68rem;
+    line-height: 1.4;
+    color: rgba(180,175,165,.75);
+    white-space: pre-wrap;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(240,120,32,.4) rgba(0,0,0,.3);
+  }
