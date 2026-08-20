@@ -61,7 +61,7 @@
     grid-template-columns: 124px minmax(0, 1fr);
     grid-template-rows: auto minmax(0, 1fr);
     grid-template-areas:
-      "brand brand"
+      "rail brand"
       "rail eq";
     gap: 8px;
     background: linear-gradient(180deg, #14161c 0%, #0c0e12 100%);
@@ -75,22 +75,62 @@
 
   .brand {
     grid-area: brand;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 10px;
+    width: 100%;
+  }
+  .brand-title {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .brand-title .logo {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .brand-title .logo-sub {
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
+  .logo-sub .ver-letter {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: var(--orange, #f07820);
+    letter-spacing: 0.06em;
+  }
+  .logo-sub .ver-num {
+    font-size: 0.92em;
+    color: rgba(200, 200, 190, 0.55);
+    letter-spacing: 0.12em;
   }
   .info-toggle {
-    display: flex; align-items: center; gap: 4px;
-    font-size: 0.42rem; color: var(--muted);
-    letter-spacing: 0.1em; text-transform: uppercase;
-    font-family: Oswald, sans-serif; cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 0.55rem;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-family: Oswald, sans-serif;
+    cursor: pointer;
     flex-shrink: 0;
+    min-width: 56px;
+    padding: 4px 6px;
+    text-align: center;
   }
   .info-toggle input { accent-color: var(--orange); width: 14px; height: 14px; }
   .logo {
     font-family: Oswald, sans-serif;
     font-weight: 700;
-    font-size: 1.55rem;
+    font-size: 1.7rem;
     letter-spacing: 0.12em;
     line-height: 1;
     background: linear-gradient(90deg, #e8a030, #f0e8d8 30%, #a0c0e8 55%, #e8a030 80%, #f0e8d8);
@@ -102,10 +142,11 @@
   }
   .logo-sub {
     font-family: Oswald, sans-serif;
-    font-size: 0.55rem;
-    letter-spacing: 0.14em;
-    color: rgba(180,180,170,.4);
-    margin-left: 2px;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    color: rgba(180,180,170,.45);
+    margin-left: 0;
+    margin-top: 2px;
   }
   .brand-report {
     margin-left: auto;
@@ -273,6 +314,24 @@
     gap: 3px;
     min-width: 0;
   }
+  
+  .eq-col input[type=range],
+  .eq-col .solo,
+  .eq-faders,
+  .eq-block {
+    pointer-events: auto !important;
+  }
+  .eq-col .solo {
+    cursor: pointer !important;
+    z-index: 5;
+    position: relative;
+  }
+  .eq-col input[type=range] {
+    cursor: pointer !important;
+    z-index: 4;
+    position: relative;
+  }
+
   .eq-col input[type=range] {
     writing-mode: vertical-lr;
     direction: rtl;
@@ -445,7 +504,7 @@
     margin-bottom: 2px;
   }
   .top-dl {
-    font-size: 0.55rem;
+    font-size: 0.88rem;
     color: var(--amber);
     text-decoration: none;
     letter-spacing: 0.04em;
@@ -453,7 +512,9 @@
   }
   .top-dl-wrap {
     min-height: 0;
-    transform: translateY(-6px);
+    text-align: center;
+    margin: 0 0 8px 0;
+    padding-top: 2px;
   }
 
   .stage {
@@ -464,45 +525,130 @@
     align-items: center;
     justify-content: center;
     min-height: 0;
+    container-type: size;
+    container-name: stage;
   }
 
+  .time-cs {
+    font-size: 0.72em;
+    opacity: 0.7;
+    font-family: inherit;
+  }
   .time {
-    position: absolute;
-    left: 50%;
-    /* midway between top of ring (~46% - half diameter) and top of play (~center) */
-    top: 22%;
-    transform: translateX(-50%);
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
     z-index: 20;
-    font-family: Oswald, sans-serif;
+    font-family: "Consolas", "SF Mono", "Courier New", monospace;
     font-size: 0.95rem;
-    letter-spacing: 0.14em;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.06em;
     color: #e0ded6;
-    margin: 0;
+    margin: 4px 0 0;
     padding: 7px 16px;
     border-radius: 10px;
-    background: linear-gradient(165deg, rgba(40,40,48,.92) 0%, rgba(16,16,20,.96) 100%);
-    border: 1px solid rgba(255,255,255,.1);
-    box-shadow:
-      inset 0 1px 0 rgba(255,255,255,.08),
-      0 4px 14px rgba(0,0,0,.45);
+    background: linear-gradient(165deg, rgba(40,40,48,.92) 0%, rgba(16,16,20,.95) 100%);
+    min-width: 17ch;
+    text-align: center;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  .time.time-under-play {
+    /* sits where MASTER lived — under A / Play / B */
+    margin-top: 10px;
+  }
+  .ring-wrap {
+    position: absolute;
+    left: 50%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    /* equal axes from container — never oval */
+    width: min(90cqi, 90cqb, 68vmin);
+    height: min(90cqi, 90cqb, 68vmin);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
     pointer-events: none;
+    z-index: 5;
+  }
+  .ring {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.04);
+    opacity: 0.42;
+    background:
+      radial-gradient(circle at 50% 50%,
+        rgba(8,8,10,.9) 0 2.2%,
+        rgba(40,28,22,.35) 2.2% 2.5%,
+        rgba(180,150,80,.25) 2.5% 2.9%,
+        rgba(50,32,24,.3) 2.9% 11%,
+        rgba(200,170,100,.2) 11% 11.5%,
+        rgba(30,20,14,.28) 11.5% 17%,
+        transparent 17.2%
+      ),
+      repeating-radial-gradient(circle at 50% 50%,
+        rgba(12,12,14,.5) 0 1.5px,
+        rgba(18,18,20,.35) 1.5px 3px
+      ),
+      radial-gradient(circle at 38% 32%, rgba(255,255,255,.03) 0%, transparent 42%),
+      rgba(8,8,10,.55);
+    box-shadow:
+      inset 0 0 50px rgba(0,0,0,.45),
+      inset 0 0 0 1px rgba(255,255,255,.03),
+      0 8px 28px rgba(0,0,0,.3);
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+  .ring.spinning {
+    animation: vinyl-spin 12.5s linear infinite;
+  }
+  @keyframes vinyl-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
   }
 
-  .ring {
+  
+  /* A / B — top corners of the disc (screenshot layout) */
+  .ab-float {
     position: absolute;
-    left: 50%; top: 46%;
-    transform: translate(-50%, -50%);
-    width: min(72vh, 92%);
-    height: min(72vh, 92%);
-    max-width: calc(100% - 16px);
-    max-height: calc(100% - 56px);
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: 1px solid rgba(255,255,255,.06);
-    box-shadow:
-      0 0 0 1px rgba(255,255,255,.03),
-      0 0 40px rgba(0,0,0,.35);
-    pointer-events: none;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    pointer-events: auto;
+  }
+  .ab-float-a {
+    left: 5%;
+    top: 5%;
+    transform: none;
+  }
+  .ab-float-b {
+    right: 5%;
+    top: 5%;
+    transform: none;
+  }
+  .ab-float .sbtn-lg {
+    width: 64px !important;
+    height: 64px !important;
+    min-width: 64px;
+    min-height: 64px;
+    border-radius: 50% !important;
+  }
+  .ab-float .sbtn-lg::after {
+    width: 15px !important;
+    height: 15px !important;
+  }
+  .ab-float .engrave {
+    max-width: 72px;
+    text-align: center;
+  }
+  .play-row-solo {
+    grid-template-columns: 1fr !important;
+    width: auto !important;
+    max-width: none !important;
+    justify-items: center;
   }
 
   .play-stack {
@@ -536,6 +682,7 @@
     align-items: center;
     gap: 7px;
     width: 80px;
+    
   }
   /* A sits in left column, right-aligned toward play */
   .play-row .ab-side:first-child {
@@ -546,7 +693,21 @@
     justify-self: start;
   }
   .play-row .play-rim {
-    justify-self: center;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    padding: 6px;
+    background:
+      linear-gradient(145deg, #5a5a66 0%, #2a2a32 40%, #0a0a0e 100%);
+    box-shadow:
+      0 12px 28px rgba(0,0,0,.6),
+      0 2px 0 rgba(255,255,255,.08),
+      inset 0 1px 0 rgba(255,255,255,.22),
+      inset 0 -3px 8px rgba(0,0,0,.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
   }
   .play-row .sbtn-lg,
   .ab-side .sbtn-lg {
@@ -594,23 +755,32 @@
   .play {
     width: 100% !important;
     height: 100% !important;
+    min-width: 96px;
+    min-height: 96px;
     border-radius: 50%;
     border: none;
-    background: radial-gradient(circle at 36% 28%, #7a7a84 0%, #2e2e36 40%, #0c0c10 100%);
-    color: #f0eee8;
-    font-size: 2.4rem !important;
+    background:
+      radial-gradient(circle at 32% 24%, #a8a8b4 0%, #5c5c68 28%, #2a2a34 58%, #0e0e14 100%);
+    color: #f2f0ea;
+    font-size: 3.4rem !important;
     cursor: pointer;
     box-shadow:
-      inset 0 4px 8px rgba(255,255,255,.2),
-      inset 0 -14px 28px rgba(0,0,0,.65);
+      inset 0 8px 14px rgba(255,255,255,.28),
+      inset 0 -18px 32px rgba(0,0,0,.78),
+      inset 0 0 0 1px rgba(0,0,0,.5),
+      inset 0 0 0 2px rgba(255,255,255,.04);
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 0 2px 4px rgba(0,0,0,.5);
+    transition: transform 0.08s ease, box-shadow 0.08s ease;
+    text-shadow: 0 2px 4px rgba(0,0,0,.55);
   }
   .play:active {
-    transform: scale(0.97);
-    box-shadow: inset 0 8px 20px rgba(0,0,0,.7);
+    transform: scale(0.96);
+    box-shadow:
+      inset 0 14px 28px rgba(0,0,0,.82),
+      inset 0 2px 4px rgba(255,255,255,.06),
+      inset 0 0 0 1px rgba(0,0,0,.6);
   }
 
   .sbtn-master {
@@ -638,12 +808,11 @@
     left: 50%;
     top: 46%;
     transform: translate(-50%, -50%);
-    width: min(72vh, 92%);
-    height: min(72vh, 92%);
-    max-width: calc(100% - 16px);
-    max-height: calc(100% - 56px);
-    aspect-ratio: 1;
-    pointer-events: none;
+    width: min(90cqi, 90cqb, 68vmin);
+    height: min(90cqi, 90cqb, 68vmin);
+    aspect-ratio: 1 / 1;
+    pointer-events: auto;
+    cursor: grab;
     z-index: 15;
   }
   .scrub-wrap svg {
@@ -654,16 +823,14 @@
   }
   .scrub-track {
     fill: none;
-    stroke: rgba(255,255,255,.18);
-    stroke-width: 4;
-    stroke-linecap: round;
+    stroke: rgba(255,255,255,.2);
+    stroke-width: 1.75;
   }
   .scrub-fill {
     fill: none;
-    stroke: rgba(240,120,32,.9);
-    stroke-width: 4;
+    stroke: #f07820 !important;
+    stroke-width: 2.75;
     stroke-linecap: round;
-    stroke-dasharray: 0 999;
   }
   .scrub-thumb {
     fill: radial-gradient(circle at 35% 30%, #f0f0f4, #8a8a92);
@@ -676,9 +843,6 @@
   }
   .scrub-thumb:active { cursor: grabbing; }
   .scrub-hit {
-    fill: transparent;
-    stroke: transparent;
-    stroke-width: 14;
     pointer-events: stroke;
     cursor: pointer;
   }
@@ -692,6 +856,7 @@
   .right-bottom {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 6px;
     margin-top: auto;
     padding-top: 8px;
@@ -699,48 +864,88 @@
   .meterbank {
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     gap: 12px;
   }
+  .meterbank .master-between {
+    flex: 0 0 56px;
+    padding: 0 4px;
+  }
+  .meterbank .master-between .engrave {
+    max-width: none;
+  }
+  .meterbank .sbtn-master {
+    width: 52px;
+    height: 52px;
+  }
   .vu {
-    flex: 1;
-    background: linear-gradient(180deg, #e0d4a0 0%, #c8b878 100%);
-    border: 1px solid rgba(0,0,0,.3);
-    border-radius: 8px;
-    padding: 5px 10px 4px;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 2px 8px rgba(0,0,0,.25);
+    flex: 0 0 auto;
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    box-sizing: border-box;
+    background: linear-gradient(165deg, #f0e2a8 0%, #d4c078 45%, #c4a858 100%);
+    border: 1px solid rgba(80, 55, 15, 0.35);
+    border-radius: 999px;
+    padding: 10px 14px 9px;
+    min-height: 54px;
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.45),
+      inset 0 -2px 4px rgba(0,0,0,.12),
+      0 3px 10px rgba(0,0,0,.28);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .vu .vu-label {
     font-family: Oswald, sans-serif;
-    font-size: 0.58rem;
+    font-size: 0.5rem;
     letter-spacing: 0.12em;
     color: #5a4020;
     text-transform: uppercase;
+    line-height: 1.15;
   }
   .vu .vu-val {
     font-family: Oswald, sans-serif;
-    font-size: 1.05rem;
+    font-size: 1.18rem;
+    font-weight: 600;
     color: #2a1c08;
     line-height: 1.1;
+    margin-top: 2px;
   }
-  .vu .vu-sub { font-size: 0.28rem; color: #6a5030; }
+  .vu .vu-sub {
+    display: none;
+  }
   .vu.tp .vu-val { color: #1a3a18; }
 
   .file-name {
     text-align: center;
-    font-size: 0.65rem;
+    font-size: 0.78rem;
     color: var(--muted);
   }
 
   .status {
-    font-size: 0.38rem;
-    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.35;
+    color: #c8c4b8;
     text-align: center;
-    min-height: 1em;
+    min-height: 1.2em;
+    max-width: 100%;
+    padding: 0 8px;
+    word-break: break-word;
   }
-  .stream-badge { font-size: 0.36rem; }
-  a.dl, #download { font-size: 0.45rem; color: var(--amber); text-decoration: none; }
+  .stream-badge {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: var(--amber);
+    margin-top: 4px;
+  }
+  a.dl, #download { font-size: 0.88rem; color: var(--amber); text-decoration: none; }
 
   .eq-spectrum-wrap {
     display: none;
@@ -750,17 +955,36 @@
   }
 
   .info-panel {
-    position: fixed; z-index: 200;
-    max-width: 360px;
-    max-height: min(60vh, 380px);
+    position: fixed;
+    z-index: 220;
+    width: min(400px, 72vw);
+    height: min(400px, 72vw);
+    max-width: 400px;
+    max-height: 400px;
     overflow: auto;
     background: #12141a;
-    border: 1px solid rgba(255,255,255,.1);
-    border-radius: 12px;
-    padding: 12px;
-    box-shadow: 0 16px 40px rgba(0,0,0,.7);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 50%;
+    padding: 52px 44px;
+    box-sizing: border-box;
+    box-shadow: 0 16px 40px rgba(0,0,0,.75);
     display: none;
+    pointer-events: auto;
+    text-align: center;
   }
+  .info-panel.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .info-panel .info-title { text-align: center; width: 100%; }
+  .info-panel .info-body { text-align: center; font-size: 0.76rem; line-height: 1.35; width: 100%; }
+  .info-hl {
+    color: var(--orange, #f07820);
+    font-weight: 600;
+  }
+  .info-panel .info-need { text-align: center; font-size: 0.66rem; opacity: 0.85; margin-top: 8px; width: 100%; }
   .info-title { font-family: Oswald, sans-serif; letter-spacing: 0.08em; margin-bottom: 6px; color: var(--amber); }
   .info-body { font-size: 0.75rem; line-height: 1.4; }
   .info-need { font-size: 0.7rem; color: var(--muted); margin-top: 8px; }
@@ -768,7 +992,9 @@
   .eligibility-panel {
     position: fixed; z-index: 210;
     left: 50%; top: 50%;
+    right: auto; bottom: auto;
     transform: translate(-50%, -50%);
+    margin: 0;
     width: min(480px, 92vw);
     max-height: min(70vh, 480px);
     overflow: auto;
@@ -819,9 +1045,9 @@
         <input type="checkbox" id="infoToggle" checked />
         <span>Info</span>
       </label>
-      <div>
+      <div class="brand-title">
         <div class="logo">DEVINE MASTER</div>
-        <div class="logo-sub">v20260818ae</div>
+        <div class="logo-sub"><span class="ver-letter">v</span><span class="ver-num">20260819n</span></div>
       </div>
       <div class="sunit brand-report">
         <button type="button" class="sbtn led-amber" id="btnFinalise" title="Finalise & Report"></button>
@@ -974,57 +1200,63 @@
 
   <!-- ========== RIGHT ========== -->
   <div class="right">
-    <div class="right-top">
-      <div class="top-dl-wrap" style="text-align:center">
-        <a class="top-dl" id="topDownload" href="#" style="display:none" download>Download master (WAV 16-bit)</a>
-        <a class="top-dl" id="download" href="#">Download master (WAV 16-bit)</a>
-      </div>
-    </div>
+    <!-- download moved to right-bottom -->
+
 
     <div class="stage">
-      <div class="ring" aria-hidden="true"></div>
+      <div class="ring-wrap" aria-hidden="true">
+        <div class="ring" id="vinylRing"></div>
+      </div>
       <div class="scrub-wrap" id="scrubWrap" aria-hidden="false">
         <svg viewBox="0 0 200 200" id="scrubSvg">
-          <!-- bottom semicircle: from left (10,100) through bottom (100,190) to right (190,100) -->
-          <path class="scrub-hit" id="scrubHit"
-            d="M 14 100 A 86 86 0 0 0 186 100" />
-          <path class="scrub-track" id="scrubTrack"
-            d="M 14 100 A 86 86 0 0 0 186 100" />
-          <path class="scrub-fill" id="scrubFill"
-            d="M 14 100 A 86 86 0 0 0 186 100" />
-          <circle class="scrub-thumb" id="scrubThumb" cx="14" cy="100" r="7" />
+          <!-- Full circle scrub at r=90 (90% of viewBox). rotate(-90) so progress starts at top -->
+          <circle class="scrub-hit" id="scrubHit" cx="100" cy="100" r="100" fill="transparent" stroke="transparent" stroke-width="0" style="pointer-events:fill;cursor:grab" />
+          <circle class="scrub-track" id="scrubTrack" cx="100" cy="100" r="100"
+            fill="none" />
+          <circle class="scrub-fill" id="scrubFill" cx="100" cy="100" r="100"
+            fill="none"
+            stroke="#f07820"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            transform="translate(100 100) scale(-1 1) rotate(-90) translate(-100 -100)"
+            stroke-dasharray="0 9999"
+            stroke-dashoffset="0" />
+          <circle class="scrub-thumb" id="scrubThumb" cx="100" cy="0" r="5" />
         </svg>
         <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="Seek" />
       </div>
-      <div class="time" id="time">00:00 / 00:00</div>
-
+      <div class="ab-float ab-float-a">
+        <div class="ab-btn a sbtn sbtn-lg on led-amber" id="tabA"></div>
+        <span class="engrave">A · Source</span>
+      </div>
+      <div class="ab-float ab-float-b">
+        <div class="ab-btn b sbtn sbtn-lg led-amber" id="tabB"></div>
+        <span class="engrave">B · Mastered</span>
+      </div>
       <div class="play-stack">
-        <div class="play-row">
-          <div class="ab-side">
-            <div class="ab-btn a sbtn sbtn-lg on led-amber" id="tabA"></div>
-            <span class="engrave">A · Source</span>
-          </div>
+        <div class="play-row play-row-solo">
           <div class="play-rim">
             <button class="play" id="btnPlay" type="button">▶</button>
           </div>
-          <div class="ab-side">
-            <div class="ab-btn b sbtn sbtn-lg led-amber" id="tabB"></div>
-            <span class="engrave">B · Mastered</span>
-          </div>
         </div>
-        <div class="sunit">
-          <button class="master sbtn sbtn-master" id="btnMaster"></button>
-          <span class="engrave">Master</span>
-        </div>
+        <div class="time time-under-play" id="time">00:00 / 00:00</div>
       </div>
     </div>
 
     <div class="right-bottom">
+      <div class="top-dl-wrap" style="text-align:center">
+        <a class="top-dl" id="topDownload" href="#" style="display:none" download>Download master (WAV 16-bit)</a>
+      </div>
+      <a id="download" href="#" download style="display:none !important;position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true"></a>
       <div class="meterbank">
         <div class="vu">
           <div class="vu-label">Integrated LUFS</div>
           <div class="vu-val" id="lufsVal">—.—</div>
           <div class="vu-sub">BS.1770-4 · Compliant</div>
+        </div>
+        <div class="sunit master-between">
+          <button class="master sbtn sbtn-master" id="btnMaster"></button>
+          <span class="engrave">Master</span>
         </div>
         <div class="vu tp">
           <div class="vu-label">True Peak</div>
@@ -1058,6 +1290,8 @@
 </div>
 
 <script>
+window.__wantPlay = false;
+
 const LYRICS_DB = {
   "AGUARDA MEU CORACAO": "════════════════════════════════════════════════════════════\nAGUARDA MEU CORACAO\nD. DeVine / dan\nStatus: Draft\nLanguage: PT\nMatch keys: aguarda meu coracao, aguarda-meu-coracao, aguarda_meu_coracao, aguarda\n════════════════════════════════════════════════════════════\nAGUARDA, MEU CORAÇÃO\nD. DeVine / dan\n\n[Verse 1]\nNo cume da montanha, onde o vento sussurra,\nEspero por ti, meu amor, com a alma pura.\nCada rajada que vem é uma esperança,\nMas o tempo é cruel, e a espera é uma dança.\n\n[Chorus]\nEspera, meu coração, espera,\nNesta fila de sonhos, eu te encontro.\nEspera, meu amor, espera,\nJuntos, vamos conseguir.\n\n[Verse 2]\nAs noites são frias, o silêncio é profundo,\nCada estrela no céu é um desejo ao mundo.\nQue o caminho te traga de volta para mim,\nNum abraço apertado, onde a dor tem fim.\n\n[Bridge]\nMas se o destino decidir nos separar,\nGuardarei teu sorriso, teu olhar a brilhar.\nPois no coração, a saudade é eterna,\nE o amor, meu querido, é uma chama que governa.\n\n[Chorus]\nEspera, meu coração, espera,\nNesta fila de sonhos, eu te encontro.\nEspera, meu amor, espera,\nJuntos, vamos conseguir.\n\n[Verse 3]\nLembro-me daquela tarde, sob o céu dourado,\nJuntos no silêncio, o mundo pausado.\nTeu riso ecoava entre as rochas e o vento,\nUm instante eterno, um doce momento.\n\n[Verse 4]\nAs estações mudam, a montanha se veste,\nDe verde a branco, de calor a frio celeste.\nMas meu coração, como a rocha, não se altera,\nEspera por ti, na primavera ou no inverno, espera.\n\n[Outro]\nE se o tempo decidir nos manter distantes,\nGuardarei tua essência em meus dias errantes.\nPois no alto da montanha, sob o céu sem fim,\nMeu amor por ti, eterno, vive em mim.\n\n--------------------------------------------------\nPRODUCTION / STYLE NOTES\n--------------------------------------------------\nGenre tags: Fado, swamp blues, singer-songwriter\nInstruments: drumset, maracas, tambourine, bongos, Hammond organ, castanets, dulcimer, acoustic drums\nStatus: Draft\n\n────────────────────────────────────────────────────────────\nPRODUCTION NOTES\n────────────────────────────────────────────────────────────\nLinked audio: Aguarda Meu Coracao\n",
   "ALWAYS BE": "════════════════════════════════════════════════════════════\nALWAYS BE\nD. DeVine / dan\nStatus: Draft\nLanguage: EN\nMatch keys: always be, always-be, always_be, always\n════════════════════════════════════════════════════════════\nALWAYS BE\nD. DeVine / dan\n\nTITLE: keeping me awake\n\n[INTRO]\nHey!\n(Hey! Hey! Hey!)  \nHey!\n\n[Verse 1: FEMALE]\nI can't find you hand in the dark, \n[MALE]\nfeel my hand, I'll help you see the way,\n[FEMALE]\nThe wind creaks in my sleep, it's keeping me awake\n[MALE]\nIt's the wind of dreams and change.   \n\n[Verse 2: FEMALE]\nMy days are better when im with you, \n[FEMALE]\nSo come into to my arms my dear, \n\n[Chorus: [FEMALE & MALE]\nCause though the truth that carry us,\nThe days come and go but we will always grow, \n\n[Interlude: FEMALE]\n(Hey! Hey! Hey!)  \n\n[Verse 3: FEMALE]\nThere's an old voice in my head pushing me, \nI miss our little talks,\nall buried in our past,\nNow full of life and full of love \n \n[Verse 4: MALE]\nAll day Im wrong and right,\n[FEMALE]\nMind game you play, \nSo come into to my arms my dear, \n\n[Chorus: [FEMALE & MALE]\nCause though the truth that carry us,\nThe days come and go but we will always grow, \n\n[Bridge: FEMALE & MALE]\n(Hey!)\nI can't find you hand in the dark, \n(Hey!)\nfeel my hand, I'll help you see the way,\n(Hey!)\nCause though the truth that carry us,\nThe days come and go but we will always grow, \n\n[Outro: FEMALE & MALE]\nDays go, go , go away as we find our way, \nThe past is present with you, \nthe way we say, say, say Im with you,  \nDays apart brings us closer each day, \nSo sleep, sleep, sleep my dear,\nI watch as you find your dreams.\n\n[Final Chorus: FEMALE & MALE]\n(Hey!)\nI can't find you hand in the dark, \n(Hey!)\nfeel my hand, I'll help you see the way,\n(Hey!)\nCause though the truth that carry us,\nThe days come and go but we will always grow, \n \n[Ending: FEMALE & MALE]\nCause though the truth that carry us,\nThe days come and go but we will always grow, \nCause though the truth that carry us,\nThe days come and go but we will always grow, \n\n-----------------------\n\n\n\n[INTRO]\nHey!\n(Hey! Hey! Hey!)\nHey!\n[Verse 1]\n[FEMALE]\nI feel your hand in the dark,\n[MALE]\ntake my hand, I’ll love you all the way,\n[FEMALE]\nThe wind creaks in my sleep, it’s keeping me awake,\n[MALE]\nIt’s the wind of dreams and change.  \n[Verse 2]\n[FEMALE]\nMy days are better when I’m with you,\nSo come into my arms, my dear,  \n[Chorus: FEMALE & MALE]\n‘Cause though the moon that carries us,\nThe days come and go but we always grow,   \n[Interlude: FEMALE]\n(Hey! Hey! Hey!)  \n[Verse 3: FEMALE]\nThere’s an thought pushing me,\nI miss our little talks,\nAll part in past,\nNow full of life and full of love,  \n[Verse 4]\n[MALE]\nAll day I’m up and down,\n[FEMALE]\nMind games you play,\nSo come into my arms, my dear,  \n[Chorus: FEMALE & MALE]\n‘Cause though the moon that carries us,\nThe days come and go but we always grow,   \n[Bridge: FEMALE & MALE]\n(Hey!)\nI feel your hand in the dark,\n(Hey!)\ntake my hand, I’ll love you all the way,\n(Hey!)\n‘Cause though the moon that carries us,\nThe days come and go but we always grow,  \n[Outro: FEMALE & MALE]\nDays go, go, go away as we find our way,\nThe past is present with you,\nThe way we say, say, say I’m with you,\nDays apart bring us closer each day,\nSo sleep, sleep, sleep, my dear,\nI watch as you find your dreams.  \n[Final Chorus: FEMALE & MALE]\n(Hey!)\nI feel your hand in the dark,\n(Hey!)\ntake my hand, I’ll love you all the way,\n(Hey!)\n‘Cause though the moon that carries us,\nThe days come and go but we always grow,  \n[Ending: FEMALE & MALE]\n‘Cause though the moon that carries us,\nThe days come and go but we always grow,  \n‘Cause though the moon that carries us,\nThe days come and go but we always grow,  \n\n-------\n\nalways be \n\n[INTRO]\nHey!\n(Hey! Hey! Hey!)\nHey!\n[Verse 1]\n[FEMALE]\nI feel your hand in the dark,\n[MALE]\ntake my hand, I’ll love you all the way,\n[FEMALE]\nThe wind creaks in my sleep, it’s keeping me awake,\n[MALE]\nIt’s the wind of dreams and change my dear,  \n[Verse 2]\n[FEMALE]\nThe days feel better when I’m with you,\nSo come into my arms, my dear,  \n[Chorus: FEMALE & MALE]\n‘Cause though the moon that carries us,\nThe days come and go but we always be,   \n[Interlude: FEMALE]\n(Hey! Hey! Hey!)  \n[Verse 3: FEMALE]\nThere’s an thought pushing me,\nI miss our little talks,\nAll part of past,\nNow full of life and full of will,  \n[Verse 4]\n[MALE]\nSome day I’m yes and no,\n[FEMALE]\nyour mind play unfair with you,\nSo come into my arms, my dear,  \n[Chorus: FEMALE & MALE]\n‘Cause though the moon that carries us,\nThe days come and go but we always be,   \n[Bridge: FEMALE & MALE]\n(Hey!)\nI feel your hand in the dark,\n(Hey!)\ntake my hand, I’ll love you all the way,\n(Hey!)\n‘Cause though the moon that carries us,\nThe days come and go but we always be,  \n[Outro: FEMALE & MALE]\nDays go, go, go away as we find our way,\nThe present starts with you,\nThe way we say, say, say I’m with you,\nDays apart bring us closer each day,\nSo sleep, sleep, sleep, my dear,\nI listen as you find your dreams.  \n[Final Chorus: FEMALE & MALE]\n(Hey!)\nI feel your hand in the dark,\n(Hey!)\ntake my hand, I’ll love you all the way,\n(Hey!)\n‘Cause though the moon that carries us,\nThe days come and go but we always be,  \n[Ending: FEMALE & MALE]\n‘Cause though the moon that carries us,\nThe days come and go but we always be,  \n‘Cause though the moon that carries us,\nThe days come and go but we always be,  \n\n-------------------\n\n[INTRO]\nEi!\n(Ei! Ei! Ei!)\nEi!  \n[Verse 1]\n[FEMININO]\nEu sinto sua mão no escuro,\n[MASCULINO]\nPegue minha mão, eu te amarei até o fim,\n[FEMININO]\nO vento range em meu sono, me mantém acordada,\n[MASCULINO]\nÉ o vento dos sonhos e da mudança, minha querida,  \n[Verse 2]\n[FEMININO]\nOs dias parecem livres quando você está comigo,\nEntão venha para os meus braços, meu querido,  \n[Chorus: FEMININO & MASCULINO]\nPois pela lua que nos guia,\nOs dias vêm e vão, mas sempre seremos,  \n[Interlude: FEMININO]\n(Ei! Ei! Ei!)  \n[Verse 3: FEMININO]\nUm pensamento inquieto me empurra adiante,\nSinto falta das nossas conversas, tão doces,\nTodas tecidas em nosso passado, completas,\nAgora cheias de vida e vontade de ver,  \n[Verse 4]\n[MASCULINO]\nAlguns dias sou sim, outros sou não,\n[FEMININO]\nSua mente joga truques, injustos e reais,\nEntão venha para os meus braços, meu querido,  \n[Chorus: FEMININO & MASCULINO]\nPois pela lua que nos guia,\nOs dias vêm e vão, mas sempre seremos,  \n[Bridge: FEMININO & MASCULINO]\n(Ei!)\nEu sinto sua mão no escuro,\n(Ei!)\nPegue minha mão, eu te amarei até o fim,\n(Ei!)\nPois pela lua que nos guia,\nOs dias vêm e vão, mas sempre seremos,  \n[Outro: FEMININO & MASCULINO]\nOs dias vão, vão, vão, mas achamos nosso caminho,\nO presente começa com você hoje,\nO jeito que dizemos, dizemos, dizemos, estou com você,\nDias separados nos puxam mais perto, é verdade,\nEntão durma, durma, durma, meu querido,\nEu escuto enquanto seus sonhos aparecem.  \n[Final Chorus: FEMININO & MASCULINO]\n(Ei!)\nEu sinto sua mão no escuro,\n(Ei!)\nPegue minha mão, eu te amarei até o fim,\n(Ei!)\nPois pela lua que nos guia,\nOs dias vêm e vão, mas sempre seremos,  \n[Ending: FEMININO & MASCULINO]\nPois pela lua que nos guia,\nOs dias vêm e vão, mas sempre seremos,\nPois pela lua que nos guia,\nOs dias vêm e vão, mas sempre seremos,  \n\n\n\n\n--------------------------------------------------\nPRODUCTION / STYLE NOTES\n--------------------------------------------------\nStatus: Draft – reformatted into template (original content preserved)\nOriginal filename: always be.txt\n\n────────────────────────────────────────────────────────────\nPRODUCTION NOTES\n────────────────────────────────────────────────────────────\nLinked audio: always be\n",
@@ -1160,7 +1394,7 @@ const $ = id => document.getElementById(id);
 
 /* App identity — MUST be before any top-level code that reads them (avoid TDZ) */
 const MEASUREMENT_SPEC_VERSION = "bs1770-4+tp4x-v1";
-const APP_BUILD = "v20260818ae";
+const APP_BUILD = "v20260819n";
 const CATALOGUE_STORAGE_KEY = "devine_master_catalogue_v1";
 const AUTHORITATIVE_TP_OVERS = 4;
 const STREAM_TP_CEILING_DBTP = -1.0;
@@ -1478,17 +1712,32 @@ function applyLiveParams() {
       $("audioB").volume = Math.min(1, Math.max(0, bLevel > 1 ? 1 : bLevel));
     }
 
+    // Always apply B-side EQ/solo when B chain exists (master monitor)
+    if (window._bEqBands && window._bEqBands.length) {
+      for (let i = 0; i < 6; i++) {
+        let g = toggles.eq ? (+($("eq"+i) ? $("eq"+i).value : 0)) : 0;
+        if (solos.some(Boolean) && !solos[i]) g = -24;
+        if (window._bEqBands[i]) window._bEqBands[i].gain.value = g;
+      }
+      if (window._bHpf && $("hpf")) window._bHpf.frequency.value = +$("hpf").value;
+      if (window._bLpf && $("lpf")) window._bLpf.frequency.value = +$("lpf").value * 1000;
+    }
+    if ((!live.hpf || !live.bands || !live.gain) && typeof decodedBuffer !== "undefined" && decodedBuffer) {
+      try { if (typeof buildLiveGraph === "function") buildLiveGraph(); } catch (e) { console.warn(e); }
+    }
     if (!live.hpf || !live.bands || !live.gain) return;
 
     if (live.hpf) live.hpf.frequency.value = $("hpf") ? +$("hpf").value : 30;
     if (live.lpf) live.lpf.frequency.value = $("lpf") ? +$("lpf").value * 1000 : 18000;
 
     for (let i = 0; i < 6; i++) {
-      if (!live.bands[i]) continue;
       let g = toggles.eq ? (+($("eq"+i) ? $("eq"+i).value : 0)) : 0;
       if (solos.some(Boolean) && !solos[i]) g = -24;
-      live.bands[i].gain.value = g;
+      if (live.bands && live.bands[i]) live.bands[i].gain.value = g;
+      if (window._bEqBands && window._bEqBands[i]) window._bEqBands[i].gain.value = g;
     }
+    if (window._bHpf && $("hpf")) window._bHpf.frequency.value = +$("hpf").value;
+    if (window._bLpf && $("lpf")) window._bLpf.frequency.value = +$("lpf").value * 1000;
 
     if (live.comp) {
       if (toggles.comp) {
@@ -1562,12 +1811,12 @@ function rebindAllControls() {
   if ($("tabA")) $("tabA").onclick = () => {
     hideBlockingOverlays();
     if (!decodedBuffer) { const f = $("file"); if (f) f.click(); return; }
-    switchMonitor("A");
+    switchMonitor("A"); if (window.__resumePlaySoon) window.__resumePlaySoon();
   };
   if ($("tabB")) $("tabB").onclick = () => {
     hideBlockingOverlays();
     try { setToggle("provenance", true); } catch (e) {}
-    switchMonitor("B");
+    switchMonitor("B"); if (window.__resumePlaySoon) window.__resumePlaySoon();
   };
 
   // Toggles
@@ -1594,6 +1843,7 @@ function rebindAllControls() {
       try { applyLiveParams(); } catch (e) {}
     };
   });
+
 
   // EQ
   for (let i = 0; i < 6; i++) {
@@ -1648,14 +1898,20 @@ function rebindAllControls() {
 
 function switchMonitor(toMode) {
   try {
-    mode = toMode === "B" ? "B" : "A";
-    const tabA = $("tabA");
-    const tabB = $("tabB");
-    if (tabA) tabA.classList.toggle("on", mode === "A");
-    if (tabB) tabB.classList.toggle("on", mode === "B");
     const aB = $("audioB");
-    const ep = $("eligibilityPanel");
-    if (ep) ep.classList.remove("show");
+    const keepGoing = !!window.__wantPlay;
+
+    if (mode === "A" && live && live.playing) {
+      try { live.offset = livePosition(); } catch (e) {}
+    }
+
+    mode = toMode === "B" ? "B" : "A";
+    if ($("tabA")) $("tabA").classList.toggle("on", mode === "A");
+    if ($("tabB")) $("tabB").classList.toggle("on", mode === "B");
+    try {
+      const ep = $("eligibilityPanel");
+      if (ep) ep.classList.remove("show");
+    } catch (e) {}
 
     if (mode === "A") {
       if (aB) { try { aB.pause(); } catch (e) {} }
@@ -1668,12 +1924,16 @@ function switchMonitor(toMode) {
         ensureCtx();
         if (audioCtx.state === "suspended") audioCtx.resume();
         if (!live.hpf || !live.ms || !live.bands || live.bands.length < 6) buildLiveGraph();
-        startLive(live.offset || 0);
+        if (keepGoing) {
+          startLive(live.offset || 0);
+          if ($("btnPlay")) $("btnPlay").textContent = "⏸";
+        } else {
+          if ($("btnPlay")) $("btnPlay").textContent = "▶";
+        }
         if ($("status")) $("status").textContent = "Source A — EQ / vol live";
       } catch (e) {
         console.warn(e);
         if ($("status")) $("status").textContent = "A: " + (e.message || e);
-        if ($("btnPlay")) $("btnPlay").textContent = "▶";
       }
       return;
     }
@@ -1685,13 +1945,19 @@ function switchMonitor(toMode) {
       return;
     }
     try { applyLiveParams(); } catch (e) {}
-    aB.play().then(() => {
-      if ($("btnPlay")) $("btnPlay").textContent = "⏸";
-      if ($("status")) $("status").textContent = "Master B — volume live";
-    }).catch(e => {
-      if ($("status")) $("status").textContent = "B play failed: " + (e.message || e);
+    if (keepGoing) {
+      aB.play().then(function () {
+        if ($("btnPlay")) $("btnPlay").textContent = "⏸";
+        if ($("status")) $("status").textContent = "Master B — volume live";
+      }).catch(function (e) {
+        if ($("status")) $("status").textContent = "B play failed: " + (e.message || e);
+        if ($("btnPlay")) $("btnPlay").textContent = "▶";
+      });
+    } else {
+      try { aB.pause(); } catch (e) {}
       if ($("btnPlay")) $("btnPlay").textContent = "▶";
-    });
+      if ($("status")) $("status").textContent = "Master B — volume live";
+    }
   } catch (e) {
     console.error("switchMonitor", e);
     if ($("status")) $("status").textContent = "Monitor: " + (e.message || e);
@@ -1727,9 +1993,16 @@ function startLive(fromOffset) {
 
   src.onended = () => {
     if (live.source === src) {
-      live.playing = false;
-      $("btnPlay").textContent = "▶";
-      live.offset = 0;
+      if (window.__wantPlay) {
+        // Full circle / end of track — loop while user still wants play
+        live.offset = 0;
+        try { startLive(0); } catch (e) { console.warn(e); }
+        if ($("btnPlay")) $("btnPlay").textContent = "⏸";
+      } else {
+        live.playing = false;
+        if ($("btnPlay")) $("btnPlay").textContent = "▶";
+        live.offset = 0;
+      }
     }
   };
 }
@@ -1828,7 +2101,7 @@ $("pSpotify").onclick = () => applyPreset("spotify");
 if ($("pMatch")) $("pMatch").onclick = () => applyPreset("match");
 try { applyPreset("devine"); } catch (e) { console.warn(e); }
 if ($("status")) {
-  $("status").textContent = "DEVINE MASTER " + (typeof APP_BUILD !== "undefined" ? APP_BUILD : "v20260818ae") + " — drop or click to load audio";
+  $("status").textContent = "DEVINE MASTER " + (typeof APP_BUILD !== "undefined" ? APP_BUILD : "v20260819n") + " — drop or click to load audio";
 }
 
 /* —— Slider live binding —— */
@@ -1904,7 +2177,7 @@ $("tabA").onclick = () => {
     if (f) f.click();
     return;
   }
-  switchMonitor("A");
+  switchMonitor("A"); if (window.__resumePlaySoon) window.__resumePlaySoon();
 };
 // Explicit load affordance on the file label
 if ($("fileLabel")) {
@@ -1914,7 +2187,7 @@ if ($("fileLabel")) {
 }
 $("tabB").onclick = () => {
   setToggle("provenance", true);
-  switchMonitor("B");
+  switchMonitor("B"); if (window.__resumePlaySoon) window.__resumePlaySoon();
 };
 
 const shell = document.querySelector(".shell");
@@ -1966,9 +2239,18 @@ async function loadFile(f) {
 }
 
 function fmt(t) {
-  if (!isFinite(t)) return "00:00";
-  const m = Math.floor(t / 60), s = Math.floor(t % 60);
-  return String(m).padStart(2,"0") + ":" + String(s).padStart(2,"0");
+  if (!isFinite(t) || t < 0) t = 0;
+  const m = Math.floor(t / 60);
+  const s = Math.floor(t % 60);
+  const cs = Math.floor((t % 1) * 100);
+  return String(m).padStart(2,"0") + ":" + String(s).padStart(2,"0") + ":" + String(cs).padStart(2,"0");
+}
+function fmtHtml(t) {
+  if (!isFinite(t) || t < 0) t = 0;
+  const m = String(Math.floor(t / 60)).padStart(2,"0");
+  const s = String(Math.floor(t % 60)).padStart(2,"0");
+  const cs = String(Math.floor((t % 1) * 100)).padStart(2,"0");
+  return m + ":" + s + ":<span class=\"time-cs\">" + cs + "</span>";
 }
 
 function tick() {
@@ -1981,8 +2263,14 @@ function tick() {
     cur = live.playing ? livePosition() : live.offset;
     if (cur > dur) cur = dur;
   }
-  $("time").textContent = fmt(cur) + " / " + fmt(dur);
+  (function(){ var el = $("time"); if (el) el.innerHTML = fmtHtml(cur) + " / " + fmtHtml(dur); })();
   if (typeof updateScrubUI === "function") updateScrubUI(cur, dur);
+  try {
+    var spinning = false;
+    if (mode === "B" && $("audioB") && !$("audioB").paused) spinning = true;
+    else if (live && live.playing) spinning = true;
+    if (typeof setVinylSpin === "function") setVinylSpin(spinning);
+  } catch (e) {}
 
   // Real level meters from analyser when live; from audio element peaks when on B
   if (live.playing && live.analyser && live.dataL) {
@@ -2042,13 +2330,17 @@ $("btnPlay").onclick = async () => {
       }
       if (aB.paused) {
         try { applyLiveParams(); } catch (e) {}
+        window.__wantPlay = true;
         try {
           await aB.play();
           if ($("btnPlay")) $("btnPlay").textContent = "⏸";
         } catch (e) {
+          window.__wantPlay = false;
           if ($("status")) $("status").textContent = "B play failed: " + (e.message || e);
         }
       } else {
+        window.__wantPlay = false;
+        aB.loop = false;
         aB.pause();
         if ($("btnPlay")) $("btnPlay").textContent = "▶";
       }
@@ -2060,12 +2352,16 @@ $("btnPlay").onclick = async () => {
       return;
     }
     if (live.playing) {
+      window.__wantPlay = false;
       live.offset = livePosition();
       stopLive();
+      if ($("btnPlay")) $("btnPlay").textContent = "▶";
       if ($("status")) $("status").textContent = "Paused";
     } else {
+      window.__wantPlay = true;
       if (!live.hpf || !live.bands) buildLiveGraph();
       startLive(live.offset || 0);
+      if ($("btnPlay")) $("btnPlay").textContent = "⏸";
       if ($("status")) $("status").textContent = "Live A — EQ / vol update in real time";
     }
   } catch (e) {
@@ -2076,7 +2372,14 @@ $("btnPlay").onclick = async () => {
 
 ["audioA","audioB"].forEach(id => {
   const el = $(id);
-  if (el) el.addEventListener("ended", () => { $("btnPlay").textContent = "▶"; });
+  if (el) el.addEventListener("ended", () => {
+    if (window.__wantPlay) {
+      try { el.currentTime = 0; el.play(); } catch (e) {}
+      if ($("btnPlay")) $("btnPlay").textContent = "⏸";
+    } else {
+      if ($("btnPlay")) $("btnPlay").textContent = "▶";
+    }
+  });
 });
 
 /* ============================================================================
@@ -2695,7 +2998,28 @@ $("btnMaster").onclick = async () => {
         window._bAnalyser.fftSize = 1024;
         window._bAnalyser.smoothingTimeConstant = 0.7;
         window._bData = new Uint8Array(window._bAnalyser.frequencyBinCount);
-        window._bSource.connect(window._bGain);
+        // EQ + HPF/LPF on B so SUB→AIR / solo work while monitoring master
+        window._bHpf = audioCtx.createBiquadFilter();
+        window._bHpf.type = "highpass";
+        window._bHpf.frequency.value = 30;
+        window._bLpf = audioCtx.createBiquadFilter();
+        window._bLpf.type = "lowpass";
+        window._bLpf.frequency.value = 18000;
+        window._bEqBands = [];
+        var freqs = (typeof EQ_FREQS !== "undefined" && EQ_FREQS) ? EQ_FREQS : [80, 250, 800, 2500, 6000, 12000];
+        for (var bi = 0; bi < 6; bi++) {
+          var f = audioCtx.createBiquadFilter();
+          if (bi === 0) { f.type = "lowshelf"; f.frequency.value = 60; }
+          else if (bi === 5) { f.type = "highshelf"; f.frequency.value = 10000; }
+          else { f.type = "peaking"; f.frequency.value = freqs[bi] || 1000; f.Q.value = 0.9; }
+          f.gain.value = 0;
+          window._bEqBands.push(f);
+        }
+        window._bSource.connect(window._bHpf);
+        window._bHpf.connect(window._bEqBands[0]);
+        for (var bj = 0; bj < 5; bj++) window._bEqBands[bj].connect(window._bEqBands[bj + 1]);
+        window._bEqBands[5].connect(window._bLpf);
+        window._bLpf.connect(window._bGain);
         window._bGain.connect(window._bAnalyser);
         window._bAnalyser.connect(audioCtx.destination);
       } else if (window._bGain && window._bAnalyser) {
@@ -3506,22 +3830,37 @@ let _pendingExportUrl = null;
 let _softAcknowledged = false;
 
 function setDownloadEnabled(url, enabled) {
-  const anchors = [$("download"), $("topDownload")].filter(Boolean);
-  anchors.forEach(a => {
+  // UI: only topDownload is visible. Hidden #download stays in sync for legacy callers.
+  const top = $("topDownload");
+  const legacy = $("download");
+  const apply = (a, visible) => {
+    if (!a) return;
     if (enabled && url) {
       a.href = url;
-      a.style.display = a.id === "topDownload" ? "inline" : "block";
-      a.style.visibility = "visible";
       a.style.pointerEvents = "auto";
       a.style.opacity = "1";
+      if (visible) {
+        a.style.display = "inline";
+        a.style.visibility = "visible";
+      } else {
+        a.style.display = "none";
+        a.style.visibility = "hidden";
+      }
     } else {
       a.removeAttribute("href");
       a.style.pointerEvents = "none";
-      a.style.opacity = "0.35";
-      if (a.id === "topDownload") a.style.visibility = "visible";
-      else a.style.display = "block";
+      a.style.opacity = visible ? "0.35" : "0";
+      if (visible) {
+        a.style.display = "inline";
+        a.style.visibility = "visible";
+      } else {
+        a.style.display = "none";
+        a.style.visibility = "hidden";
+      }
     }
-  });
+  };
+  apply(top, true);
+  apply(legacy, false);
 }
 
 function showEligibilityPanel(result, url) {
@@ -3745,6 +4084,43 @@ tick();
 
 /* —— Centered hover info for buttons —— */
 const INFO = {
+
+  load: {
+    title: "Load audio",
+    body: "Load a WAV, MP3, FLAC, or M4A source into side A. This is the start of every master.",
+    need: "Always load a clean source before adjusting EQ or running MASTER."
+  },
+  catExport: {
+    title: "Export catalogue JSON",
+    body: "Downloads the mastering catalogue log (all masters, presets, meters, provenance).",
+    need: "Use after sessions to keep history for comparison and finetuning."
+  },
+  cgBaseline: {
+    title: "Cold gravity · Baseline",
+    body: "Minimal catalogue pull on residual EQ. Closest to a neutral process.",
+    need: "Use when you want the least tonal influence from the catalogue."
+  },
+  cgGentle: {
+    title: "Cold gravity · Gentle",
+    body: "Moderate catalogue-informed tonal pull without strong commitment.",
+    need: "Middle ground between neutral and Strong."
+  },
+  cgStrong: {
+    title: "Cold gravity · Strong",
+    body: "Stronger catalogue-informed tonal gravity — the preferred D.Devine desk default from ear validation.",
+    need: "Default for catalogue identity masters."
+  },
+  lufsMeter: {
+    title: "Integrated LUFS",
+    body: "BS.1770-4 integrated loudness of the current master render. D.Devine targets about −10.1; Spotify path about −14.0.",
+    need: "Read after MASTER. Soft/hard gates use this value for export eligibility."
+  },
+  tpMeter: {
+    title: "True Peak",
+    body: "4× oversampled true peak of the master. Streaming-safe ceiling is −1.0 dBTP.",
+    need: "Must pass ≤ −1.0 dBTP for a clean streaming export."
+  },
+
   trans: {
     title: "Transient",
     body: "Sharpens attack so hits and plucks speak faster. Uses a quicker compressor attack so transients cut through dense AI mixes.",
@@ -3767,8 +4143,8 @@ const INFO = {
   },
   eq: {
     title: "EQ",
-    body: "Enables the six-band equalizer (Sub through Air). When off, band faders are ignored and the tonal balance stays flat.",
-    need: "On for tonal shaping toward your D.Devine or Spotify target. Off for a pure dynamics-only pass."
+    body: "Enables the six-band equalizer (Sub through Air). When off, band faders are ignored and the tonal balance stays flat. On A this shapes the live source graph; on B the same faders are a monitor EQ on the rendered master.",
+    need: "On for tonal shaping toward your D.Devine or Spotify target. Off for a pure dynamics-only pass. Note: B-EQ is a monitor tweak on the already-rendered master (Preview / Loaded Audio). It does not rewrite the exported WAV unless you run MASTER again."
   },
   comp: {
     title: "Comp",
@@ -3797,8 +4173,8 @@ const INFO = {
   },
   master: {
     title: "MASTER",
-    body: "Renders the full offline chain with your current controls, measures LUFS / true peak, and prepares the downloadable master.",
-    need: "Press when the live preview feels right. Non-destructive — original file is never overwritten."
+    body: "Renders the full offline chain with your current controls, measures LUFS / true peak, and prepares the downloadable master. This is the step that bakes EQ and processing into the downloadable WAV.",
+    need: "Press when the live preview feels right. Non-destructive — original file is never overwritten. Note: B-EQ is only a monitor tweak on an already-rendered master until you run MASTER again."
   },
   tabA: {
     title: "A — Source",
@@ -3807,8 +4183,8 @@ const INFO = {
   },
   tabB: {
     title: "B — Mastered",
-    body: "Listen to the last rendered master for A/B comparison against the source.",
-    need: "Available after MASTER completes. Provenance Ⓟ is forced on when you open B."
+    body: "Listen to the last rendered master for A/B comparison against the source. SUB→AIR and Solo still work here as a monitor EQ on that master.",
+    need: "Available after MASTER completes. Provenance Ⓟ is forced on when you open B. Note: B-EQ is a monitor tweak on the already-rendered master (Preview / Loaded Audio). It does not rewrite the exported WAV unless you run MASTER again."
   },
   pDevine: {
     title: "D.Devine preset",
@@ -3933,6 +4309,27 @@ const INFO = {
   }
 };
 
+
+function positionInfoOnVinyl(panel) {
+  if (!panel) return;
+  // Dead center of the vinyl disc — not the stage (stage includes meters/download and shifts)
+  const vinyl =
+    document.querySelector(".ring-wrap") ||
+    document.getElementById("vinylRing") ||
+    document.querySelector(".scrub-wrap") ||
+    document.querySelector(".stage");
+  if (!vinyl) return;
+  const r = vinyl.getBoundingClientRect();
+  if (r.width < 8 || r.height < 8) return;
+  const cx = r.left + r.width / 2;
+  const cy = r.top + r.height / 2;
+  panel.style.left = cx + "px";
+  panel.style.top = cy + "px";
+  panel.style.transform = "translate(-50%, -50%)";
+  panel.style.right = "auto";
+  panel.style.bottom = "auto";
+}
+
 (function setupInfoHover() {
   const infoPanel = $("infoPanel");
   const infoTitle = $("infoTitle");
@@ -3943,15 +4340,22 @@ const INFO = {
   let infoHideTimer = null;
   const INFO_DELAY = 480;
 
-  function showInfo(key) {
+  function showInfo(key, el) {
     const tog = $("infoToggle");
     if (tog && !tog.checked) return;
     const d = INFO[key];
     if (!d) return;
     infoTitle.textContent = d.title;
-    infoBody.textContent = d.body;
-    infoNeed.textContent = d.need ? ("When: " + d.need) : "";
+    infoBody.innerHTML = String(d.body || "").replace(/\bMASTER\b/g, "<span class=\"info-hl\">MASTER</span>");
+    infoNeed.innerHTML = d.need ? ("When: " + String(d.need).replace(/\bMASTER\b/g, "<span class=\"info-hl\">MASTER</span>")) : "";
     infoPanel.classList.add("show");
+    // Dead center of vinyl disc
+    try { positionInfoOnVinyl(infoPanel); } catch (e) {
+      infoPanel.style.left = "50%";
+      infoPanel.style.top = "40%";
+      infoPanel.style.transform = "translate(-50%, -50%)";
+    }
+
   }
   function hideInfo() { infoPanel.classList.remove("show"); }
   const infoToggle = $("infoToggle");
@@ -3960,10 +4364,11 @@ const INFO = {
       if (!infoToggle.checked) hideInfo();
     });
   }
-  function armInfo(key) {
+  function armInfo(key, el) {
     clearTimeout(infoTimer);
     clearTimeout(infoHideTimer);
-    infoTimer = setTimeout(() => showInfo(key), INFO_DELAY);
+    infoAnchor = el || null;
+    infoTimer = setTimeout(() => showInfo(key, el), INFO_DELAY);
   }
   function disarmInfo() {
     clearTimeout(infoTimer);
@@ -3971,13 +4376,13 @@ const INFO = {
   }
 
   document.querySelectorAll(".tog[data-k]").forEach(el => {
-    el.addEventListener("mouseenter", () => armInfo(el.dataset.k));
+    el.addEventListener("mouseenter", () => armInfo(el.dataset.k, el));
     el.addEventListener("mouseleave", disarmInfo);
   });
   [["pDevine","pDevine"],["pSpotify","pSpotify"],["pMatch","pMatch"],["btnMaster","master"],["btnFinalise","finalise"],["tabA","tabA"],["tabB","tabB"],["eqReset","eqReset"]].forEach(([id, key]) => {
     const el = $(id);
     if (!el) return;
-    el.addEventListener("mouseenter", () => armInfo(key));
+    el.addEventListener("mouseenter", () => armInfo(key, el));
     el.addEventListener("mouseleave", disarmInfo);
   });
   // Sliders + EQ bands
@@ -3985,7 +4390,7 @@ const INFO = {
    ["eq0","eq0"],["eq1","eq1"],["eq2","eq2"],["eq3","eq3"],["eq4","eq4"],["eq5","eq5"]].forEach(([id, key]) => {
     const el = $(id);
     if (!el) return;
-    el.addEventListener("mouseenter", () => armInfo(key));
+    el.addEventListener("mouseenter", () => armInfo(key, el));
     el.addEventListener("mouseleave", disarmInfo);
   });
   document.querySelectorAll(".solo").forEach(el => {
@@ -4005,9 +4410,40 @@ const INFO = {
     $("mR").parentElement.addEventListener("mouseenter", () => armInfo("meters"));
     $("mR").parentElement.addEventListener("mouseleave", disarmInfo);
   }
+  // Load / gravity / catalogue / LUFS / TP
+  [
+    ["btnLoadFile", "load"],
+    ["btnCatExport", "catExport"],
+    ["cgBaseline", "cgBaseline"],
+    ["cgGentle", "cgGentle"],
+    ["cgStrong", "cgStrong"],
+    ["lufsVal", "lufsMeter"],
+    ["tpVal", "tpMeter"]
+  ].forEach(function (pair) {
+    var id = pair[0], key = pair[1];
+    var el = $(id);
+    if (!el) return;
+    el.style.cursor = "pointer";
+    el.addEventListener("mouseenter", function () { armInfo(key, el); });
+    el.addEventListener("mouseleave", disarmInfo);
+  });
+  document.querySelectorAll(".vu, .cg-btn").forEach(function (el) {
+    el.style.cursor = "pointer";
+    el.addEventListener("mouseenter", function () {
+      var key = "lufsMeter";
+      if (el.classList.contains("tp")) key = "tpMeter";
+      else if (el.classList.contains("cg-btn")) {
+        var g = el.getAttribute("data-g");
+        key = g === "gentle" ? "cgGentle" : (g === "strong" ? "cgStrong" : "cgBaseline");
+      }
+      armInfo(key, el);
+    });
+    el.addEventListener("mouseleave", disarmInfo);
+  });
+
   // Labels near gain/hpf etc.
   document.querySelectorAll(".field label, .eq-name").forEach(el => {
-    el.style.cursor = "help";
+    el.style.cursor = "pointer";
   });
   infoPanel.addEventListener("mouseenter", () => clearTimeout(infoHideTimer));
   infoPanel.addEventListener("mouseleave", disarmInfo);
@@ -4156,7 +4592,7 @@ if ($("btnFinalise")) {
   if (tabA) {
     tabA.onclick = () => {
       if (!decodedBuffer && fileEl) { fileEl.click(); return; }
-      if (typeof switchMonitor === "function") switchMonitor("A");
+      if (typeof switchMonitor === "function") switchMonitor("A"); if (window.__resumePlaySoon) window.__resumePlaySoon();
       else {
         mode = "A";
         tabA.classList.add("on");
@@ -4169,7 +4605,7 @@ if ($("btnFinalise")) {
   if (tabBboot) {
     tabBboot.onclick = () => {
       if (typeof setToggle === "function") setToggle("provenance", true);
-      if (typeof switchMonitor === "function") switchMonitor("B");
+      if (typeof switchMonitor === "function") switchMonitor("B"); if (window.__resumePlaySoon) window.__resumePlaySoon();
     };
   }
   const shellEl = document.querySelector(".shell");
@@ -4230,31 +4666,44 @@ if ($("btnFinalise")) {
   const track = document.getElementById("scrubTrack");
   if (!thumb || !hit || !seek) return;
 
-  const CX = 100, CY = 100, R = 86;
-  // Bottom semicircle (SVG y-down: sweep 0 = CCW = through bottom)
-  const D = "M 14 100 A 86 86 0 0 0 186 100";
-  if (track) track.setAttribute("d", D);
-  if (fill) fill.setAttribute("d", D);
-  hit.setAttribute("d", D);
-
-  const PATH_LEN = Math.PI * R;
+  const CX = 100, CY = 100, R = 100;
+  // Full circle = outer ring size. Progress counter-clockwise from top.
+  const CIRC = 2 * Math.PI * R;
 
   function pt(t) {
     t = Math.max(0, Math.min(1, t));
-    const a = Math.PI - t * Math.PI;
+    // t=0 at top, counter-clockwise
+    const a = -Math.PI / 2 - t * Math.PI * 2;
     return { x: CX + R * Math.cos(a), y: CY + R * Math.sin(a) };
   }
 
   function setThumb(t) {
     t = Math.max(0, Math.min(1, t));
     const p = pt(t);
-    thumb.setAttribute("cx", p.x.toFixed(2));
-    thumb.setAttribute("cy", p.y.toFixed(2));
+    if (thumb) {
+      thumb.setAttribute("cx", p.x.toFixed(2));
+      thumb.setAttribute("cy", p.y.toFixed(2));
+    }
     if (fill) {
-      const d = t * PATH_LEN;
-      fill.setAttribute("stroke-dasharray", d.toFixed(2) + " " + (PATH_LEN + 4).toFixed(2));
+      const drawn = Math.max(0, t * CIRC);
+      const rest = Math.max(CIRC - drawn, 0.01);
+      fill.setAttribute("stroke-dasharray", drawn.toFixed(3) + " " + rest.toFixed(3));
+      fill.setAttribute("stroke-dashoffset", "0");
+      fill.setAttribute("stroke", "#f07820");
+      fill.style.stroke = "#f07820";
+      fill.style.opacity = "1";
     }
   }
+
+  setThumb(0);
+
+  
+window.setVinylSpin = function setVinylSpin(on) {
+  const ring = document.getElementById("vinylRing");
+  if (!ring) return;
+  if (on) ring.classList.add("spinning");
+  else ring.classList.remove("spinning");
+}
 
   window.updateScrubUI = function(cur, dur) {
     if (seek.dataset.dragging === "1") return;
@@ -4324,58 +4773,115 @@ if ($("btnFinalise")) {
     if (rect.width < 1 || rect.height < 1) return 0;
     const x = ((clientX - rect.left) / rect.width) * 200;
     const y = ((clientY - rect.top) / rect.height) * 200;
-    let ang = Math.atan2(y - CY, x - CX);
-    if (ang < 0) ang = 0;
-    if (ang > Math.PI) ang = Math.PI;
-    return 1 - ang / Math.PI;
+    let ang = Math.atan2(y - CY, x - CX); // -PI..PI, 0 = right
+    // From top, counter-clockwise to match pt()
+    let fromTop = Math.PI / 2 - ang; // invert vs clockwise mapping
+    if (fromTop < 0) fromTop += Math.PI * 2;
+    if (fromTop >= Math.PI * 2) fromTop -= Math.PI * 2;
+    return Math.max(0, Math.min(1, fromTop / (Math.PI * 2)));
   }
 
-  /** Only accept interaction on the lower arc (below midline + margin) */
+  /** Accept interaction on the full scrub ring band (not the center play cluster) */
   function isOnLowerArc(clientX, clientY) {
     const svg = document.getElementById("scrubSvg");
     const rect = svg.getBoundingClientRect();
     if (rect.width < 1) return false;
     const x = ((clientX - rect.left) / rect.width) * 200;
     const y = ((clientY - rect.top) / rect.height) * 200;
-    // Must be below horizontal center (keeps A/B/Play free)
-    if (y < CY + 12) return false;
     const dx = x - CX, dy = y - CY;
     const dist = Math.sqrt(dx * dx + dy * dy);
-    return dist > R - 22 && dist < R + 22;
+    // Full LP surface (grab anywhere on the record); leave play button core free
+    return dist >= 28 && dist <= R + 10;
   }
 
   let dragging = false;
   let pendingT = 0;
+  let lastAng = null;
+
+  /** Angle in radians, 0 at top, increasing counter-clockwise (matches progress). */
+  function angFromClient(clientX, clientY) {
+    const svg = document.getElementById("scrubSvg");
+    const rect = svg.getBoundingClientRect();
+    if (rect.width < 1) return 0;
+    const x = ((clientX - rect.left) / rect.width) * 200;
+    const y = ((clientY - rect.top) / rect.height) * 200;
+    // atan2: 0 = +x (right). Convert so 0 = top, increases CCW.
+    let ang = Math.atan2(y - CY, x - CX); // -PI..PI
+    let fromTop = Math.PI / 2 - ang; // CCW from top
+    // normalize 0..2PI
+    while (fromTop < 0) fromTop += Math.PI * 2;
+    while (fromTop >= Math.PI * 2) fromTop -= Math.PI * 2;
+    return fromTop;
+  }
 
   function onDown(ev) {
     const e = ev.touches ? ev.touches[0] : ev;
-    if (!isOnLowerArc(e.clientX, e.clientY)) return; // let click pass to A/Play/B
+    if (!isOnLowerArc(e.clientX, e.clientY)) return;
     dragging = true;
     seek.dataset.dragging = "1";
-    pendingT = tFromClient(e.clientX, e.clientY);
-    setThumb(pendingT);
+    // Do NOT jump thumb/seek on click — only track angle for later movement
+    lastAng = angFromClient(e.clientX, e.clientY);
+    // start from current playhead
+    try {
+      const cur = (typeof duration === "function" && duration() > 0)
+        ? (function () {
+            try {
+              if (modeIsB()) {
+                const b = document.getElementById("audioB");
+                return (b && b.duration) ? (b.currentTime / b.duration) : 0;
+              }
+              const dm = window.__dm;
+              if (dm && dm.getLive && dm.getLive() && dm.getLive().playing && typeof livePosition === "function") {
+                return livePosition() / duration();
+              }
+            } catch (err) {}
+            return parseFloat(seek.value || "0") / 1000;
+          })()
+        : parseFloat(seek.value || "0") / 1000;
+      pendingT = Math.max(0, Math.min(1, cur));
+    } catch (err) {
+      pendingT = parseFloat(seek.value || "0") / 1000;
+    }
     ev.preventDefault();
     ev.stopPropagation();
   }
+
   function onMove(ev) {
-    if (!dragging) return;
+    if (!dragging || lastAng == null) return;
     const e = ev.touches ? ev.touches[0] : ev;
-    pendingT = tFromClient(e.clientX, e.clientY);
+    const ang = angFromClient(e.clientX, e.clientY);
+    // Smallest signed delta; positive = CCW = forward in track
+    let d = ang - lastAng;
+    if (d > Math.PI) d -= Math.PI * 2;
+    if (d < -Math.PI) d += Math.PI * 2;
+    lastAng = ang;
+    if (Math.abs(d) < 0.0005) return; // ignore pure click noise
+    pendingT = Math.max(0, Math.min(1, pendingT + d / (Math.PI * 2)));
     setThumb(pendingT);
+    // live scrub while dragging
+    try { commitSeek(pendingT); } catch (err) {}
     ev.preventDefault();
   }
+
   function onUp(ev) {
     if (!dragging) return;
     dragging = false;
     seek.dataset.dragging = "0";
-    commitSeek(pendingT);
+    lastAng = null;
+    try { commitSeek(pendingT); } catch (err) {}
   }
 
-  // Only bind on hit/thumb — NOT on the whole window until drag starts
   hit.addEventListener("mousedown", onDown);
   thumb.addEventListener("mousedown", onDown);
   hit.addEventListener("touchstart", onDown, { passive: false });
   thumb.addEventListener("touchstart", onDown, { passive: false });
+  // full disc also receives events via SVG background
+  const svgEl = document.getElementById("scrubSvg");
+  if (svgEl) {
+    svgEl.style.cursor = "grab";
+    svgEl.addEventListener("mousedown", onDown);
+    svgEl.addEventListener("touchstart", onDown, { passive: false });
+  }
 
   window.addEventListener("mousemove", onMove);
   window.addEventListener("mouseup", onUp);
@@ -4383,6 +4889,121 @@ if ($("btnFinalise")) {
   window.addEventListener("touchend", onUp);
 
   setThumb(0);
+})();
+
+
+/* —— Info hover: event delegation (Load, gravity, export, meters) —— */
+(function setupInfoDelegation() {
+  function keyFromTarget(t) {
+    if (!t || !t.closest) return null;
+    if (t.closest("#btnLoadFile") || t.closest('[id="btnLoadFile"]') || (t.closest(".sunit") && t.closest(".sunit").querySelector("#btnLoadFile"))) return "load";
+    if (t.closest("#btnCatExport")) return "catExport";
+    if (t.closest("#cgBaseline") || (t.closest(".cg-btn") && t.closest(".cg-btn").getAttribute("data-g") === "baseline")) return "cgBaseline";
+    if (t.closest("#cgGentle") || (t.closest(".cg-btn") && t.closest(".cg-btn").getAttribute("data-g") === "gentle")) return "cgGentle";
+    if (t.closest("#cgStrong") || (t.closest(".cg-btn") && t.closest(".cg-btn").getAttribute("data-g") === "strong")) return "cgStrong";
+    if (t.closest("#lufsVal") || (t.closest(".vu") && !t.closest(".vu.tp"))) return "lufsMeter";
+    if (t.closest("#tpVal") || t.closest(".vu.tp")) return "tpMeter";
+    if (t.closest("#btnLoadFile") || (t.closest(".rail-section") && t.textContent && t.textContent.indexOf("LOAD") >= 0 && t.closest("button"))) return "load";
+    return null;
+  }
+  var timer = null, hideT = null;
+  document.addEventListener("mouseover", function (ev) {
+    var key = keyFromTarget(ev.target);
+    if (!key) return;
+    var tog = document.getElementById("infoToggle");
+    if (tog && !tog.checked) return;
+    clearTimeout(timer);
+    clearTimeout(hideT);
+    timer = setTimeout(function () {
+      var d = (typeof INFO !== "undefined") ? INFO[key] : null;
+      if (!d) return;
+      var panel = document.getElementById("infoPanel");
+      var title = document.getElementById("infoTitle");
+      var body = document.getElementById("infoBody");
+      var need = document.getElementById("infoNeed");
+      if (!panel) return;
+      if (title) title.textContent = d.title;
+      if (body) body.innerHTML = String(d.body || "").replace(/\bMASTER\b/g, "<span class=\"info-hl\">MASTER</span>");
+      if (need) need.innerHTML = d.need ? ("When: " + String(d.need).replace(/\bMASTER\b/g, "<span class=\"info-hl\">MASTER</span>")) : "";
+      try { positionInfoOnVinyl(panel); } catch (e) {}
+      panel.classList.add("show");
+    }, 420);
+  }, true);
+  document.addEventListener("mouseout", function (ev) {
+    var key = keyFromTarget(ev.target);
+    if (!key) return;
+    clearTimeout(timer);
+    hideT = setTimeout(function () {
+      var panel = document.getElementById("infoPanel");
+      if (panel) panel.classList.remove("show");
+    }, 160);
+  }, true);
+})();
+
+
+
+
+/* Continuous play — deferred resume after A/B switch */
+window.__resumePlaySoon = function () {
+  if (!window.__wantPlay) return;
+  setTimeout(function () {
+    try {
+      if (!window.__wantPlay) return;
+      if (typeof mode !== "undefined" && mode === "B") {
+        var aB = document.getElementById("audioB");
+        if (aB && aB.src && aB.paused) {
+          var p = aB.play();
+          if (p && p.catch) p.catch(function () {});
+          var bp = document.getElementById("btnPlay");
+          if (bp) bp.textContent = "⏸";
+        }
+      } else if (typeof live !== "undefined" && live && !live.playing && typeof decodedBuffer !== "undefined" && decodedBuffer && typeof startLive === "function") {
+        startLive((live && live.offset) || 0);
+        var bp2 = document.getElementById("btnPlay");
+        if (bp2) bp2.textContent = "⏸";
+      }
+    } catch (e) { console.warn("resumePlaySoon", e); }
+  }, 50);
+  setTimeout(window.__resumePlaySoon, 200);
+};
+
+
+/* —— Rebind EQ faders + solo (hard) —— */
+(function rebindEqSolo() {
+  function wire() {
+    for (var i = 0; i < 6; i++) {
+      (function (idx) {
+        var el = document.getElementById("eq" + idx);
+        if (!el) return;
+        el.oninput = el.onchange = function () {
+          try {
+            if (typeof decodedBuffer !== "undefined" && decodedBuffer && (!live.hpf || !live.bands) && typeof buildLiveGraph === "function") buildLiveGraph();
+            if (typeof applyLiveParams === "function") applyLiveParams();
+          } catch (e) { console.warn("eq", e); }
+        };
+      })(i);
+      var btn = document.querySelector('.solo[data-i="' + i + '"]');
+      if (btn) {
+        btn.onclick = function (ev) {
+          try {
+            var ix = +this.getAttribute("data-i");
+            if (isNaN(ix)) return;
+            solos[ix] = !solos[ix];
+            this.classList.toggle("on", !!solos[ix]);
+            if (typeof decodedBuffer !== "undefined" && decodedBuffer && (!live.hpf || !live.bands) && typeof buildLiveGraph === "function") buildLiveGraph();
+            if (typeof applyLiveParams === "function") applyLiveParams();
+            if (document.getElementById("status")) {
+              document.getElementById("status").textContent = "Solo " + ix + (solos[ix] ? " on" : " off");
+            }
+          } catch (e) { console.warn("solo", e); }
+          if (ev) { ev.preventDefault(); ev.stopPropagation(); }
+        };
+      }
+    }
+  }
+  wire();
+  setTimeout(wire, 0);
+  setTimeout(wire, 500);
 })();
 
 </script>
