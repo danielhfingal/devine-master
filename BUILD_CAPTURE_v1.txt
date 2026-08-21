@@ -1,0 +1,5 @@
+Capture v1.0 / lab build v20260822lab-capture-v1f
+- Vinyl name disc (true circle, centered on ring)
+- Arm/Stop + peak/silent
+- LP spins while recording (capturing class)
+- Session bats kill stale :8765
