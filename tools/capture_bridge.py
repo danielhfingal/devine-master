@@ -48,17 +48,29 @@ _lock = threading.Lock()
 
 
 def safe_tag(name: str) -> str:
+    """Sanitize track title for filenames. Strip date/capture noise so re-records
+    do not become track_capture_capture_capture.wav."""
     name = (name or "source").strip() or "source"
+    # Drop extension and path
+    name = name.replace("\\", "/").split("/")[-1]
+    if "." in name:
+        name = name.rsplit(".", 1)[0]
     out = []
     for c in name:
         if c.isalnum() or c in " -_":
             out.append(c if c != " " else "_")
         else:
             out.append("_")
-    tag = "".join(out).strip("_")[:60] or "source"
+    tag = "".join(out).strip("_") or "source"
     while "__" in tag:
         tag = tag.replace("__", "_")
-    return tag
+    # Strip repeated _capture and leading YYYYMMDD_ stamps from prior takes
+    import re as _re
+    tag = _re.sub(r"(_capture)+$", "", tag, flags=_re.I)
+    tag = _re.sub(r"^(20\d{6}_)+", "", tag)
+    tag = _re.sub(r"(_capture)+$", "", tag, flags=_re.I)
+    tag = tag.strip("_") or "source"
+    return tag[:60]
 
 
 def load_preferred() -> str | None:
