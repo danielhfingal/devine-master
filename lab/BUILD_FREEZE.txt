@@ -1,0 +1,16 @@
+v20260822lab-trinity-freeze
+
+Trinity desk freeze — 2026-08-22
+
+Daily driver: DEVINE_MASTER_Trinity_standalone.html
+Modules: DEVINE MASTER / SourceCast / StudioCraft
+
+Verified:
+- Three gold module tabs
+- INFO hover on rail, EQ, StudioCraft (Play transport excluded)
+- CREATE Continue/Cancel/Esc (no play-triangle)
+- Standalone fully inlined
+
+Rebuild: python rebuild_standalone.py
+Serve: python -m http.server 8080
+Open: http://127.0.0.1:8080/DEVINE_MASTER_Trinity_standalone.html
