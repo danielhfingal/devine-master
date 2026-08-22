@@ -1,0 +1,10 @@
+v20260822lab-trinity-qg3
+
+QualityGate Phase 3
+- Clip cluster detection on rendered buffer
+- Optional checkbox: QA soft holds export (localStorage)
+- Catalogue qa + qa_vector for preset comparison
+- Phases 1+2 retained (LUFS/TP/crest, A/B residual, EQ/HPF/width integrity)
+
+Daily driver: DEVINE_MASTER_Trinity_standalone.html
+Banner: v20260822lab-trinity-qg3

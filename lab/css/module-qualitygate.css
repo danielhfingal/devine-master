@@ -1,0 +1,127 @@
+/* module-qualitygate.css — Phase 1-3 badge + report panel */
+  .qg-badge {
+    display: none;
+    margin-top: 6px;
+    font-family: Oswald, sans-serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    color: rgba(200,200,190,.55);
+  }
+  .qg-badge.show { display: block; }
+  .qg-badge.show.ok { color: #60c080; }
+  .qg-badge.show.warn { color: #f0b020; }
+  .qg-badge.show.blocked { color: #f06050; }
+  .qg-badge.show:hover,
+  .qg-badge.show:focus { text-decoration: underline; outline: none; }
+
+  .qg-strict {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 4px;
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.04em;
+    color: rgba(180,180,170,.55);
+    cursor: pointer;
+    user-select: none;
+  }
+  .qg-strict input { accent-color: #e8a030; margin: 0; }
+
+  .qg-panel {
+    display: none;
+    position: fixed;
+    z-index: 250;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(420px, 92vw);
+    max-height: min(70vh, 520px);
+    overflow: auto;
+    background: #12141a;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 14px;
+    padding: 16px 18px 18px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.75);
+    box-sizing: border-box;
+  }
+  .qg-panel.show { display: block; }
+  .qg-panel-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .qg-panel-title {
+    font-family: Oswald, sans-serif;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--amber, #e8a030);
+    font-size: 0.9rem;
+  }
+  .qg-panel-close {
+    border: 1px solid rgba(255,255,255,.15);
+    background: rgba(0,0,0,.35);
+    color: rgba(230,228,220,.85);
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-family: Oswald, sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .qg-panel-close:hover {
+    border-color: rgba(240,120,32,.45);
+    color: #ffc060;
+  }
+  .qg-gate {
+    font-family: Oswald, sans-serif;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+  }
+  .qg-gate-pass { color: #60c080; }
+  .qg-gate-warn { color: #f0b020; }
+  .qg-gate-fail { color: #f06050; }
+  .qg-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 0.72rem;
+    line-height: 1.45;
+    padding: 3px 0;
+    border-bottom: 1px solid rgba(255,255,255,.04);
+  }
+  .qg-k { color: rgba(180,180,170,.65); }
+  .qg-v { color: rgba(230,228,220,.92); text-align: right; }
+  .qg-sec {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-family: Oswald, sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(240,120,32,.85);
+  }
+  .qg-list {
+    margin: 0;
+    padding-left: 1.1em;
+    font-size: 0.7rem;
+    line-height: 1.4;
+    color: rgba(220,218,210,.88);
+  }
+  .qg-ok { margin-top: 10px; font-size: 0.72rem; color: #60c080; }
+  .qg-spec-line {
+    font-size: 0.62rem;
+    line-height: 1.45;
+    color: rgba(220,218,210,.82);
+    word-break: break-word;
+    margin-top: 4px;
+  }
