@@ -105,3 +105,16 @@ Reports: `tracks/lab_3x3_report.md` · Renders: `tracks/lab_3x3_renders/`
 | `ai-mastering/` | Offline engine |
 | `tracks/` | Raws / renders / priors |
 | `devine_master_catalogue_*.json` | Lab notebook exports |
+
+---
+
+## Desk files (2026-08-21)
+
+| Track | File | Notes |
+|-------|------|--------|
+| Freeze | `DEVINE_MASTER_Beta.html` | Beta 1 · `v20260819n` |
+| Lab | `DEVINE_MASTER_Lab_StudioDraft.html` | StudioDraft + SourceCast · `v20260820lab-create-ring` |
+| Archive | `ui/archive/` | Old Beta 29/30 HTML |
+
+**Zones:** DEVINE MASTER (mix) · SourceCast (play) · StudioDraft (lyrics).
+
