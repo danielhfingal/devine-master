@@ -1,16 +1,19 @@
-# tools — Capture v1.0
+# DEVINE MASTER — tools
 
-Loopback record → captures\ → Lab SourceCast A.
+## Capture freeze (2026-08-22) — v2c
 
-## Golden path
-1. tools\start_capture_bridge.bat (one window, self-test OK)
-2. Lab StudioDraft (46)
-3. Record → name pressing on vinyl disc → play Suno → Stop
-4. Vinyl spins while recording; silent captures are flagged
+| File | Role |
+|------|------|
+| `capture_bridge.py` | Loopback capture, `build: v1x-meter`, live_peak + meter_pct |
+| `DEVINE_MASTER_CAPTURE_v2c.html` | Daily driver desk (EQ L/R + REC% meters) |
+| `meter_probe.html` | Bridge-only meter test |
+| `CAPTURE_FREEZE_v2c.md` | Freeze notes |
 
-## Rules
-- One bridge only on :8765
-- Speakers (Realtek) = device 0
-- Shift+click Record = change device
+### Run
+```bash
+python tools/capture_bridge.py
+cd tools && python -m http.server 8766
+# open http://127.0.0.1:8766/DEVINE_MASTER_CAPTURE_v2c.html
+```
 
-See CAPTURE notes in repo history.
+**Never** `git pull` over a working local bridge until `capture_bridge.py` on remote is non-empty and contains `v1x-meter`.
