@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DEVINE MASTER — Trinity</title>
+<link rel="stylesheet" href="css/00-tokens.css" />
+<link rel="stylesheet" href="css/module-devine-master.css" />
+<link rel="stylesheet" href="css/module-sourcecast.css" />
+<link rel="stylesheet" href="css/module-studiocraft.css" />
+</head>
+<body>
+<div id="captureBuildBanner">TRINITY DESK — Module 1 DEVINE MASTER · Module 2 SourceCast · Module 3 StudioCraft — v20260822lab-trinity-sc-pill</div>
+
+<div class="shell">
+
+  <!-- ========== MODULE 1 · DEVINE MASTER ========== -->
+  <!-- ========== LEFT ========== -->
+  <div class="left">
+    <div class="brand">
+      <label class="info-toggle">
+        <input type="checkbox" id="infoToggle" checked />
+        <span>Info</span>
+      </label>
+      <div class="brand-title">
+        <div class="logo">DEVINE MASTER</div>
+        <div class="logo-sub" id="logoSub" title="Build v20260822lab-trinity-sc-pill">V20260822 · TRINITY</div>
+      </div>
+      <div class="sunit brand-report">
+        <button type="button" class="sbtn led-amber" id="btnFinalise" title="Finalise & Report"></button>
+        <span class="engrave">Report</span>
+      </div>
+    </div>
+
+    <aside class="rail">
+      <div class="rail-section">
+        <div class="rail-title">File</div>
+        <div class="rail-grid c2-rec">
+          <div class="sunit">
+            <button type="button" class="sbtn sbtn-lg" id="btnLoadFile" title="Load audio file"></button>
+            <span class="engrave">Load audio</span>
+          </div>
+          <div class="sunit">
+            <button type="button" class="sbtn sbtn-lg" id="btnCaptureRec" data-k="captureRec"></button>
+            <span class="engrave" id="lblCaptureRec">Record</span>
+            <div id="capInlineMeter" title="Capture input level"><div id="capInlineMeterFill"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="rail-section">
+        <div class="rail-title">Preset</div>
+        <div class="rail-grid c3">
+          <div class="sunit"><div class="preset sbtn on led-amber" id="pDevine"></div><span class="engrave">Devine</span></div>
+          <div class="sunit"><div class="preset sbtn led-amber" id="pSpotify"></div><span class="engrave">Spotify</span></div>
+          <div class="sunit"><div class="preset sbtn led-amber" id="pMatch"></div><span class="engrave">Match</span></div>
+        </div>
+      </div>
+      <div class="rail-section cold-gravity" id="coldGravity">
+        <div class="rail-title">Cold gravity</div>
+        <div class="rail-grid c3">
+          <div class="sunit"><div class="cg-btn sbtn led-amber" data-g="baseline" id="cgBaseline"></div><span class="engrave">Base</span></div>
+          <div class="sunit"><div class="cg-btn sbtn led-amber" data-g="gentle" id="cgGentle"></div><span class="engrave">Gentle</span></div>
+          <div class="sunit"><div class="cg-btn sbtn on led-amber" data-g="strong" id="cgStrong"></div><span class="engrave">Strong</span></div>
+        </div>
+      </div>
+      <div class="rail-section">
+        <div class="rail-title">Processing</div>
+        <div class="rail-grid">
+          <div class="sunit"><div class="tog sbtn" data-k="trans"></div><span class="engrave">Trans</span></div>
+          <div class="sunit"><div class="tog sbtn on" data-k="mono"></div><span class="engrave">Mono</span></div>
+          <div class="sunit"><div class="tog sbtn on" data-k="lim"></div><span class="engrave">Lim</span></div>
+          <div class="sunit"><div class="tog sbtn on" data-k="decl"></div><span class="engrave">DeClip</span></div>
+          <div class="sunit"><div class="tog sbtn on" data-k="eq"></div><span class="engrave">EQ</span></div>
+          <div class="sunit"><div class="tog sbtn on" data-k="comp"></div><span class="engrave">Comp</span></div>
+        </div>
+      </div>
+      <div class="rail-section">
+        <div class="rail-title">Output</div>
+        <div class="rail-grid c3">
+          <div class="sunit"><div class="tog sbtn on" data-k="presetOut"></div><span class="engrave">Pre</span></div>
+          <div class="sunit"><div class="tog sbtn on" data-k="dither"></div><span class="engrave">Dith</span></div>
+          <div class="sunit"><div class="tog sbtn on" data-k="provenance"></div><span class="engrave">Prov</span></div>
+        </div>
+      </div>
+      <div class="rail-section">
+        <div class="rail-title">Export</div>
+        <div class="rail-grid c1">
+          <div class="sunit"><button type="button" class="dl sbtn" id="btnCatExport"></button><span class="engrave">Cat JSON</span></div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="eq-block">
+      <div class="eq-head">
+        <div class="eq-head-label">Makeup / Volume</div>
+        <div class="vol-field">
+          <input type="range" id="vol" min="-12" max="12" step="0.1" value="0" title="Makeup / volume" />
+          <div class="vol-ends"><span>−12</span><span>0</span><span>+12</span></div>
+        </div>
+      </div>
+      <div class="eq-title">Equaliser</div>
+
+      <div class="eq-main">
+        <div class="eq-faders">
+          <div class="eq-col">
+            <input type="range" id="eq0" min="-12" max="12" step="0.5" value="0" />
+            <span class="eq-name">Sub</span>
+            <button type="button" class="solo sbtn sbtn-sm" data-i="0"></button>
+          </div>
+          <div class="eq-col">
+            <input type="range" id="eq1" min="-12" max="12" step="0.5" value="0" />
+            <span class="eq-name">Low</span>
+            <button type="button" class="solo sbtn sbtn-sm" data-i="1"></button>
+          </div>
+          <div class="eq-col">
+            <input type="range" id="eq2" min="-12" max="12" step="0.5" value="0" />
+            <span class="eq-name">Low-Mid</span>
+            <button type="button" class="solo sbtn sbtn-sm" data-i="2"></button>
+          </div>
+          <div class="eq-col">
+            <input type="range" id="eq3" min="-12" max="12" step="0.5" value="0" />
+            <span class="eq-name">Presence</span>
+            <button type="button" class="solo sbtn sbtn-sm" data-i="3"></button>
+          </div>
+          <div class="eq-col">
+            <input type="range" id="eq4" min="-12" max="12" step="0.5" value="0" />
+            <span class="eq-name">High-Mid</span>
+            <button type="button" class="solo sbtn sbtn-sm" data-i="4"></button>
+          </div>
+          <div class="eq-col">
+            <input type="range" id="eq5" min="-12" max="12" step="0.5" value="0" />
+            <span class="eq-name">Air</span>
+            <button type="button" class="solo sbtn sbtn-sm" data-i="5"></button>
+          </div>
+        </div>
+        <div class="eq-meters-col">
+          <div class="eq-meters-pair">
+            <div class="rail-meter"><div class="rail-fill" id="mL"></div></div>
+            <div class="rail-meter"><div class="rail-fill" id="mR"></div></div>
+          </div>
+          <div class="meter-lr">L · R</div>
+          <div class="sunit">
+            <button type="button" class="eq-reset sbtn sbtn-rst" id="eqReset" title="Reset all EQ bands"></button>
+            <span class="engrave">Rst</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="eq-cont">
+        <div class="field">
+          <label>Gain · <span id="gainV">0.0</span></label>
+          <input type="range" id="gain" min="-12" max="12" step="0.1" value="0" />
+        </div>
+        <div class="field">
+          <label>SR</label>
+          <input type="range" id="sr" min="0" max="2" step="1" value="1" />
+          <div class="sr-ends">
+            <span id="sr0">32</span>
+            <span id="sr1" class="on">44.1</span>
+            <span id="sr2">48</span>
+          </div>
+        </div>
+        <div class="field">
+          <label>HPF · <span id="hpfV">30</span></label>
+          <input type="range" id="hpf" min="20" max="500" value="30" />
+        </div>
+        <div class="field">
+          <label>LPF · <span id="lpfV">18</span></label>
+          <input type="range" id="lpf" min="8" max="20" step="0.1" value="18" />
+        </div>
+        <div class="field">
+          <label>Width · <span id="widthV">1.00</span></label>
+          <input type="range" id="width" min="0.5" max="1.5" step="0.01" value="1.00" />
+        </div>
+        <div class="field">
+          <label>Drive · <span id="driveV">0.08</span></label>
+          <input type="range" id="drive" min="0" max="1" step="0.01" value="0.08" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========== MODULE 2 · SOURCECAST (LP) ========== -->
+  <!-- ========== RIGHT ========== -->
+  <div class="right">
+    <!-- download moved to right-bottom -->
+
+
+    <div class="sourcecast-label" aria-hidden="true">SOURCECAST</div>
+    <div class="stage">
+      <div class="ring-wrap" aria-hidden="true">
+        <div class="ring" id="vinylRing"></div>
+      </div>
+      <div class="scrub-wrap" id="scrubWrap" aria-hidden="false">
+        <svg viewBox="0 0 200 200" id="scrubSvg">
+          <!-- Full circle scrub at r=90 (90% of viewBox). rotate(-90) so progress starts at top -->
+          <circle class="scrub-hit" id="scrubHit" cx="100" cy="100" r="100" fill="transparent" stroke="transparent" stroke-width="0" style="pointer-events:fill;cursor:grab" />
+          <circle class="scrub-track" id="scrubTrack" cx="100" cy="100" r="100"
+            fill="none" />
+          <circle class="scrub-fill" id="scrubFill" cx="100" cy="100" r="100"
+            fill="none"
+            stroke="#f07820"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            transform="translate(100 100) scale(-1 1) rotate(-90) translate(-100 -100)"
+            stroke-dasharray="0 9999"
+            stroke-dashoffset="0" />
+          <circle class="scrub-thumb" id="scrubThumb" cx="100" cy="0" r="5" />
+        </svg>
+        <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="Seek" />
+      </div>
+      <div class="ab-float ab-float-a">
+        <div class="ab-btn a sbtn sbtn-lg on led-amber" id="tabA"></div>
+        <span class="engrave">A · SOURCE</span>
+      </div>
+      <div class="ab-float ab-float-b">
+        <div class="ab-btn b sbtn sbtn-lg led-amber" id="tabB"></div>
+        <span class="engrave">B · MASTERED</span>
+      </div>
+      <div class="play-stack">
+        <div class="play-row play-row-solo">
+          <div class="play-rim">
+            <button class="play" id="btnPlay" type="button">▶</button>
+          </div>
+        </div>
+        <div class="time time-under-play" id="time">00:00 / 00:00</div>
+        <div id="capLevelWrap" class="cap-level-wrap" aria-hidden="true" style="display:none">
+          <div class="cap-level-label">INPUT</div>
+          <div class="cap-level-track"><div class="cap-level-fill" id="capLevel"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-bottom">
+      <div class="top-dl-wrap" style="text-align:center">
+        <a class="top-dl" id="topDownload" href="#" style="display:none" download>Download master (WAV 16-bit)</a>
+      </div>
+      <a id="download" href="#" download style="display:none !important;position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true"></a>
+      <div class="meterbank">
+        <div class="vu">
+          <div class="vu-label">Integrated LUFS</div>
+          <div class="vu-val" id="lufsVal">—.—</div>
+          <div class="vu-sub">BS.1770-4 · Compliant</div>
+        </div>
+        <div class="sunit master-between">
+          <button class="master sbtn sbtn-master" id="btnMaster"></button>
+          <span class="engrave">Master</span>
+        </div>
+        <div class="vu tp">
+          <div class="vu-label">True Peak</div>
+          <div class="vu-val" id="tpVal">—.—</div>
+          <div class="vu-sub">4× oversampled · Suite passed</div>
+        </div>
+      </div>
+      <div class="file-name" id="fileLabel">No file loaded</div>
+      <div class="status" id="status"></div>
+      <span class="stream-badge" id="streamBadge" role="button" tabindex="0" title="Show streaming eligibility (INFO-style)" aria-label="Streaming eligibility details"></span>
+    </div>
+  </div>
+
+
+  <!-- ========== MODULE 3 · STUDIOCRAFT ========== -->
+  <!-- ========== STUDIOCRAFT ========== -->
+  <aside class="draft" id="studioDraft" aria-label="StudioCraft lyrics">
+    <div class="draft-brand">
+      <div class="draft-title">STUDIOCRAFT</div>
+      <div class="draft-tag">CRAFT. SYNC. CREATE</div>
+    </div>
+    <div class="draft-body-wrap">
+      <div class="draft-template-label" id="sdTemplateLabel">No track loaded</div>
+      <div class="draft-lyrics" id="sdLyricsBody" data-placeholder="Load audio to match lyrics — or paste here."></div>
+    </div>
+    <div class="sd-below-wrap" id="sdBelowWrap" style="display:none">
+      <button type="button" class="sd-below-toggle" id="sdBelowToggle">Show notes / versions</button>
+      <div class="sd-below-panel" id="sdBelowPanel" hidden>
+        <div id="sdBelowBody" contenteditable="true" spellcheck="true" data-placeholder="Production notes, prompt, creative process…"></div>
+      </div>
+    </div>
+
+    <div class="sd-status" id="sdStatusFlags">
+      <button type="button" class="sd-status-toggle" id="sdStatusToggle" aria-expanded="false">Status</button>
+      <div class="sd-status-body" id="sdStatusBody" hidden>
+        <label class="sd-check"><input type="checkbox" id="sdFlagWav" data-flag="wav" /> Mastered 16-bit WAV</label>
+        <label class="sd-check"><input type="checkbox" id="sdFlagMp3" data-flag="mp3" /> Mastered MP3</label>
+        <label class="sd-check"><input type="checkbox" id="sdFlagFlac" data-flag="flac" /> Mastered 16-bit FLAC</label>
+        <label class="sd-check"><input type="checkbox" id="sdFlagLyricsLock" data-flag="lyricsLock" /> Lyrics locked</label>
+        <label class="sd-check"><input type="checkbox" id="sdFlagStream" data-flag="stream" /> Streaming eligible</label>
+        <label class="sd-check"><input type="checkbox" id="sdFlagLocal" data-flag="local" /> Local</label>
+        <label class="sd-check"><input type="checkbox" id="sdFlagSpotify" data-flag="spotify" /> On Spotify</label>
+        <div class="sd-edit-row">
+          <span class="sd-edit-label">Edit</span>
+          <input type="text" class="sd-edit-input" id="sdFlagEdit" data-flag="edit" placeholder="Add note / later expansion…" autocomplete="off" />
+        </div>
+      </div>
+    </div>
+    <div class="draft-rail">
+      <div class="draft-rail-section">
+        <div class="draft-rail-title">Sheet</div>
+        <div class="draft-rail-grid">
+          <div class="sunit">
+            <button type="button" class="sbtn on led-amber" id="sdLiveLyrics" aria-pressed="true"></button>
+            <span class="engrave">Live lyrics</span>
+          </div>
+          <div class="sunit">
+            <button type="button" class="sbtn led-amber" id="sdLiveFollow" aria-pressed="false"></button>
+            <span class="engrave">Block follow</span>
+          </div>
+          <div class="sunit">
+            <button type="button" class="sbtn led-amber" id="sdLiveEdit" aria-pressed="false"></button>
+            <span class="engrave">Live edit</span>
+          </div>
+          <div class="sunit">
+            <button type="button" class="sbtn led-amber" id="sdLocked" aria-pressed="false" title="Lock Create — freeze lyric sheet"></button>
+            <span class="engrave">Lock Create</span>
+          </div>
+        </div>
+      </div>
+      <div class="draft-rail-section">
+        <div class="draft-rail-title">Actions</div>
+        <div class="draft-rail-grid draft-rail-grid-2">
+          <div class="sunit">
+            <button type="button" class="sd-action-btn sd-create" id="sdCreate" title="New lyric sheet — write, then Export for generator">CREATE</button>
+            <span class="engrave">Create</span>
+          </div>
+          <div class="sunit">
+            <button type="button" class="sd-action-btn" id="sdSave">SAVE</button>
+            <span class="engrave">Save</span>
+          </div>
+          <div class="sunit">
+            <button type="button" class="sd-action-btn" id="sdExportClean" title="Export clean lyrics for the music generator">EXPORT</button>
+            <span class="engrave">For generator</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="draft-meta" id="sdMeta"></div>
+
+
+</div>
+
+  <input type="file" id="file" accept="audio/*,.wav,.mp3,.flac,.m4a" />
+  <audio id="audioA"></audio>
+  <audio id="audioB"></audio>
+  <canvas id="eqSpectrum" width="400" height="48" style="display:none"></canvas>
+  <div id="lyrics" style="display:none" contenteditable="true"></div>
+
+  <div class="info-panel" id="infoPanel" role="tooltip">
+    <div class="info-title" id="infoTitle"></div>
+    <div class="info-body" id="infoBody"></div>
+    <div class="info-need" id="infoNeed"></div>
+  </div>
+
+  
+  <!-- Capture v1.0 — vinyl name disc (true circle) -->
+  <div class="cap-name-overlay" id="capNameOverlay" aria-hidden="true">
+    <div class="cap-name-disc" role="dialog" aria-labelledby="capNameTitle" aria-modal="true">
+      <div class="cap-name-inner">
+        <div class="cap-name-kicker">Side A · Pressing</div>
+        <div class="cap-name-title" id="capNameTitle">Name your pressing</div>
+        <div class="cap-name-sub">What should the label say when the needle drops?</div>
+        <div class="cap-name-hint">This is the official title on the center label, the name people see every time the record hits the turntable.</div>
+        <input type="text" class="cap-name-input" id="capNameInput" maxlength="80" autocomplete="off" spellcheck="false" placeholder="Label title…" />
+        <div class="cap-name-actions">
+          <button type="button" class="cap-name-btn skip" id="capNameCancel">Not now</button>
+          <button type="button" class="cap-name-btn press" id="capNameOk">Drop the needle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sd-create-overlay" id="sdCreateOverlay" aria-hidden="true">
+    <div class="sd-create-dialog" role="dialog" aria-labelledby="sdCreateTitle" aria-modal="true">
+      <div class="sd-create-title" id="sdCreateTitle">Create new sheet</div>
+      <div class="sd-create-body" id="sdCreateBody">
+        Opens a <strong>blank</strong> lyric sheet and clears this work area.
+        Unsaved lyrics, notes, and status ticks can be lost.
+        Save first if you need to keep this work.
+      </div>
+      <div class="sd-create-actions">
+        <button type="button" class="sd-create-continue" id="sdCreateConfirm" title="Continue CREATE" aria-label="Continue CREATE"></button>
+        <div class="sd-create-continue-label">Continue CREATE</div>
+        <button type="button" class="sd-create-cancel" id="sdCreateCancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="eligibility-panel" id="eligibilityPanel">
+    <h3 id="eligTitle">Streaming export</h3>
+    <div class="elig-body" id="eligBody"></div>
+    <div class="elig-actions" id="eligActions"></div>
+  </div>
+
+
+<script src="js/00-core.js"></script>
+<script src="js/module-devine-master.js"></script>
+<script src="js/module-sourcecast.js"></script>
+<script src="js/module-studiocraft.js"></script>
+</body>
+</html>
