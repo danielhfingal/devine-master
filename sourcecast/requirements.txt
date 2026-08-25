@@ -1,0 +1,13 @@
+# Core (always)
+numpy>=1.24
+scipy>=1.10
+PyYAML>=6.0
+tqdm>=4.65
+soundfile>=0.12
+
+# Neural print path (GPU recommended)
+torch>=2.1
+demucs>=4.0.1
+bs-roformer>=0.1.0
+audio-separator>=0.24
+huggingface_hub>=0.23
