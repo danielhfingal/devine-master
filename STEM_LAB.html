@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SourceCast · Stem Lab</title>
+<style>
+  :root {
+    --bg: #0a0a0c; --panel: #141418; --line: #2a2a32; --text: #e8e6e0;
+    --muted: #8a8790; --accent: #f0a030; --ok: #3ecf8e; --bad: #e05555;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: "Segoe UI", system-ui, sans-serif;
+    background: var(--bg); color: var(--text); min-height: 100vh;
+  }
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 20px; border-bottom: 1px solid var(--line);
+    background: linear-gradient(180deg, #1a1510, var(--bg));
+  }
+  header h1 { margin: 0; font-size: 15px; letter-spacing: 0.12em; color: var(--accent); font-weight: 600; }
+  header .sub { color: var(--muted); font-size: 12px; margin-left: 12px; }
+  header a { color: var(--muted); font-size: 12px; text-decoration: none; }
+  header a:hover { color: var(--accent); }
+  main { max-width: 1100px; margin: 0 auto; padding: 20px; }
+  .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 16px; }
+  button, .btn {
+    background: #222228; color: var(--text); border: 1px solid var(--line);
+    border-radius: 8px; padding: 8px 14px; cursor: pointer; font-size: 13px;
+  }
+  button.primary { background: #3a2a10; border-color: var(--accent); color: var(--accent); }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+  button:hover:not(:disabled) { border-color: var(--accent); }
+  .panel {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    padding: 16px; margin-bottom: 16px;
+  }
+  .panel h2 { margin: 0 0 10px; font-size: 12px; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; }
+  #status { font-size: 13px; color: var(--muted); min-height: 1.4em; }
+  #progress {
+    height: 4px; background: var(--line); border-radius: 2px; margin: 8px 0 0;
+    overflow: hidden;
+  }
+  #progress > i { display: block; height: 100%; width: 0; background: var(--accent); transition: width 0.15s; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    background: #1c1c22; border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 12px; font-size: 13px;
+  }
+  .chip strong { color: var(--accent); font-weight: 600; }
+  .stem-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;
+  }
+  .stem-card {
+    background: #121216; border: 1px solid var(--line); border-radius: 10px; padding: 12px;
+  }
+  .stem-card .name { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+  .stem-card .meta { font-size: 11px; color: var(--muted); line-height: 1.5; }
+  .limit {
+    font-size: 11px; color: var(--muted); border-top: 1px solid var(--line);
+    margin-top: 16px; padding-top: 12px; line-height: 1.5;
+  }
+  input[type=file] { font-size: 12px; color: var(--muted); }
+  label.opt { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+</style>
+</head>
+<body>
+<header>
+  <div style="display:flex;align-items:baseline">
+    <h1>SOURCECAST · STEM LAB</h1>
+    <span class="sub">8-stem spectral unmix · desk language</span>
+  </div>
+  <a href="../daily/DEVINE_MASTER.html">← Trinity Desk</a>
+</header>
+<main>
+  <div class="panel">
+    <h2>Load mix</h2>
+    <div class="row">
+      <input type="file" id="file" accept="audio/*,.wav,.mp3,.flac,.m4a"/>
+      <label class="opt"><input type="radio" name="sc" value="8" checked/> 8 stems</label>
+      <label class="opt"><input type="radio" name="sc" value="6"/> 6 stems</label>
+      <label class="opt">Isolation <input type="range" id="iso" min="0" max="100" value="70" style="width:100px"/></label>
+      <button class="primary" id="btnRun" disabled>Separate</button>
+      <button id="btnExport" disabled>Export ZIP + JSON</button>
+      <button id="btnPush" disabled>Push analysis → Desk</button>
+    </div>
+    <div id="status">Load a mix to start.</div>
+    <div id="progress"><i id="bar"></i></div>
+  </div>
+
+  <div class="panel" id="summary" style="display:none">
+    <h2>Working (drums tempo · bass key)</h2>
+    <div class="chips" id="chips"></div>
+  </div>
+
+  <div class="panel" id="stemsPanel" style="display:none">
+    <h2>Stems</h2>
+    <div class="stem-grid" id="stems"></div>
+    <p class="limit">
+      Honest limit: high-quality spectral unmix (STFT + HPSS + mid/side + competing masks) for detect / audition / measure —
+      not a neural model (Demucs). Bleed is real; not a print master.
+    </p>
+  </div>
+</main>
+<script src="js/module-stemlab.js"></script>
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  let last = null;
+  let fileName = "mix";
+
+  $("file").addEventListener("change", () => {
+    $("btnRun").disabled = !$("file").files || !$("file").files[0];
+    $("status").textContent = $("file").files[0] ? "Ready: " + $("file").files[0].name : "Load a mix to start.";
+  });
+
+  function stemCount() {
+    const r = document.querySelector('input[name=sc]:checked');
+    return r && r.value === "6" ? 6 : 8;
+  }
+
+  $("btnRun").onclick = async () => {
+    const f = $("file").files[0];
+    if (!f || !window.StemLab) return;
+    $("btnRun").disabled = true;
+    $("btnExport").disabled = true;
+    $("btnPush").disabled = true;
+    $("status").textContent = "Decoding…";
+    $("bar").style.width = "2%";
+    try {
+      const pcm = await StemLab.decodeAudioFile(f);
+      fileName = pcm.name || f.name.replace(/\.[^.]+$/, "");
+      $("status").textContent = "Separating…";
+      const result = await StemLab.separateMix(
+        { left: pcm.left, right: pcm.right, sampleRate: pcm.sampleRate },
+        {
+          name: fileName,
+          stemCount: stemCount(),
+          isolation: Number($("iso").value) / 100,
+          onProgress: (p, stage) => {
+            $("bar").style.width = Math.round(p * 100) + "%";
+            $("status").textContent = stage + " · " + Math.round(p * 100) + "%";
+          },
+        }
+      );
+      last = result;
+      render(result);
+      $("btnExport").disabled = false;
+      $("btnPush").disabled = false;
+      $("status").textContent = "Ready · " + result.analysis.method;
+    } catch (e) {
+      console.error(e);
+      $("status").textContent = "Error: " + (e && e.message ? e.message : e);
+    } finally {
+      $("btnRun").disabled = false;
+    }
+  };
+
+  function render(result) {
+    const a = result.analysis;
+    $("summary").style.display = "block";
+    $("stemsPanel").style.display = "block";
+    $("chips").innerHTML =
+      '<span class="chip">Tempo <strong>' + a.tempo.bpm + "</strong> · " + a.tempoSource +
+      " · conf " + (a.tempo.confidence * 100 | 0) + "%</span>" +
+      '<span class="chip">Key <strong>' + a.key.key + " " + a.key.mode +
+      (a.key.camelot ? " · " + a.key.camelot : "") + "</strong> · " + a.keySource + "</span>" +
+      '<span class="chip">LUFS <strong>' + a.lufs + "</strong></span>" +
+      '<span class="chip">Peak <strong>' + a.peakDb + " dB</strong></span>" +
+      '<span class="chip">' + a.durationSec + "s · " + a.sampleRate + " Hz</span>";
+    const grid = $("stems");
+    grid.innerHTML = "";
+    a.stems.forEach((s) => {
+      const el = document.createElement("div");
+      el.className = "stem-card";
+      el.innerHTML =
+        '<div class="name">' + s.label + " · " + Math.round(s.presence * 100) + "%</div>" +
+        '<div class="meta">LUFS ' + s.lufs + " · peak " + s.peakDb +
+        (s.key ? "<br>key " + s.key.key + " " + s.key.mode + (s.key.camelot ? " " + s.key.camelot : "") : "") +
+        (s.tempo ? "<br>tempo " + s.tempo.bpm : "") +
+        (s.sdrDb != null ? "<br>SI-SDR " + s.sdrDb + " dB" : "") +
+        "</div>";
+      grid.appendChild(el);
+    });
+  }
+
+  $("btnExport").onclick = () => {
+    if (!last || !StemLab.encodeWavPcm16 || !StemLab.zipStore) return;
+    const files = [];
+    const json = new TextEncoder().encode(JSON.stringify(last.analysis, null, 2));
+    files.push({ name: fileName + "_stem_analysis.json", data: json });
+    last.stems.forEach((s) => {
+      const wav = StemLab.encodeWavPcm16(s.left, s.right, last.mix.sampleRate);
+      files.push({ name: fileName + "_" + s.id + ".wav", data: wav });
+    });
+    const blob = StemLab.zipStore(files);
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = fileName + "_stems.zip";
+    a.click();
+    URL.revokeObjectURL(a.href);
+  };
+
+  $("btnPush").onclick = () => {
+    if (!last) return;
+    const a = last.analysis;
+    const payload = {
+      track: a.track,
+      tempo: a.tempo,
+      key: a.key,
+      tempoSource: a.tempoSource,
+      keySource: a.keySource,
+      lufs: a.lufs,
+      peakDb: a.peakDb,
+      method: a.method,
+      pass: a.pass,
+      at: new Date().toISOString(),
+    };
+    try {
+      localStorage.setItem("devine_stemlab_last", JSON.stringify(payload));
+      // Also try postMessage to opener desk
+      if (window.opener && !window.opener.closed) {
+        window.opener.postMessage({ type: "devine-stemlab", payload }, "*");
+      }
+      $("status").textContent =
+        "Pushed to localStorage (devine_stemlab_last). Open desk and use stem chips / inject if needed. " +
+        a.key.key + " " + a.key.mode + " · " + a.tempo.bpm + " BPM";
+    } catch (e) {
+      $("status").textContent = "Push failed: " + e;
+    }
+  };
+})();
+</script>
+</body>
+</html>
