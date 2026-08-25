@@ -1,0 +1,16 @@
+OPEN: 
+F:\devine-master-fresh\Devine_Master_Ops\daily\DEVINE_MASTER.html
+
+
+
+Devine_Master_Ops/
+├── DEVINE_MASTER.html          ← source of truth on disk
+├── daily/DEVINE_MASTER.html    ← open this
+├── 01_ACTIVE/DEVINE_MASTER.html
+├── tracks/analysis/
+├── tracks/project_json/
+├── catalogue/entries/
+├── catalogue/views/
+├── lab/scripts/  lab/runs/
+└── docs/
+
