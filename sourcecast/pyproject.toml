@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sourcecast-stemlab"
+version = "1.0.0"
+description = "Devine Master · SourceCast Stem Lab — ensemble music source separation"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Devine Master" }]
+license = { text = "MIT" }
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "PyYAML>=6.0",
+  "tqdm>=4.65",
+]
+
+[project.optional-dependencies]
+neural = [
+  "torch>=2.1",
+  "demucs>=4.0.1",
+  "soundfile>=0.12",
+  "bs-roformer>=0.1.0",
+  "audio-separator>=0.24",
+  "huggingface_hub>=0.23",
+]
+
+[project.scripts]
+stemlab = "sourcecast.stemlab.cli:main"
+
+[tool.setuptools]
+packages = ["sourcecast", "sourcecast.stemlab", "sourcecast.stemlab.models"]
+package-dir = { "sourcecast" = "." }
+
+[tool.setuptools.package-data]
+sourcecast = ["configs/*.yaml"]
