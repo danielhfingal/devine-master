@@ -1,9 +1,0 @@
-DEVINE_MASTER_TRANSFER (split packs)
-====================================
-1) DEVINE_MASTER_TRANSFER.zip          = docs + code + catalogue JSON + lyrics (this pack)
-2) DEVINE_MASTER_TRANSFER_AUDIO_SOURCE.zip
-3) DEVINE_MASTER_TRANSFER_AUDIO_MASTERED.zip
-
-Download all three if you need full audio. Lab 3x3 renders omitted (re-run: ai-mastering/run_3x3_offline.py).
-
-Paste TRANSFER_PROMPT.txt as first message in a new Grok session.

@@ -1,3 +1,0 @@
-DEVINE MASTER build v20260818r
-Scrub R=100 (same as outer), CCW orange fill, vinyl spin, true circle.
-Full HTML lives in project workspace / F: clone — update DEVINE_MASTER_Beta.html from desk export.

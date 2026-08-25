@@ -1,5 +1,0 @@
-Capture v1.p (2026-08-22)
-- Lab (46): vinyl name, arm/stop, REC clock, live level meter, INFO hover (no native title)
-- Beta daily driver: Record next to Load, same bridge flow
-- capture_bridge.py: live_peak on /status while recording
-- Copy tools/DEVINE_MASTER_Lab_StudioDraft (46).html + DEVINE_MASTER_Beta.html + tools/capture_bridge.py to F: and local git push for large HTML

@@ -1,2 +1,0 @@
-DEVINE MASTER v20260819a
-Continuous play + full-disc scrub + hover targets fixed.
