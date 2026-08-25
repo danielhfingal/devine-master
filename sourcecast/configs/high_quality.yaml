@@ -1,0 +1,73 @@
+name: high_quality
+sample_rate: null
+output_sample_rate: null
+stems: [vocals, drums, bass, other]
+device: auto
+precision: float32
+allow_spectral_fallback: true
+output_wav_bit_depth: 24
+normalize_peak: null
+
+models:
+  - id: htdemucs_ft
+    backend: demucs
+    name: htdemucs_ft
+    enabled: true
+  - id: bs_roformer_viperx
+    backend: roformer
+    architecture: bs_roformer
+    checkpoint: model_bs_roformer_ep_317_sdr_12.9755.ckpt
+    stems: [vocals, other]
+    enabled: true
+  - id: melband_roformer_kim
+    backend: roformer
+    architecture: melband_roformer
+    checkpoint: melband_roformer_kim_ft_unwa.ckpt
+    stems: [vocals]
+    enabled: true
+  - id: scnet
+    backend: scnet
+    name: scnet_large
+    enabled: false
+
+chunk:
+  seconds: 36
+  overlap: 2.5
+  window: hann
+
+tta:
+  shifts: 2
+  shift_seconds: 0.5
+  polarity_invert: true
+  channel_swap: false
+  overlap: 0.25
+
+ensemble:
+  method: phase_aware
+  residual_other: true
+  n_fft: 4096
+  hop: 1024
+  stem_weights:
+    vocals:
+      htdemucs_ft: 0.22
+      bs_roformer_viperx: 0.33
+      melband_roformer_kim: 0.45
+    drums:
+      htdemucs_ft: 0.42
+      bs_roformer_viperx: 0.48
+      melband_roformer_kim: 0.10
+    bass:
+      htdemucs_ft: 0.48
+      bs_roformer_viperx: 0.42
+      melband_roformer_kim: 0.10
+    other:
+      htdemucs_ft: 0.38
+      bs_roformer_viperx: 0.42
+      melband_roformer_kim: 0.20
+
+refine:
+  enabled: false
+  backend: diffusion
+  checkpoint: null
+  steps: 8
+  strength: 0.35

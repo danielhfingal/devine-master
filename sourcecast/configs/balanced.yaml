@@ -1,0 +1,50 @@
+name: balanced
+stems: [vocals, drums, bass, other]
+device: auto
+allow_spectral_fallback: true
+output_wav_bit_depth: 24
+
+models:
+  - id: htdemucs_ft
+    backend: demucs
+    name: htdemucs_ft
+    enabled: true
+  - id: melband_roformer_kim
+    backend: roformer
+    architecture: melband_roformer
+    checkpoint: melband_roformer_kim_ft_unwa.ckpt
+    stems: [vocals]
+    enabled: true
+
+chunk:
+  seconds: 30
+  overlap: 2.0
+  window: hann
+
+tta:
+  shifts: 1
+  shift_seconds: 0.4
+  polarity_invert: true
+  channel_swap: false
+  overlap: 0.25
+
+ensemble:
+  method: phase_aware
+  residual_other: true
+  n_fft: 4096
+  hop: 1024
+  stem_weights:
+    vocals:
+      htdemucs_ft: 0.35
+      melband_roformer_kim: 0.65
+    drums:
+      htdemucs_ft: 1.0
+    bass:
+      htdemucs_ft: 1.0
+    other:
+      htdemucs_ft: 1.0
+
+refine:
+  enabled: false
+  backend: diffusion
+  checkpoint: null

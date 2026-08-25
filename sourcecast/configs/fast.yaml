@@ -1,0 +1,29 @@
+name: fast
+stems: [vocals, drums, bass, other]
+device: auto
+allow_spectral_fallback: true
+output_wav_bit_depth: 16
+
+models:
+  - id: htdemucs_ft
+    backend: demucs
+    name: htdemucs_ft
+    enabled: true
+
+chunk:
+  seconds: 24
+  overlap: 1.5
+  window: hann
+
+tta:
+  shifts: 0
+  polarity_invert: false
+  channel_swap: false
+  overlap: 0.25
+
+ensemble:
+  method: average
+  residual_other: true
+
+refine:
+  enabled: false

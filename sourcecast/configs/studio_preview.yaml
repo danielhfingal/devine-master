@@ -1,0 +1,29 @@
+name: studio_preview
+# CPU spectral unmix — no neural weights required.
+stems: [vocals, drums, bass, other]
+device: cpu
+allow_spectral_fallback: true
+output_wav_bit_depth: 24
+
+models:
+  - id: spectral
+    backend: spectral
+    enabled: true
+    stems: [vocals, drums, bass, other]
+
+chunk:
+  seconds: 45
+  overlap: 2.0
+  window: hann
+
+tta:
+  shifts: 0
+  polarity_invert: false
+  channel_swap: false
+
+ensemble:
+  method: average
+  residual_other: true
+
+refine:
+  enabled: false
