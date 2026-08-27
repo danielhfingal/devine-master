@@ -1,139 +1,102 @@
 #!/usr/bin/env python3
-"""Catalogue stem separation — full-set or single track (CLI)."""
+"""Catalogue stem separation — full-set or single track (CLI).
+
+Long-running by design. Writes contract stems under tracks/stems/{track_id}/
+and a batch report JSON for calibration / post-batch analyse.
+"""
+
 from __future__ import annotations
 
 import argparse
 import json
 import sys
-import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from catalogue_discover import discover_catalogue, safe_track_id, stems_complete
+HERE = Path(__file__).resolve().parent
+if str(HERE) not in sys.path:
+    sys.path.insert(0, str(HERE))
 
-OPS = Path(__file__).resolve().parents[2]
-STEMS_ROOT = OPS / "tracks" / "stems"
-REPORTS = OPS / "tracks" / "stems" / "_batch_reports"
+from catalogue_discover import discover_mixes, load_audio_root  # noqa: E402
+from engine_demucs import separate as demucs_separate  # noqa: E402
+
+OPS = HERE.parents[1]
+STEMS = OPS / "tracks" / "stems"
+REPORTS = STEMS / "_batch_reports"
 
 
 def _now() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
 
 
-def run_batch(items: list[dict], *, force: bool = False, model: str = "htdemucs", dry_run: bool = False) -> dict:
-    from engine_demucs import demucs_available, separate
+def main(argv: list[str] | None = None) -> int:
+    ap = argparse.ArgumentParser(description="Catalogue stem separation batch")
+    ap.add_argument("--audio-dir", type=Path, default=None)
+    ap.add_argument("--full-set", action="store_true")
+    ap.add_argument("--solo", action="store_true", help="Also write per-slot solo runs if engine supports")
+    ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--track", type=str, default=None, help="Single track_id or path")
+    ap.add_argument("-v", "--verbose", action="store_true")
+    args = ap.parse_args(argv)
 
-    if not dry_run and not demucs_available():
-        raise RuntimeError("demucs not installed — pip install -r requirements-stem.txt")
-
-    STEMS_ROOT.mkdir(parents=True, exist_ok=True)
+    audio_dir = args.audio_dir or load_audio_root()
+    STEMS.mkdir(parents=True, exist_ok=True)
     REPORTS.mkdir(parents=True, exist_ok=True)
+
+    if args.track:
+        p = Path(args.track)
+        if p.is_file():
+            mixes = [{"track_id": p.stem, "path": p}]
+        else:
+            mixes = [m for m in discover_mixes(audio_dir) if m["track_id"] == args.track]
+            if not mixes:
+                print(f"[batch] track not found: {args.track}", file=sys.stderr)
+                return 1
+    else:
+        mixes = discover_mixes(audio_dir)
+
+    if args.limit and args.limit > 0:
+        mixes = mixes[: args.limit]
+
+    job_id = f"batch_{_now()}"
+    results = []
+    done = skipped = errors = 0
+
+    for m in mixes:
+        tid = m["track_id"]
+        src = Path(m["path"])
+        out = STEMS / tid
+        side = out / f"{tid}__stems.json"
+        if side.is_file() and all((out / f"{tid}__{s}.wav").is_file() for s in ("vocals", "drums", "bass", "other")):
+            skipped += 1
+            results.append({"track_id": tid, "status": "skipped_complete", "path": str(out)})
+            if args.verbose:
+                print(f"[batch] skip complete {tid}")
+            continue
+        try:
+            if args.verbose:
+                print(f"[batch] separate {tid} <- {src}")
+            demucs_separate(src, tid, STEMS)
+            done += 1
+            results.append({"track_id": tid, "status": "done", "path": str(out)})
+        except Exception as e:
+            errors += 1
+            results.append({"track_id": tid, "status": "error", "error": str(e)})
+            print(f"[batch] error {tid}: {e}", file=sys.stderr)
 
     report = {
         "schema": "devine-stem-batch-v1",
-        "started_at": _now(),
-        "model": model,
-        "force": force,
-        "total": len(items),
-        "results": [],
+        "job_id": job_id,
+        "created_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "audio_dir": str(audio_dir),
+        "summary": {"done": done, "skipped_complete": skipped, "error": errors},
+        "results": results,
     }
-    t0 = time.time()
-
-    for i, it in enumerate(items, start=1):
-        tid = it["track_id"]
-        src = Path(it["source_path"])
-        row = {"track_id": tid, "source_path": str(src), "index": i, "of": len(items)}
-        print(f"\n[{i}/{len(items)}] {tid}", flush=True)
-        print(f"  source: {src}", flush=True)
-
-        if not force and stems_complete(STEMS_ROOT, tid):
-            row["status"] = "skipped_complete"
-            row["message"] = "contract stems already present"
-            print("  skip (complete)", flush=True)
-            report["results"].append(row)
-            continue
-
-        if not src.is_file():
-            row["status"] = "error"
-            row["message"] = "source missing"
-            print("  ERROR missing source", flush=True)
-            report["results"].append(row)
-            continue
-
-        if dry_run:
-            row["status"] = "dry_run"
-            report["results"].append(row)
-            print("  dry-run", flush=True)
-            continue
-
-        try:
-            dest = separate(src, tid, STEMS_ROOT, model=model)
-            row["status"] = "done"
-            row["dest"] = str(dest)
-            print(f"  done → {dest}", flush=True)
-        except Exception as e:
-            row["status"] = "error"
-            row["message"] = str(e)
-            print(f"  ERROR {e}", flush=True)
-        report["results"].append(row)
-
-    report["finished_at"] = _now()
-    report["elapsed_sec"] = round(time.time() - t0, 1)
-    done = sum(1 for r in report["results"] if r["status"] == "done")
-    skip = sum(1 for r in report["results"] if r["status"] == "skipped_complete")
-    err = sum(1 for r in report["results"] if r["status"] == "error")
-    report["summary"] = {"done": done, "skipped_complete": skip, "error": err}
-
-    name = f"batch_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-    path = REPORTS / name
-    path.write_text(json.dumps(report, indent=2), encoding="utf-8")
-    report["report_path"] = str(path)
-    print(f"\n[batch] report {path}", flush=True)
-    print(f"[batch] summary {report['summary']}", flush=True)
-    return report
-
-
-def main() -> int:
-    ap = argparse.ArgumentParser(description="Devine catalogue stem batch")
-    ap.add_argument("--mode", choices=("full", "single"), default="full")
-    ap.add_argument("--track-id", default="")
-    ap.add_argument("--in", dest="source", default="")
-    ap.add_argument("--force", action="store_true")
-    ap.add_argument("--model", default="htdemucs")
-    ap.add_argument("--discover-only", action="store_true")
-    ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--limit", type=int, default=0)
-    ap.add_argument("--root", action="append", default=[])
-    args = ap.parse_args()
-
-    extra = [Path(r) for r in args.root]
-
-    if args.mode == "single":
-        if not args.source:
-            print("single mode requires --in path", file=sys.stderr)
-            return 2
-        tid = safe_track_id(args.track_id or Path(args.source).stem)
-        items = [{
-            "track_id": tid,
-            "source_path": str(Path(args.source).resolve()),
-            "source_name": Path(args.source).name,
-            "root": str(Path(args.source).resolve().parent),
-        }]
-    else:
-        limit = args.limit if args.limit > 0 else None
-        items = discover_catalogue(OPS, extra_roots=extra, limit=limit)
-
-    if args.discover_only:
-        print(json.dumps({"count": len(items), "tracks": items}, indent=2))
-        return 0
-
-    if not items:
-        print("No sources found. Set STEM_SOURCE_ROOTS or pass --root", file=sys.stderr)
-        return 1
-
-    print(f"[batch] mode={args.mode} tracks={len(items)} force={args.force}", flush=True)
-    run_batch(items, force=args.force, model=args.model, dry_run=args.dry_run)
-    return 0
+    rpath = REPORTS / f"{job_id}.json"
+    rpath.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    print(f"[batch] report {rpath}")
+    print(f"[batch] summary {report['summary']}")
+    return 0 if errors == 0 else 2
 
 
 if __name__ == "__main__":

@@ -1,15 +1,34 @@
 #!/usr/bin/env python3
-"""Discover mix files for catalogue stem separation (Phase 1 batch)."""
+"""Discover mix files under the catalogue audio root."""
+
 from __future__ import annotations
 
-import os
 import re
 from pathlib import Path
 
-AUDIO_EXT = {".wav", ".flac", ".mp3", ".m4a"}
-SKIP_DIR_PARTS = {
-    "stems", "_jobs", "node_modules", ".git", "captures", "__pycache__",
-}
+HERE = Path(__file__).resolve().parent
+OPS = HERE.parents[1]
+AUDIO_ROOT_FILE = HERE / "audio_root.txt"
+
+AUDIO_EXT = {".wav", ".flac", ".aiff", ".aif", ".mp3", ".m4a"}
+
+
+def load_audio_root() -> Path:
+    if AUDIO_ROOT_FILE.is_file():
+        line = AUDIO_ROOT_FILE.read_text(encoding="utf-8").strip().splitlines()
+        if line:
+            p = Path(line[0].strip())
+            if p.is_dir():
+                return p
+    # defaults
+    for cand in (
+        Path(r"F:\devine-master-fresh\Audio"),
+        OPS.parent / "Audio",
+        OPS / "Audio",
+    ):
+        if cand.is_dir():
+            return cand
+    return Path(r"F:\devine-master-fresh\Audio")
 
 
 def safe_track_id(name: str) -> str:
@@ -18,67 +37,29 @@ def safe_track_id(name: str) -> str:
     return s[:80] or "track"
 
 
-def _default_roots(ops_root: Path) -> list[Path]:
-    roots: list[Path] = []
-    env = os.environ.get("STEM_SOURCE_ROOTS", "").strip()
-    if env:
-        for part in env.split(os.pathsep):
-            part = part.strip()
-            if part:
-                roots.append(Path(part))
-    try:
-        ar = Path(__file__).resolve().parent / "audio_root.txt"
-        if ar.is_file():
-            for line in ar.read_text(encoding="utf-8").splitlines():
-                line = line.strip()
-                if line and not line.startswith("#"):
-                    roots.append(Path(line))
-    except Exception:
-        pass
-    for rel in ("tracks/source", "tracks/masters", "../masters", "../source"):
-        roots.append(ops_root / rel)
-    parent = ops_root.parent
-    roots.append(parent / "Audio")
-    roots.append(parent)
-    return roots
-
-
-def stems_complete(stems_root: Path, track_id: str) -> bool:
-    d = stems_root / track_id
-    if not d.is_dir():
-        return False
-    side = d / f"{track_id}__stems.json"
-    if side.is_file():
-        return True
-    return all((d / f"{track_id}__{s}.wav").is_file() for s in ("vocals", "drums", "bass", "other"))
-
-
-def discover_catalogue(ops_root: Path, extra_roots: list[Path] | None = None, limit: int | None = None) -> list[dict]:
-    roots = _default_roots(ops_root)
-    if extra_roots:
-        roots = list(extra_roots) + roots
-    seen = {}
-    items = []
-    for root in roots:
-        root = Path(root)
-        if not root.exists():
+def discover_mixes(audio_dir: Path | None = None) -> list[dict]:
+    root = Path(audio_dir) if audio_dir else load_audio_root()
+    if not root.is_dir():
+        return []
+    out: list[dict] = []
+    seen: set[str] = set()
+    for p in sorted(root.rglob("*")):
+        if not p.is_file():
             continue
-        for p in root.rglob("*"):
-            if not p.is_file() or p.suffix.lower() not in AUDIO_EXT:
-                continue
-            if any(part in SKIP_DIR_PARTS for part in p.parts):
-                continue
-            if "__" in p.stem and any(p.stem.endswith(f"__{s}") for s in ("vocals", "drums", "bass", "other")):
-                continue
-            tid = safe_track_id(p.stem)
-            if tid in seen:
-                # prefer wav
-                if p.suffix.lower() == ".wav" and Path(seen[tid]["source_path"]).suffix.lower() != ".wav":
-                    seen[tid] = {"track_id": tid, "source_path": str(p.resolve()), "source_name": p.name, "root": str(root)}
-                continue
-            seen[tid] = {"track_id": tid, "source_path": str(p.resolve()), "source_name": p.name, "root": str(root)}
-    items = list(seen.values())
-    items.sort(key=lambda x: x["track_id"].lower())
-    if limit:
-        items = items[:limit]
-    return items
+        if p.suffix.lower() not in AUDIO_EXT:
+            continue
+        # skip obvious stem dumps
+        low = p.name.lower()
+        if any(x in low for x in ("__vocals", "__drums", "__bass", "__other", "_stems")):
+            continue
+        tid = safe_track_id(p.stem)
+        if tid in seen:
+            continue
+        seen.add(tid)
+        out.append({"track_id": tid, "path": str(p.resolve()), "name": p.name})
+    return out
+
+
+if __name__ == "__main__":
+    for m in discover_mixes():
+        print(m["track_id"], m["path"])
