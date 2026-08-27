@@ -1,13 +1,32 @@
-# Stem Bridge (Phase 1)
+# Stem bridge (Phase 1 + catalogue + shelf)
 
-Local Demucs-class stem separation for Devine Master Ops.
+Local separator service for Devine Master.
+
+**Port:** `8766` (capture stays on `8765`)
+
+## Start
 
 ```powershell
-cd F:\devine-master-fresh\Devine_Master_Ops\tools\stem_bridge
-pip install -r requirements-stem.txt
-python catalogue_batch.py --mode full
-python catalogue_analyse.py --from-report ..\..\tracks\stems\_batch_reports\batch_YYYYMMDD_HHMMSS.json
+cd F:\devine-master-fresh\Devine_Master_Ops
+python .\tools\stem_bridge\stem_bridge.py
 ```
 
-Contract stems: `tracks/stems/{track_id}/` + `__stems.json`  
-Analysis: `tracks/analysis/*_stem_tempo_key_pass_*.json` via `catalogue_analyse.py`
+Health must report `service: devine-stem-bridge`.
+
+## Key endpoints
+
+- `GET /health`
+- `GET /catalogue/stems` · `GET /catalogue/stems/{track_id}`
+- `GET /file/stems/{track_id}/{slot}`
+- `GET /catalogue/shelf` · `GET /catalogue/shelf/{id}`
+- `POST /separate` · `POST /catalogue/separate`
+
+## Shelf
+
+```powershell
+python .\tools\stem_bridge\catalogue_shelf.py sync
+python .\tools\stem_bridge\catalogue_shelf.py list
+python .\tools\stem_bridge\catalogue_shelf.py package --id TRACK --confirm-release
+```
+
+See `SHELF.md`.
