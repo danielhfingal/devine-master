@@ -102,18 +102,13 @@
     if (!pairReady() || !wantPlay) return;
     var a = $("audioA");
     var b = $("audioB");
-    var sec = getClockSec();
-    seekPair(sec);
+    seekPair(getClockSec());
     setShadowGains();
     try {
       if (modeIsB()) {
-        if (a && a.src && a.paused) {
-          a.play().catch(function () {});
-        }
+        if (a && a.src && a.paused) a.play().catch(function () {});
       } else {
-        if (b && b.src && b.paused) {
-          b.play().catch(function () {});
-        }
+        if (b && b.src && b.paused) b.play().catch(function () {});
       }
     } catch (e) {
       console.warn("abSync shadow play", e);
@@ -153,12 +148,10 @@
         pauseShadow();
       }
       try {
-        if $("status") && pairReady()) {
-          var st = $("status");
+        var st = $("status");
+        if (st && pairReady()) {
           var base = st.textContent || "";
-          if (base.indexOf("SYNC") < 0) {
-            st.textContent = base + " · SYNC A↔B";
-          }
+          if (base.indexOf("SYNC") < 0) st.textContent = base + " · SYNC A↔B";
         }
       } catch (e) {}
     };
@@ -181,11 +174,8 @@
         }
       }
       try {
-        if (window.__wantPlay && pairReady()) {
-          ensureShadowPlaying(true);
-        } else if (!window.__wantPlay) {
-          pauseShadow();
-        }
+        if (window.__wantPlay && pairReady()) ensureShadowPlaying(true);
+        else if (!window.__wantPlay) pauseShadow();
       } catch (e) {
         console.warn("abSync after play", e);
       }
@@ -206,20 +196,18 @@
           var ta = clampToMedia(a, sec);
           if (Math.abs((a.currentTime || 0) - ta) > 0.08) a.currentTime = ta;
         }
-        setShadowGains();
-      } else {
-        if (b && b.src && !b.paused) {
-          var tb = clampToMedia(b, sec);
-          if (Math.abs((b.currentTime || 0) - tb) > 0.08) b.currentTime = tb;
-        }
-        setShadowGains();
+      } else if (b && b.src && !b.paused) {
+        var tb = clampToMedia(b, sec);
+        if (Math.abs((b.currentTime || 0) - tb) > 0.08) b.currentTime = tb;
       }
+      setShadowGains();
     } catch (e) {}
   }
 
   setInterval(snapTick, SNAP_MS);
 
-  function hookSeek() {
+  function boot() {
+    wirePlay();
     document.addEventListener(
       "mouseup",
       function () {
@@ -230,11 +218,6 @@
       },
       true
     );
-  }
-
-  function boot() {
-    wirePlay();
-    hookSeek();
     ["tabA", "tabB"].forEach(function (id) {
       var el = $(id);
       if (!el) return;
