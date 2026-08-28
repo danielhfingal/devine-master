@@ -1,0 +1,26 @@
+# SourceCast Stem Lab — high_quality preset
+# Print path only when neural models load. Spectral fallback disabled.
+
+name: high_quality
+allow_spectral_fallback: false
+
+models:
+  - htdemucs_ft
+  - bs_roformer_viperx
+  - mel_band_roformer_kim
+
+tta:
+  shifts: 2
+  polarity_invert: true
+
+blend:
+  mode: phase_aware
+  weights:
+    vocals: 1.0
+    drums: 1.0
+    bass: 1.0
+    other: 1.0
+
+output:
+  sample_rate: original
+  format: wav
