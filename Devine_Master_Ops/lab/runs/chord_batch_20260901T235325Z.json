@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-01T23:53:25.563745+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Neon-Jesus_mastered_S3b_DEVINE.wav",
+      "out": "tracks\\analysis\\Neon-Jesus_mastered_S3b_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "Em",
+          "seconds": 95.48,
+          "share": 0.356
+        },
+        {
+          "chord": "E",
+          "seconds": 93.07,
+          "share": 0.347
+        },
+        {
+          "chord": "G",
+          "seconds": 27.12,
+          "share": 0.101
+        }
+      ],
+      "nSegments": 249
+    }
+  ]
+}

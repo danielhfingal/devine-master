@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:52:43.715208+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "One-Way Love_Bass.wav",
+      "out": "tracks\\analysis\\One-Way_Love_Bass_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "Gm",
+          "seconds": 107.46,
+          "share": 0.432
+        },
+        {
+          "chord": "Cm",
+          "seconds": 38.45,
+          "share": 0.154
+        },
+        {
+          "chord": "G",
+          "seconds": 32.23,
+          "share": 0.129
+        }
+      ],
+      "nSegments": 209
+    }
+  ]
+}

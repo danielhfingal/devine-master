@@ -1,0 +1,289 @@
+{
+  "schema": "devine-stem-tempo-key-pass/v1",
+  "track": "Espere Que_Bass",
+  "pass": "stem-tempo-key-batch-2026-08-25",
+  "engine": "batch_stemlab \u00b7 STFT HPSS + template masks \u00b7 bass-weighted key \u00b7 drums-weighted tempo",
+  "notDemucs": true,
+  "keyLocked": false,
+  "tempoLocked": false,
+  "tempo": {
+    "Bass": {
+      "body": {
+        "peaks": [
+          {
+            "bpm": 86.1,
+            "ac": 1.0
+          },
+          {
+            "bpm": 166.7,
+            "ac": 0.271
+          }
+        ],
+        "families": [
+          {
+            "center": 86,
+            "score": 1.3897,
+            "members": [
+              [
+                86.1,
+                1.0
+              ],
+              [
+                166.7,
+                0.271
+              ]
+            ]
+          }
+        ]
+      },
+      "mid": {
+        "peaks": [
+          {
+            "bpm": 86.1,
+            "ac": 1.0
+          },
+          {
+            "bpm": 166.7,
+            "ac": 0.271
+          }
+        ],
+        "families": [
+          {
+            "center": 86,
+            "score": 1.3897,
+            "members": [
+              [
+                86.1,
+                1.0
+              ],
+              [
+                166.7,
+                0.271
+              ]
+            ]
+          }
+        ]
+      },
+      "late": {
+        "peaks": [
+          {
+            "bpm": 86.1,
+            "ac": 1.0
+          },
+          {
+            "bpm": 166.7,
+            "ac": 0.271
+          }
+        ],
+        "families": [
+          {
+            "center": 86,
+            "score": 1.3897,
+            "members": [
+              [
+                86.1,
+                1.0
+              ],
+              [
+                166.7,
+                0.271
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "key": {
+    "Bass": {
+      "body": [
+        {
+          "key": "G#",
+          "mode": "minor",
+          "camelot": "1A",
+          "corr": 0.924
+        },
+        {
+          "key": "D#",
+          "mode": "major",
+          "camelot": "5B",
+          "corr": 0.922
+        },
+        {
+          "key": "D#",
+          "mode": "minor",
+          "camelot": "2A",
+          "corr": 0.918
+        },
+        {
+          "key": "B",
+          "mode": "major",
+          "camelot": "1B",
+          "corr": 0.892
+        },
+        {
+          "key": "G",
+          "mode": "minor",
+          "camelot": "6A",
+          "corr": 0.881
+        }
+      ],
+      "mid": [
+        {
+          "key": "G#",
+          "mode": "minor",
+          "camelot": "1A",
+          "corr": 0.924
+        },
+        {
+          "key": "D#",
+          "mode": "major",
+          "camelot": "5B",
+          "corr": 0.922
+        },
+        {
+          "key": "D#",
+          "mode": "minor",
+          "camelot": "2A",
+          "corr": 0.918
+        },
+        {
+          "key": "B",
+          "mode": "major",
+          "camelot": "1B",
+          "corr": 0.892
+        },
+        {
+          "key": "G",
+          "mode": "minor",
+          "camelot": "6A",
+          "corr": 0.881
+        }
+      ]
+    }
+  },
+  "key_ensemble": [
+    {
+      "key": "G#",
+      "mode": "minor",
+      "camelot": "1A",
+      "score": 0.924
+    },
+    {
+      "key": "D#",
+      "mode": "major",
+      "camelot": "5B",
+      "score": 0.922
+    },
+    {
+      "key": "D#",
+      "mode": "minor",
+      "camelot": "2A",
+      "score": 0.918
+    },
+    {
+      "key": "B",
+      "mode": "major",
+      "camelot": "1B",
+      "score": 0.892
+    },
+    {
+      "key": "G",
+      "mode": "minor",
+      "camelot": "6A",
+      "score": 0.881
+    },
+    {
+      "key": "G#",
+      "mode": "major",
+      "camelot": "4B",
+      "score": 0.878
+    }
+  ],
+  "key_working": {
+    "key": "G#",
+    "mode": "minor",
+    "camelot": "1A",
+    "locked": false,
+    "confidence": "stem-mix"
+  },
+  "tempo_working": {
+    "bpm": 86.1,
+    "locked": false,
+    "confidence": "stem-mix"
+  },
+  "mix": {
+    "lufs": -19.3,
+    "peakDb": -2.0
+  },
+  "stems": [
+    {
+      "id": "vocals",
+      "label": "Vocals",
+      "presence": 0.0,
+      "lufs": -54.0,
+      "peakDb": -31.0,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "drums",
+      "label": "Drums",
+      "presence": 0.0,
+      "lufs": -45.7,
+      "peakDb": -7.1,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "bass",
+      "label": "Bass",
+      "presence": 0.84,
+      "lufs": -20.1,
+      "peakDb": -3.0,
+      "key": {
+        "key": "G#",
+        "mode": "minor",
+        "camelot": "1A",
+        "confidence": 0.28
+      },
+      "tempo": {
+        "bpm": 86.1,
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "guitar",
+      "label": "Guitar",
+      "presence": 0.0,
+      "lufs": -44.3,
+      "peakDb": -20.6,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "keys",
+      "label": "Keys",
+      "presence": 0.0,
+      "lufs": -44.0,
+      "peakDb": -20.1,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "other",
+      "label": "Other",
+      "presence": 0.0,
+      "lufs": -53.8,
+      "peakDb": -32.8,
+      "key": null,
+      "tempo": null
+    }
+  ],
+  "summary": {
+    "tempo": 86.1,
+    "key": "G# minor 1A",
+    "locked": false
+  },
+  "updatedAt": "2026-08-25T23:42:58.292Z"
+}

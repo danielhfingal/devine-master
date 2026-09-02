@@ -1,0 +1,372 @@
+{
+  "schema": "devine_quality_batch_v1",
+  "exportedAt": "2026-09-01T01:18:25.602453+00:00",
+  "audioRoot": "F:\\devine-master-fresh\\Audio",
+  "mode": "master",
+  "fileCount": 3,
+  "rows": [
+    {
+      "file": "Espera_que_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Espera_que_mastered (2).mp3",
+      "input": {
+        "lufs": -9.722113498519787,
+        "tp": -1.0397854901538128,
+        "integratedLUFS": -9.722113498519787,
+        "truePeakdBTP": -1.0397854901538128,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "master",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "editions": {
+        "devine": {
+          "processing": {
+            "preset": "devine",
+            "loudnessAim": {
+              "fromLufs": -9.722113498519787,
+              "target": -10.1,
+              "gainDb": -0.3778865014802123
+            }
+          },
+          "output": {
+            "lufs": -10.099999999999989,
+            "tp": -1.4176719916340255,
+            "integratedLUFS": -10.099999999999989,
+            "truePeakdBTP": -1.4176719916340255,
+            "method": "BS.1770-4-style+cubicTP4x",
+            "windowNote": "centre_60s",
+            "sampleRate": 48000,
+            "channels": 2
+          },
+          "validation": {
+            "safetyPass": true,
+            "streamingEligible": true,
+            "hardFails": [],
+            "softWarns": [],
+            "hardFailCount": 0,
+            "softWarnCount": 0
+          },
+          "metrics": {
+            "lufs": -10.099999999999989,
+            "tpDbtp": -1.4176719916340255,
+            "targetLufs": -10.1,
+            "metricsSource": "measure_bs1770_python"
+          }
+        },
+        "spotify": {
+          "processing": {
+            "preset": "spotify",
+            "loudnessAim": {
+              "fromLufs": -13.999999999999998,
+              "target": -14.0,
+              "gainDb": -1.9286549331065743e-15
+            }
+          },
+          "output": {
+            "lufs": -13.999999999999995,
+            "tp": -5.317671991634027,
+            "integratedLUFS": -13.999999999999995,
+            "truePeakdBTP": -5.317671991634027,
+            "method": "BS.1770-4-style+cubicTP4x",
+            "windowNote": "centre_60s",
+            "sampleRate": 48000,
+            "channels": 2
+          },
+          "validation": {
+            "safetyPass": true,
+            "streamingEligible": true,
+            "hardFails": [],
+            "softWarns": [],
+            "hardFailCount": 0,
+            "softWarnCount": 0
+          },
+          "metrics": {
+            "lufs": -13.999999999999995,
+            "tpDbtp": -5.317671991634027,
+            "targetLufs": -14.0,
+            "metricsSource": "measure_bs1770_python"
+          }
+        },
+        "match": {
+          "processing": {
+            "preset": "match",
+            "loudnessAim": {
+              "fromLufs": -9.722113498519787,
+              "target": -10.1,
+              "gainDb": -0.3778865014802123
+            }
+          },
+          "output": {
+            "lufs": -10.099999999999989,
+            "tp": -1.4176719916340255,
+            "integratedLUFS": -10.099999999999989,
+            "truePeakdBTP": -1.4176719916340255,
+            "method": "BS.1770-4-style+cubicTP4x",
+            "windowNote": "centre_60s",
+            "sampleRate": 48000,
+            "channels": 2
+          },
+          "validation": {
+            "safetyPass": true,
+            "streamingEligible": true,
+            "hardFails": [],
+            "softWarns": [],
+            "hardFailCount": 0,
+            "softWarnCount": 0
+          },
+          "metrics": {
+            "lufs": -10.099999999999989,
+            "tpDbtp": -1.4176719916340255,
+            "targetLufs": -10.1,
+            "metricsSource": "measure_bs1770_python"
+          }
+        }
+      }
+    },
+    {
+      "file": "Espera_que_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Espera_que_mastered (3).mp3",
+      "input": {
+        "lufs": -9.722113498519787,
+        "tp": -1.0397854901538128,
+        "integratedLUFS": -9.722113498519787,
+        "truePeakdBTP": -1.0397854901538128,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "master",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "editions": {
+        "devine": {
+          "processing": {
+            "preset": "devine",
+            "loudnessAim": {
+              "fromLufs": -9.722113498519787,
+              "target": -10.1,
+              "gainDb": -0.3778865014802123
+            }
+          },
+          "output": {
+            "lufs": -10.099999999999989,
+            "tp": -1.4176719916340255,
+            "integratedLUFS": -10.099999999999989,
+            "truePeakdBTP": -1.4176719916340255,
+            "method": "BS.1770-4-style+cubicTP4x",
+            "windowNote": "centre_60s",
+            "sampleRate": 48000,
+            "channels": 2
+          },
+          "validation": {
+            "safetyPass": true,
+            "streamingEligible": true,
+            "hardFails": [],
+            "softWarns": [],
+            "hardFailCount": 0,
+            "softWarnCount": 0
+          },
+          "metrics": {
+            "lufs": -10.099999999999989,
+            "tpDbtp": -1.4176719916340255,
+            "targetLufs": -10.1,
+            "metricsSource": "measure_bs1770_python"
+          }
+        },
+        "spotify": {
+          "processing": {
+            "preset": "spotify",
+            "loudnessAim": {
+              "fromLufs": -13.999999999999998,
+              "target": -14.0,
+              "gainDb": -1.9286549331065743e-15
+            }
+          },
+          "output": {
+            "lufs": -13.999999999999995,
+            "tp": -5.317671991634027,
+            "integratedLUFS": -13.999999999999995,
+            "truePeakdBTP": -5.317671991634027,
+            "method": "BS.1770-4-style+cubicTP4x",
+            "windowNote": "centre_60s",
+            "sampleRate": 48000,
+            "channels": 2
+          },
+          "validation": {
+            "safetyPass": true,
+            "streamingEligible": true,
+            "hardFails": [],
+            "softWarns": [],
+            "hardFailCount": 0,
+            "softWarnCount": 0
+          },
+          "metrics": {
+            "lufs": -13.999999999999995,
+            "tpDbtp": -5.317671991634027,
+            "targetLufs": -14.0,
+            "metricsSource": "measure_bs1770_python"
+          }
+        },
+        "match": {
+          "processing": {
+            "preset": "match",
+            "loudnessAim": {
+              "fromLufs": -9.722113498519787,
+              "target": -10.1,
+              "gainDb": -0.3778865014802123
+            }
+          },
+          "output": {
+            "lufs": -10.099999999999989,
+            "tp": -1.4176719916340255,
+            "integratedLUFS": -10.099999999999989,
+            "truePeakdBTP": -1.4176719916340255,
+            "method": "BS.1770-4-style+cubicTP4x",
+            "windowNote": "centre_60s",
+            "sampleRate": 48000,
+            "channels": 2
+          },
+          "validation": {
+            "safetyPass": true,
+            "streamingEligible": true,
+            "hardFails": [],
+            "softWarns": [],
+            "hardFailCount": 0,
+            "softWarnCount": 0
+          },
+          "metrics": {
+            "lufs": -10.099999999999989,
+            "tpDbtp": -1.4176719916340255,
+            "targetLufs": -10.1,
+            "metricsSource": "measure_bs1770_python"
+          }
+        }
+      }
+    },
+    {
+      "file": "Espera_que_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Espera_que_mastered.mp3",
+      "input": {
+        "lufs": -9.722113498519787,
+        "tp": -1.0397854901538128,
+        "integratedLUFS": -9.722113498519787,
+        "truePeakdBTP": -1.0397854901538128,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "master",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "editions": {
+        "devine": {
+          "processing": {
+            "preset": "devine",
+            "loudnessAim": {
+              "fromLufs": -9.722113498519787,
+              "target": -10.1,
+              "gainDb": -0.3778865014802123
+            }
+          },
+          "output": {
+            "lufs": -10.099999999999989,
+            "tp": -1.4176719916340255,
+            "integratedLUFS": -10.099999999999989,
+            "truePeakdBTP": -1.4176719916340255,
+            "method": "BS.1770-4-style+cubicTP4x",
+            "windowNote": "centre_60s",
+            "sampleRate": 48000,
+            "channels": 2
+          },
+          "validation": {
+            "safetyPass": true,
+            "streamingEligible": true,
+            "hardFails": [],
+            "softWarns": [],
+            "hardFailCount": 0,
+            "softWarnCount": 0
+          },
+          "metrics": {
+            "lufs": -10.099999999999989,
+            "tpDbtp": -1.4176719916340255,
+            "targetLufs": -10.1,
+            "metricsSource": "measure_bs1770_python"
+          }
+        },
+        "spotify": {
+          "processing": {
+            "preset": "spotify",
+            "loudnessAim": {
+              "fromLufs": -13.999999999999998,
+              "target": -14.0,
+              "gainDb": -1.9286549331065743e-15
+            }
+          },
+          "output": {
+            "lufs": -13.999999999999995,
+            "tp": -5.317671991634027,
+            "integratedLUFS": -13.999999999999995,
+            "truePeakdBTP": -5.317671991634027,
+            "method": "BS.1770-4-style+cubicTP4x",
+            "windowNote": "centre_60s",
+            "sampleRate": 48000,
+            "channels": 2
+          },
+          "validation": {
+            "safetyPass": true,
+            "streamingEligible": true,
+            "hardFails": [],
+            "softWarns": [],
+            "hardFailCount": 0,
+            "softWarnCount": 0
+          },
+          "metrics": {
+            "lufs": -13.999999999999995,
+            "tpDbtp": -5.317671991634027,
+            "targetLufs": -14.0,
+            "metricsSource": "measure_bs1770_python"
+          }
+        },
+        "match": {
+          "processing": {
+            "preset": "match",
+            "loudnessAim": {
+              "fromLufs": -9.722113498519787,
+              "target": -10.1,
+              "gainDb": -0.3778865014802123
+            }
+          },
+          "output": {
+            "lufs": -10.099999999999989,
+            "tp": -1.4176719916340255,
+            "integratedLUFS": -10.099999999999989,
+            "truePeakdBTP": -1.4176719916340255,
+            "method": "BS.1770-4-style+cubicTP4x",
+            "windowNote": "centre_60s",
+            "sampleRate": 48000,
+            "channels": 2
+          },
+          "validation": {
+            "safetyPass": true,
+            "streamingEligible": true,
+            "hardFails": [],
+            "softWarns": [],
+            "hardFailCount": 0,
+            "softWarnCount": 0
+          },
+          "metrics": {
+            "lufs": -10.099999999999989,
+            "tpDbtp": -1.4176719916340255,
+            "targetLufs": -10.1,
+            "metricsSource": "measure_bs1770_python"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema": "devine-stem-tempo-key-pass/v1",
+  "track": "One-Way Love_Piano",
+  "pass": "stem-tempo-key-batch-2026-08-26",
+  "engine": "batch_stemlab \u00b7 STFT HPSS + template masks \u00b7 bass-weighted key \u00b7 drums-weighted tempo",
+  "notDemucs": true,
+  "keyLocked": false,
+  "tempoLocked": false,
+  "tempo": {},
+  "key": {},
+  "key_ensemble": [
+    {
+      "key": "E",
+      "mode": "major",
+      "camelot": "12B",
+      "score": 0.916
+    },
+    {
+      "key": "G#",
+      "mode": "minor",
+      "camelot": "1A",
+      "score": 0.901
+    },
+    {
+      "key": "C#",
+      "mode": "minor",
+      "camelot": "12A",
+      "score": 0.893
+    },
+    {
+      "key": "B",
+      "mode": "major",
+      "camelot": "1B",
+      "score": 0.889
+    },
+    {
+      "key": "F",
+      "mode": "minor",
+      "camelot": "4A",
+      "score": 0.886
+    },
+    {
+      "key": "D#",
+      "mode": "minor",
+      "camelot": "2A",
+      "score": 0.867
+    }
+  ],
+  "key_working": {
+    "key": "E",
+    "mode": "major",
+    "camelot": "12B",
+    "locked": false,
+    "confidence": "stem-mix"
+  },
+  "tempo_working": {
+    "bpm": 139.7,
+    "locked": false,
+    "confidence": "stem-mix"
+  },
+  "mix": {
+    "lufs": -82.7,
+    "peakDb": -40.5
+  },
+  "stems": [
+    {
+      "id": "vocals",
+      "label": "Vocals",
+      "presence": 0.27,
+      "lufs": -87.9,
+      "peakDb": -46.2,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "drums",
+      "label": "Drums",
+      "presence": 0.02,
+      "lufs": -99.5,
+      "peakDb": -67.5,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "bass",
+      "label": "Bass",
+      "presence": 0.0,
+      "lufs": -115.9,
+      "peakDb": -83.9,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "guitar",
+      "label": "Guitar",
+      "presence": 0.04,
+      "lufs": -96.5,
+      "peakDb": -51.7,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "keys",
+      "label": "Keys",
+      "presence": 0.03,
+      "lufs": -97.0,
+      "peakDb": -52.4,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "other",
+      "label": "Other",
+      "presence": 0.05,
+      "lufs": -101.1,
+      "peakDb": -58.6,
+      "key": null,
+      "tempo": null
+    }
+  ],
+  "summary": {
+    "tempo": 139.7,
+    "key": "E major 12B",
+    "locked": false
+  },
+  "updatedAt": "2026-08-26T00:12:41.858Z"
+}

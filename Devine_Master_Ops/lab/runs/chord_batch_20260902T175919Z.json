@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T17:59:19.682127+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Fireflies_in_Tar_Bass.wav",
+      "out": "tracks\\analysis\\Fireflies_in_Tar_Bass_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "Dm",
+          "seconds": 76.72,
+          "share": 0.29
+        },
+        {
+          "chord": "Gm",
+          "seconds": 48.58,
+          "share": 0.184
+        },
+        {
+          "chord": "D",
+          "seconds": 45.33,
+          "share": 0.171
+        }
+      ],
+      "nSegments": 186
+    }
+  ]
+}

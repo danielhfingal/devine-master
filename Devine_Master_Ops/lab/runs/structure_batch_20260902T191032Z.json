@@ -1,0 +1,30 @@
+{
+  "schema": "devine_structure_batch_v1",
+  "exportedAt": "2026-09-02T19:10:32.165647+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Fireflies in Tar_mastered.wav",
+      "out": "tracks\\analysis\\Fireflies_in_Tar_mastered_structure_pass_2026-09-02.json",
+      "nSections": 16,
+      "labels": [
+        "intro",
+        "verse",
+        "verse",
+        "verse",
+        "chorus",
+        "chorus",
+        "chorus",
+        "bridge",
+        "chorus",
+        "verse",
+        "verse",
+        "verse",
+        "verse",
+        "chorus",
+        "verse",
+        "outro"
+      ]
+    }
+  ]
+}

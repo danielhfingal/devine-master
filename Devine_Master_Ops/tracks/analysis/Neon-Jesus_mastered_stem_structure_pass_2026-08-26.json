@@ -1,0 +1,140 @@
+{
+  "schema": "devine-stem-structure-pass/v1",
+  "track": "Neon-Jesus_mastered",
+  "pass": "phase3-structure-2026-08-26",
+  "engine": "catalogue_structure \u00b7 drums novelty + tempo_key pass",
+  "tempo_working": {
+    "bpm": 83.4,
+    "locked": false,
+    "confidence": "stem-drums"
+  },
+  "key_working": {
+    "key": "G#",
+    "mode": "minor",
+    "camelot": "1A",
+    "locked": false,
+    "confidence": "stem-bass"
+  },
+  "summary": {
+    "tempo": 83.4,
+    "key": "G# minor 1A",
+    "locked": false
+  },
+  "sections": [
+    {
+      "name": "Intro",
+      "startSec": 0.0,
+      "endSec": 11.25,
+      "energy": 0.0002,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Verse",
+      "startSec": 11.25,
+      "endSec": 36.25,
+      "energy": 0.0006,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Chorus",
+      "startSec": 36.25,
+      "endSec": 44.75,
+      "energy": 0.0008,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Verse",
+      "startSec": 44.75,
+      "endSec": 93.75,
+      "energy": 0.0003,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Chorus",
+      "startSec": 93.75,
+      "endSec": 119.75,
+      "energy": 0.0004,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Bridge",
+      "startSec": 119.75,
+      "endSec": 128.75,
+      "energy": 0.0005,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Chorus",
+      "startSec": 128.75,
+      "endSec": 137.25,
+      "energy": 0.0009,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Outro",
+      "startSec": 137.25,
+      "endSec": 145.25,
+      "energy": 0.0149,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Section 9",
+      "startSec": 145.25,
+      "endSec": 153.25,
+      "energy": 0.0141,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Section 10",
+      "startSec": 153.25,
+      "endSec": 163.75,
+      "energy": 0.0143,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Section 11",
+      "startSec": 163.75,
+      "endSec": 188.75,
+      "energy": 0.0003,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Section 12",
+      "startSec": 188.75,
+      "endSec": 197.25,
+      "energy": 0.0034,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Section 13",
+      "startSec": 197.25,
+      "endSec": 207.25,
+      "energy": 0.001,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Section 14",
+      "startSec": 207.25,
+      "endSec": 222.25,
+      "energy": 0.0004,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Section 15",
+      "startSec": 222.25,
+      "endSec": 230.75,
+      "energy": 0.002,
+      "source": "drums-rms-novelty"
+    },
+    {
+      "name": "Outro",
+      "startSec": 230.75,
+      "endSec": 240.0,
+      "energy": 0.0004,
+      "source": "drums-rms-novelty"
+    }
+  ],
+  "stem_dir": "F:\\devine-master-fresh\\Devine_Master_Ops\\tracks\\stems\\Neon-Jesus_Bass",
+  "locked": false,
+  "updatedAt": "2026-08-26T22:09:35.262Z"
+}

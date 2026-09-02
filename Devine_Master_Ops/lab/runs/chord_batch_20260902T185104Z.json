@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:51:04.892419+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Espere Que_Vocals.wav",
+      "out": "tracks\\analysis\\Espere_Que_Vocals_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "F#m",
+          "seconds": 37.52,
+          "share": 0.224
+        },
+        {
+          "chord": "F#",
+          "seconds": 33.53,
+          "share": 0.2
+        },
+        {
+          "chord": "F",
+          "seconds": 24.06,
+          "share": 0.144
+        }
+      ],
+      "nSegments": 52
+    }
+  ]
+}

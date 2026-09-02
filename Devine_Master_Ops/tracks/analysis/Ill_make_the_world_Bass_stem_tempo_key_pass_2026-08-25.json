@@ -1,0 +1,529 @@
+{
+  "schema": "devine-stem-tempo-key-pass/v1",
+  "track": "Ill make the world_Bass",
+  "pass": "stem-tempo-key-batch-2026-08-25",
+  "engine": "batch_stemlab \u00b7 STFT HPSS + template masks \u00b7 bass-weighted key \u00b7 drums-weighted tempo",
+  "notDemucs": true,
+  "keyLocked": false,
+  "tempoLocked": false,
+  "tempo": {
+    "Bass": {
+      "body": {
+        "peaks": [
+          {
+            "bpm": 65.4,
+            "ac": 1.0
+          },
+          {
+            "bpm": 132.5,
+            "ac": 0.5441
+          },
+          {
+            "bpm": 152.0,
+            "ac": 0.2507
+          },
+          {
+            "bpm": 89.1,
+            "ac": 0.2188
+          },
+          {
+            "bpm": 72.8,
+            "ac": 0.1792
+          },
+          {
+            "bpm": 80.7,
+            "ac": 0.1584
+          },
+          {
+            "bpm": 76.0,
+            "ac": 0.146
+          }
+        ],
+        "families": [
+          {
+            "center": 128,
+            "score": 1.3529,
+            "members": [
+              [
+                65.4,
+                1.0
+              ],
+              [
+                132.5,
+                0.5441
+              ]
+            ]
+          },
+          {
+            "center": 135,
+            "score": 1.3529,
+            "members": [
+              [
+                65.4,
+                1.0
+              ],
+              [
+                132.5,
+                0.5441
+              ]
+            ]
+          },
+          {
+            "center": 74,
+            "score": 0.5657,
+            "members": [
+              [
+                152.0,
+                0.2507
+              ],
+              [
+                72.8,
+                0.1792
+              ],
+              [
+                76.0,
+                0.146
+              ]
+            ]
+          },
+          {
+            "center": 150,
+            "score": 0.5285,
+            "members": [
+              [
+                152.0,
+                0.2507
+              ],
+              [
+                72.8,
+                0.1792
+              ],
+              [
+                76.0,
+                0.146
+              ]
+            ]
+          },
+          {
+            "center": 86,
+            "score": 0.2626,
+            "members": [
+              [
+                89.1,
+                0.2188
+              ]
+            ]
+          }
+        ]
+      },
+      "mid": {
+        "peaks": [
+          {
+            "bpm": 65.4,
+            "ac": 1.0
+          },
+          {
+            "bpm": 132.5,
+            "ac": 0.5441
+          },
+          {
+            "bpm": 152.0,
+            "ac": 0.2507
+          },
+          {
+            "bpm": 89.1,
+            "ac": 0.2188
+          },
+          {
+            "bpm": 72.8,
+            "ac": 0.1792
+          },
+          {
+            "bpm": 80.7,
+            "ac": 0.1584
+          },
+          {
+            "bpm": 76.0,
+            "ac": 0.146
+          }
+        ],
+        "families": [
+          {
+            "center": 128,
+            "score": 1.3529,
+            "members": [
+              [
+                65.4,
+                1.0
+              ],
+              [
+                132.5,
+                0.5441
+              ]
+            ]
+          },
+          {
+            "center": 135,
+            "score": 1.3529,
+            "members": [
+              [
+                65.4,
+                1.0
+              ],
+              [
+                132.5,
+                0.5441
+              ]
+            ]
+          },
+          {
+            "center": 74,
+            "score": 0.5657,
+            "members": [
+              [
+                152.0,
+                0.2507
+              ],
+              [
+                72.8,
+                0.1792
+              ],
+              [
+                76.0,
+                0.146
+              ]
+            ]
+          },
+          {
+            "center": 150,
+            "score": 0.5285,
+            "members": [
+              [
+                152.0,
+                0.2507
+              ],
+              [
+                72.8,
+                0.1792
+              ],
+              [
+                76.0,
+                0.146
+              ]
+            ]
+          },
+          {
+            "center": 86,
+            "score": 0.2626,
+            "members": [
+              [
+                89.1,
+                0.2188
+              ]
+            ]
+          }
+        ]
+      },
+      "late": {
+        "peaks": [
+          {
+            "bpm": 65.4,
+            "ac": 1.0
+          },
+          {
+            "bpm": 132.5,
+            "ac": 0.5441
+          },
+          {
+            "bpm": 152.0,
+            "ac": 0.2507
+          },
+          {
+            "bpm": 89.1,
+            "ac": 0.2188
+          },
+          {
+            "bpm": 72.8,
+            "ac": 0.1792
+          },
+          {
+            "bpm": 80.7,
+            "ac": 0.1584
+          },
+          {
+            "bpm": 76.0,
+            "ac": 0.146
+          }
+        ],
+        "families": [
+          {
+            "center": 128,
+            "score": 1.3529,
+            "members": [
+              [
+                65.4,
+                1.0
+              ],
+              [
+                132.5,
+                0.5441
+              ]
+            ]
+          },
+          {
+            "center": 135,
+            "score": 1.3529,
+            "members": [
+              [
+                65.4,
+                1.0
+              ],
+              [
+                132.5,
+                0.5441
+              ]
+            ]
+          },
+          {
+            "center": 74,
+            "score": 0.5657,
+            "members": [
+              [
+                152.0,
+                0.2507
+              ],
+              [
+                72.8,
+                0.1792
+              ],
+              [
+                76.0,
+                0.146
+              ]
+            ]
+          },
+          {
+            "center": 150,
+            "score": 0.5285,
+            "members": [
+              [
+                152.0,
+                0.2507
+              ],
+              [
+                72.8,
+                0.1792
+              ],
+              [
+                76.0,
+                0.146
+              ]
+            ]
+          },
+          {
+            "center": 86,
+            "score": 0.2626,
+            "members": [
+              [
+                89.1,
+                0.2188
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "key": {
+    "Bass": {
+      "body": [
+        {
+          "key": "B",
+          "mode": "major",
+          "camelot": "1B",
+          "corr": 0.627
+        },
+        {
+          "key": "B",
+          "mode": "minor",
+          "camelot": "10A",
+          "corr": 0.602
+        },
+        {
+          "key": "E",
+          "mode": "major",
+          "camelot": "12B",
+          "corr": 0.554
+        },
+        {
+          "key": "G#",
+          "mode": "minor",
+          "camelot": "1A",
+          "corr": 0.551
+        },
+        {
+          "key": "E",
+          "mode": "minor",
+          "camelot": "9A",
+          "corr": 0.526
+        }
+      ],
+      "mid": [
+        {
+          "key": "B",
+          "mode": "major",
+          "camelot": "1B",
+          "corr": 0.627
+        },
+        {
+          "key": "B",
+          "mode": "minor",
+          "camelot": "10A",
+          "corr": 0.602
+        },
+        {
+          "key": "E",
+          "mode": "major",
+          "camelot": "12B",
+          "corr": 0.554
+        },
+        {
+          "key": "G#",
+          "mode": "minor",
+          "camelot": "1A",
+          "corr": 0.551
+        },
+        {
+          "key": "E",
+          "mode": "minor",
+          "camelot": "9A",
+          "corr": 0.526
+        }
+      ]
+    }
+  },
+  "key_ensemble": [
+    {
+      "key": "B",
+      "mode": "major",
+      "camelot": "1B",
+      "score": 0.627
+    },
+    {
+      "key": "B",
+      "mode": "minor",
+      "camelot": "10A",
+      "score": 0.602
+    },
+    {
+      "key": "E",
+      "mode": "major",
+      "camelot": "12B",
+      "score": 0.554
+    },
+    {
+      "key": "G#",
+      "mode": "minor",
+      "camelot": "1A",
+      "score": 0.551
+    },
+    {
+      "key": "E",
+      "mode": "minor",
+      "camelot": "9A",
+      "score": 0.526
+    },
+    {
+      "key": "G",
+      "mode": "major",
+      "camelot": "9B",
+      "score": 0.501
+    }
+  ],
+  "key_working": {
+    "key": "B",
+    "mode": "major",
+    "camelot": "1B",
+    "locked": false,
+    "confidence": "stem-mix"
+  },
+  "tempo_working": {
+    "bpm": 65.4,
+    "locked": false,
+    "confidence": "stem-mix"
+  },
+  "mix": {
+    "lufs": -21.3,
+    "peakDb": -2.6
+  },
+  "stems": [
+    {
+      "id": "vocals",
+      "label": "Vocals",
+      "presence": 0.0,
+      "lufs": -56.3,
+      "peakDb": -27.0,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "drums",
+      "label": "Drums",
+      "presence": 0.0,
+      "lufs": -45.4,
+      "peakDb": -8.1,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "bass",
+      "label": "Bass",
+      "presence": 0.8,
+      "lufs": -22.2,
+      "peakDb": -3.2,
+      "key": {
+        "key": "B",
+        "mode": "major",
+        "camelot": "1B",
+        "confidence": 0.24
+      },
+      "tempo": {
+        "bpm": 65.4,
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "guitar",
+      "label": "Guitar",
+      "presence": 0.0,
+      "lufs": -45.4,
+      "peakDb": -21.4,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "keys",
+      "label": "Keys",
+      "presence": 0.0,
+      "lufs": -45.0,
+      "peakDb": -20.9,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "other",
+      "label": "Other",
+      "presence": 0.0,
+      "lufs": -53.7,
+      "peakDb": -29.7,
+      "key": null,
+      "tempo": null
+    }
+  ],
+  "summary": {
+    "tempo": 65.4,
+    "key": "B major 1B",
+    "locked": false
+  },
+  "updatedAt": "2026-08-25T23:48:41.019Z"
+}

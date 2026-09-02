@@ -1,0 +1,477 @@
+{
+  "schema": "devine_musical_content_scale_v1",
+  "exportedAt": "2026-09-01T23:41:21.330446+00:00",
+  "analysisRoot": "F:\\devine-master-fresh\\Devine_Master_Ops\\tracks\\analysis",
+  "summary": {
+    "titles": 17,
+    "rich": 9,
+    "thin": 8,
+    "withStructure": 0,
+    "tempoFlagged": 7
+  },
+  "titles": [
+    {
+      "titleKey": "espera_que_mastered",
+      "file": "Espera_que_mastered_stem_tempo_key_pass_2026-08-25.json",
+      "alternates": [
+        "Espera_que_mastered_2_stem_tempo_key_pass_2026-08-25.json",
+        "Espera_que_mastered_3_stem_tempo_key_pass_2026-08-25.json"
+      ],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "Espera_que_mastered",
+      "bpm": 170.5,
+      "keyLabel": "G# major 4B",
+      "key": "G#",
+      "mode": "major",
+      "camelot": "4B",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Bass"
+      ],
+      "coverage": "thin",
+      "tempoFlags": [
+        "double_time_candidate:85.2"
+      ],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "fireflies_in_tar_mastered",
+      "file": "Fireflies_in_Tar_mastered_stem_tempo_key_pass_2026-08-25.json",
+      "alternates": [
+        "Fireflies_in_Tar_mastered_2_stem_tempo_key_pass_2026-08-25.json",
+        "Fireflies_in_Tar_mastered_3_stem_tempo_key_pass_2026-08-25.json"
+      ],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "Fireflies_in_Tar_mastered",
+      "bpm": 136.0,
+      "keyLabel": "G major 9B",
+      "key": "G",
+      "mode": "major",
+      "camelot": "9B",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Bass"
+      ],
+      "coverage": "thin",
+      "tempoFlags": [],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "frank_and_folks_mastered",
+      "file": "Frank_and_Folks_mastered_stem_tempo_key_pass_2026-08-25.json",
+      "alternates": [
+        "Frank_and_Folks_mastered_2_stem_tempo_key_pass_2026-08-25.json",
+        "Frank_and_Folks_mastered_3_stem_tempo_key_pass_2026-08-25.json"
+      ],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "Frank_and_Folks_mastered",
+      "bpm": 73.8,
+      "keyLabel": "D major 10B",
+      "key": "D",
+      "mode": "major",
+      "camelot": "10B",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Bass"
+      ],
+      "coverage": "thin",
+      "tempoFlags": [],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "frank_folks",
+      "file": "Frank_Folks_stem_tempo_key_pass.json",
+      "alternates": [],
+      "schema": null,
+      "track": "Frank & Folks",
+      "bpm": 74,
+      "keyLabel": "D minor 7A",
+      "key": "D",
+      "mode": "minor",
+      "camelot": "7A",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Bass",
+        "Instrumental",
+        "Other",
+        "Vocals"
+      ],
+      "coverage": "rich",
+      "tempoFlags": [],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "ill_make_the_world_shake_mastered",
+      "file": "Ill_make_the_world_shake_mastered_stem_tempo_key_pass_2026-08-26.json",
+      "alternates": [
+        "Ill_make_the_world_shake_mastered_2_stem_tempo_key_pass_2026-08-26.json",
+        "Ill_make_the_world_shake_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "Ill_make_the_world_shake_mastered",
+      "bpm": 65.4,
+      "keyLabel": "B minor 10A",
+      "key": "B",
+      "mode": "minor",
+      "camelot": "10A",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Vocals",
+        "Bass"
+      ],
+      "coverage": "rich",
+      "tempoFlags": [
+        "half_time_candidate:130.8"
+      ],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "neon-jesus_mastered",
+      "file": "Neon-Jesus_mastered_stem_tempo_key_pass.json",
+      "alternates": [],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "Neon-Jesus_mastered",
+      "bpm": 83.4,
+      "keyLabel": "G# minor 1A",
+      "key": "G#",
+      "mode": "minor",
+      "camelot": "1A",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Vocals",
+        "Bass",
+        "Guitar",
+        "Keys",
+        "Other",
+        "Instrumental"
+      ],
+      "coverage": "rich",
+      "tempoFlags": [],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "neon_jesus_mastered",
+      "file": "Neon_Jesus_mastered_stem_tempo_key_pass_2026-08-26.json",
+      "alternates": [
+        "Neon_Jesus_mastered_2_stem_tempo_key_pass_2026-08-26.json",
+        "Neon_Jesus_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "Neon_Jesus_mastered",
+      "bpm": 81.5,
+      "keyLabel": "B minor 10A",
+      "key": "B",
+      "mode": "minor",
+      "camelot": "10A",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Bass"
+      ],
+      "coverage": "thin",
+      "tempoFlags": [],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "one_way_love_mastered",
+      "file": "One_way_Love_mastered_stem_tempo_key_pass_2026-08-26.json",
+      "alternates": [
+        "One_way_Love_mastered_2_stem_tempo_key_pass_2026-08-26.json",
+        "One_way_Love_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "One_way_Love_mastered",
+      "bpm": 143.6,
+      "keyLabel": "E minor 9A",
+      "key": "E",
+      "mode": "minor",
+      "camelot": "9A",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Vocals",
+        "Bass"
+      ],
+      "coverage": "rich",
+      "tempoFlags": [],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "ooh_ah_alive",
+      "file": "ooh_ah_Alive_stem_tempo_key_pass.json",
+      "alternates": [],
+      "schema": null,
+      "track": "ooh...ah...Alive",
+      "bpm": 59.1,
+      "keyLabel": "C# minor 12A",
+      "key": "C#",
+      "mode": "minor",
+      "camelot": "12A",
+      "keyLocked": true,
+      "tempoLocked": true,
+      "families": [
+        "Bass",
+        "Instrumental",
+        "Other",
+        "Vocals"
+      ],
+      "coverage": "rich",
+      "tempoFlags": [
+        "half_time_candidate:118.2"
+      ],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "ooh_ah_alive_mastered",
+      "file": "ooh_ah_Alive_mastered_stem_tempo_key_pass_2026-08-26.json",
+      "alternates": [
+        "ooh_ah_Alive_mastered_2_stem_tempo_key_pass_2026-08-26.json",
+        "ooh_ah_Alive_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "ooh_ah_Alive_mastered",
+      "bpm": 117.5,
+      "keyLabel": "G minor 6A",
+      "key": "G",
+      "mode": "minor",
+      "camelot": "6A",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Bass"
+      ],
+      "coverage": "thin",
+      "tempoFlags": [],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "pew_pew",
+      "file": "Pew_Pew_stem_tempo_key_pass.json",
+      "alternates": [],
+      "schema": null,
+      "track": "Pew Pew - General bum wing",
+      "bpm": 64,
+      "keyLabel": "C major 8B",
+      "key": "C",
+      "mode": "major",
+      "camelot": "8B",
+      "keyLocked": true,
+      "tempoLocked": true,
+      "families": [
+        "Bass",
+        "Instrumental",
+        "Other",
+        "Vocals"
+      ],
+      "coverage": "rich",
+      "tempoFlags": [
+        "half_time_candidate:128.0"
+      ],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "pew_pew_general_bum_wing_mastered",
+      "file": "Pew_Pew_General_Bum_Wing_mastered_stem_tempo_key_pass_2026-08-26.json",
+      "alternates": [
+        "Pew_Pew_General_Bum_Wing_mastered_2_stem_tempo_key_pass_2026-08-26.json",
+        "Pew_Pew_General_Bum_Wing_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "Pew_Pew_General_Bum_Wing_mastered",
+      "bpm": 63.8,
+      "keyLabel": "F# minor 11A",
+      "key": "F#",
+      "mode": "minor",
+      "camelot": "11A",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Vocals",
+        "Bass"
+      ],
+      "coverage": "rich",
+      "tempoFlags": [
+        "half_time_candidate:127.6"
+      ],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "snake_eyes_sold_mastered",
+      "file": "Snake_eyes_sold_mastered_stem_tempo_key_pass_2026-08-26.json",
+      "alternates": [
+        "Snake_eyes_sold_mastered_2_stem_tempo_key_pass_2026-08-26.json",
+        "Snake_eyes_sold_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "Snake_eyes_sold_mastered",
+      "bpm": 89.1,
+      "keyLabel": "G major 9B",
+      "key": "G",
+      "mode": "major",
+      "camelot": "9B",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Bass"
+      ],
+      "coverage": "thin",
+      "tempoFlags": [],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "the_beforedays_mastered",
+      "file": "The_Beforedays_mastered_stem_tempo_key_pass_2026-08-26.json",
+      "alternates": [
+        "The_Beforedays_mastered_2_stem_tempo_key_pass_2026-08-26.json",
+        "The_Beforedays_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "The_Beforedays_mastered",
+      "bpm": 71.2,
+      "keyLabel": "A# major 6B",
+      "key": "A#",
+      "mode": "major",
+      "camelot": "6B",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Bass"
+      ],
+      "coverage": "thin",
+      "tempoFlags": [],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "the_one_that_got_away_mastered",
+      "file": "The_One_That_Got_Away_mastered_stem_tempo_key_pass_2026-08-26.json",
+      "alternates": [
+        "The_One_That_Got_Away_mastered_2_stem_tempo_key_pass_2026-08-26.json",
+        "The_One_That_Got_Away_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "The_One_That_Got_Away_mastered",
+      "bpm": 65.4,
+      "keyLabel": "G# major 4B",
+      "key": "G#",
+      "mode": "major",
+      "camelot": "4B",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Bass"
+      ],
+      "coverage": "thin",
+      "tempoFlags": [
+        "half_time_candidate:130.8"
+      ],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "the_winds_against_your_ways_mastered",
+      "file": "The_Winds_Against_Your_Ways_mastered_stem_tempo_key_pass_2026-08-26.json",
+      "alternates": [
+        "The_Winds_Against_Your_Ways_mastered_2_stem_tempo_key_pass_2026-08-26.json",
+        "The_Winds_Against_Your_Ways_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "The_Winds_Against_Your_Ways_mastered",
+      "bpm": 172.3,
+      "keyLabel": "G minor 6A",
+      "key": "G",
+      "mode": "minor",
+      "camelot": "6A",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Vocals",
+        "Bass"
+      ],
+      "coverage": "rich",
+      "tempoFlags": [
+        "double_time_candidate:86.2"
+      ],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    },
+    {
+      "titleKey": "vagalumes_no_alcatrao_mastered",
+      "file": "Vagalumes_no_Alcatrao_mastered_stem_tempo_key_pass_2026-08-26.json",
+      "alternates": [
+        "Vagalumes_no_Alcatrao_mastered_2_stem_tempo_key_pass_2026-08-26.json",
+        "Vagalumes_no_Alcatrao_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ],
+      "schema": "devine-stem-tempo-key-pass/v1",
+      "track": "Vagalumes_no_Alcatrao_mastered",
+      "bpm": 136.0,
+      "keyLabel": "A minor 8A",
+      "key": "A",
+      "mode": "minor",
+      "camelot": "8A",
+      "keyLocked": false,
+      "tempoLocked": false,
+      "families": [
+        "Vocals",
+        "Bass"
+      ],
+      "coverage": "rich",
+      "tempoFlags": [],
+      "structureFile": null,
+      "chords": "missing",
+      "midi": "missing",
+      "error": null
+    }
+  ]
+}

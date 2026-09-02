@@ -1,0 +1,187 @@
+{
+  "schema": "devine-structure-pass/v1",
+  "track": "Fireflies in Tar_mastered",
+  "source": "F:\\devine-master-fresh\\Audio\\WAV\\Fireflies in Tar_mastered.wav",
+  "pass": "structure-novelty-v1-2026-09-02",
+  "engine": "rms_flux_novelty_peakpick",
+  "hints": {
+    "bpm": 136.0
+  },
+  "measurement": {
+    "sr": 22050,
+    "durationSec": 252.96,
+    "hop": 1024,
+    "minSepSec": 16.0,
+    "estimatedBars44": 143.34
+  },
+  "summary": {
+    "nSections": 16,
+    "labels": [
+      "bridge",
+      "chorus",
+      "intro",
+      "outro",
+      "verse"
+    ],
+    "boundariesSec": [
+      0.0,
+      15.882,
+      31.765,
+      47.647,
+      65.294,
+      81.176,
+      97.059,
+      112.941,
+      128.824,
+      150.0,
+      167.647,
+      187.059,
+      202.941,
+      220.588,
+      236.471,
+      252.353,
+      252.96
+    ]
+  },
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 15.882,
+      "duration": 15.882,
+      "energy": 0.101242,
+      "label": "intro",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 15.882,
+      "end": 31.765,
+      "duration": 15.883,
+      "energy": 0.242724,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 31.765,
+      "end": 47.647,
+      "duration": 15.882,
+      "energy": 0.243774,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 47.647,
+      "end": 65.294,
+      "duration": 17.647,
+      "energy": 0.205871,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 65.294,
+      "end": 81.176,
+      "duration": 15.882,
+      "energy": 0.301804,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 81.176,
+      "end": 97.059,
+      "duration": 15.883,
+      "energy": 0.379721,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 97.059,
+      "end": 112.941,
+      "duration": 15.882,
+      "energy": 0.27056,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 112.941,
+      "end": 128.824,
+      "duration": 15.883,
+      "energy": 0.165304,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 128.824,
+      "end": 150.0,
+      "duration": 21.176,
+      "energy": 0.301703,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 150.0,
+      "end": 167.647,
+      "duration": 17.647,
+      "energy": 0.236713,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 167.647,
+      "end": 187.059,
+      "duration": 19.412,
+      "energy": 0.23783,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 187.059,
+      "end": 202.941,
+      "duration": 15.882,
+      "energy": 0.211054,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 202.941,
+      "end": 220.588,
+      "duration": 17.647,
+      "energy": 0.267376,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 220.588,
+      "end": 236.471,
+      "duration": 15.883,
+      "energy": 0.270074,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 236.471,
+      "end": 252.353,
+      "duration": 15.882,
+      "energy": 0.182306,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 252.353,
+      "end": 252.96,
+      "duration": 0.607,
+      "energy": 2.4e-05,
+      "label": "outro",
+      "labelStatus": "provisional"
+    }
+  ],
+  "quality": {
+    "earRequired": false,
+    "boundaryStatus": "machine",
+    "labelStatus": "provisional",
+    "notes": [
+      "Boundaries primary; labels heuristic.",
+      "BPM snaps to bar grid when provided."
+    ],
+    "refuse": "Do not lock labels without human gate."
+  },
+  "updatedAt": "2026-09-02T19:10:31.835391+00:00"
+}

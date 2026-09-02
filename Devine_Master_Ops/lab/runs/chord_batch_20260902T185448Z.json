@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:54:48.739830+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "The_Winds_Against_Your_Ways_Other.wav",
+      "out": "tracks\\analysis\\The_Winds_Against_Your_Ways_Other_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "Gm",
+          "seconds": 92.23,
+          "share": 0.348
+        },
+        {
+          "chord": "F",
+          "seconds": 69.29,
+          "share": 0.262
+        },
+        {
+          "chord": "A#",
+          "seconds": 41.33,
+          "share": 0.156
+        }
+      ],
+      "nSegments": 186
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:55:16.793411+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Vagalumes_no_Alcatrao_Piano.wav",
+      "out": "tracks\\analysis\\Vagalumes_no_Alcatrao_Piano_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "F#",
+          "seconds": 37.71,
+          "share": 0.231
+        },
+        {
+          "chord": "C#",
+          "seconds": 26.1,
+          "share": 0.16
+        },
+        {
+          "chord": "C#m",
+          "seconds": 18.76,
+          "share": 0.115
+        }
+      ],
+      "nSegments": 62
+    }
+  ]
+}

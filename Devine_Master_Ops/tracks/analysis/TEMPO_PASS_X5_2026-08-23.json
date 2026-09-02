@@ -1,0 +1,484 @@
+{
+  "schema": "tempo_pass_x5_halftime_v1",
+  "updatedAt": "2026-08-23T20:39:04Z",
+  "policy": {
+    "tempoLock": "only after ear confirm; prefer drums stem when available",
+    "halfTimeRule": "If onset AC peaks at X and X*2 both present, musical body tempo is usually the double unless groove is half-time intentional"
+  },
+  "Fireflies_confirmed": {
+    "tempo": 135,
+    "tempoLocked": true,
+    "key": "D minor",
+    "camelot": "7A",
+    "keyLocked": true,
+    "note": "User + stem pass locked D min 7A"
+  },
+  "Pew_Pew_stem": {
+    "tempo_working": {
+      "bpm": 128,
+      "locked": false,
+      "evidence": "Drums+Inst strongest AC at ~63.8 (half) and ~129 (double). Musical working tempo ~128. Prior project 85.7 was false trap (not in stem peaks).",
+      "reject": [
+        85.7,
+        83.3
+      ]
+    },
+    "key_working": {
+      "key": "F",
+      "mode": "major",
+      "camelot": "7B",
+      "locked": false,
+      "evidence": "Bass+Inst+BassPC all F major 7B top. Prior C major 8B is related (dominant). Vocals lean Am (relative).",
+      "runner_up": "C major 8B"
+    },
+    "detail_file": "tracks/analysis/Pew_Pew_stem_tempo_key_pass.json"
+  },
+  "tracks_from_project_json": {
+    "Pew Pew": {
+      "file": "Pew_Pew_-_General_bum_wing_mastered_devine_project_v0 (1).json",
+      "tempoBpm": 85.7,
+      "tempoConfidence": 0.19,
+      "tempoLocked": false,
+      "tempoCandidates": [
+        {
+          "bpm": 85.7,
+          "conf": 0.12,
+          "score": 1.277,
+          "votes": 3
+        },
+        {
+          "bpm": 83.3,
+          "conf": 0.1,
+          "score": 1.239,
+          "votes": 3
+        },
+        {
+          "bpm": 127.6,
+          "conf": 0.1,
+          "score": 0.415,
+          "votes": 1
+        },
+        {
+          "bpm": 84.5,
+          "conf": 0.1,
+          "score": 0.415,
+          "votes": 1
+        },
+        {
+          "bpm": 93.8,
+          "conf": 0.08,
+          "score": 0.402,
+          "votes": 1
+        }
+      ],
+      "key": "C",
+      "mode": "major",
+      "camelot": "8B",
+      "keyConfidence": 0.95,
+      "keyLocked": false,
+      "keyCandidates": [
+        {
+          "key": "C",
+          "mode": "major",
+          "camelot": "8B",
+          "corr": 2.912,
+          "votes": 2.3,
+          "familyHits": 4.05
+        },
+        {
+          "key": "F",
+          "mode": "major",
+          "camelot": "7B",
+          "corr": 2.559,
+          "votes": 1.76,
+          "familyHits": 4.05
+        }
+      ]
+    },
+    "Alive": {
+      "file": "ooh_ah_Alive_mastered_devine_project_v0 (2).json",
+      "tempoBpm": 92.3,
+      "tempoConfidence": 0.21,
+      "tempoLocked": false,
+      "tempoCandidates": [
+        {
+          "bpm": 92.3,
+          "conf": 0.2,
+          "score": 1.44,
+          "votes": 3
+        },
+        {
+          "bpm": 117.6,
+          "conf": 0.18,
+          "score": 1.401,
+          "votes": 3
+        },
+        {
+          "bpm": 116.6,
+          "conf": 0.17,
+          "score": 0.915,
+          "votes": 2
+        },
+        {
+          "bpm": 118.8,
+          "conf": 0.17,
+          "score": 0.915,
+          "votes": 2
+        },
+        {
+          "bpm": 76.9,
+          "conf": 0.14,
+          "score": 0.441,
+          "votes": 1
+        }
+      ],
+      "key": "G#",
+      "mode": "minor",
+      "camelot": "1A",
+      "keyConfidence": 0.96,
+      "keyLocked": false,
+      "keyCandidates": [
+        {
+          "key": "G#",
+          "mode": "minor",
+          "camelot": "1A",
+          "corr": 3.144,
+          "votes": 2.31,
+          "familyHits": 4.06
+        },
+        {
+          "key": "B",
+          "mode": "major",
+          "camelot": "1B",
+          "corr": 2.451,
+          "votes": 0.75,
+          "familyHits": 3.06
+        },
+        {
+          "key": "C#",
+          "mode": "minor",
+          "camelot": "12A",
+          "corr": 1.957,
+          "votes": 1,
+          "familyHits": 3.31
+        }
+      ]
+    },
+    "Frank": {
+      "file": "Frank_Folks_mastered_devine_project_v0 (1).json",
+      "tempoBpm": 98.4,
+      "tempoConfidence": 0.33,
+      "tempoLocked": false,
+      "tempoCandidates": [
+        {
+          "bpm": 98.4,
+          "conf": 0.22,
+          "score": 1.985,
+          "votes": 4
+        },
+        {
+          "bpm": 73.2,
+          "conf": 0.29,
+          "score": 1.622,
+          "votes": 3
+        },
+        {
+          "bpm": 74.1,
+          "conf": 0.21,
+          "score": 0.487,
+          "votes": 1
+        },
+        {
+          "bpm": 96.8,
+          "conf": 0.19,
+          "score": 0.474,
+          "votes": 1
+        }
+      ],
+      "key": "E",
+      "mode": "major",
+      "camelot": "12B",
+      "keyConfidence": 0.95,
+      "keyLocked": false,
+      "keyCandidates": [
+        {
+          "key": "E",
+          "mode": "major",
+          "camelot": "12B",
+          "corr": 2.247,
+          "votes": 1.88,
+          "familyHits": 2.94
+        },
+        {
+          "key": "A",
+          "mode": "major",
+          "camelot": "11B",
+          "corr": 1.719,
+          "votes": 1.06,
+          "familyHits": 2.94
+        }
+      ]
+    },
+    "Got Away": {
+      "file": "The_One_That_Got_Away_mastered_devine_project_v0 (3).json",
+      "tempoBpm": 130.4,
+      "tempoConfidence": 0.25,
+      "tempoLocked": false,
+      "tempoCandidates": [
+        {
+          "bpm": 130.4,
+          "conf": 0.19,
+          "score": 1.421,
+          "votes": 3
+        },
+        {
+          "bpm": 100,
+          "conf": 0.16,
+          "score": 0.902,
+          "votes": 2
+        },
+        {
+          "bpm": 133.4,
+          "conf": 0.19,
+          "score": 0.474,
+          "votes": 1
+        },
+        {
+          "bpm": 75.9,
+          "conf": 0.18,
+          "score": 0.467,
+          "votes": 1
+        },
+        {
+          "bpm": 83.3,
+          "conf": 0.15,
+          "score": 0.448,
+          "votes": 1
+        }
+      ],
+      "key": "A",
+      "mode": "minor",
+      "camelot": "8A",
+      "keyConfidence": 0.96,
+      "keyLocked": false,
+      "keyCandidates": [
+        {
+          "key": "A",
+          "mode": "minor",
+          "camelot": "8A",
+          "corr": 2.725,
+          "votes": 2.72,
+          "familyHits": 2.72
+        }
+      ]
+    },
+    "One-way": {
+      "file": "One-way_Love_-_I_wish_she_dreams_tonight_devine_project_v0.json",
+      "tempoBpm": 72.3,
+      "tempoConfidence": 0.34,
+      "tempoLocked": false,
+      "tempoCandidates": [
+        {
+          "bpm": 72.3,
+          "conf": 0.22,
+          "score": 1.479,
+          "votes": 3
+        },
+        {
+          "bpm": 96.8,
+          "conf": 0.16,
+          "score": 0.908,
+          "votes": 2
+        },
+        {
+          "bpm": 95.2,
+          "conf": 0.17,
+          "score": 0.461,
+          "votes": 1
+        },
+        {
+          "bpm": 73.2,
+          "conf": 0.16,
+          "score": 0.454,
+          "votes": 1
+        }
+      ],
+      "key": "G",
+      "mode": "minor",
+      "camelot": "6A",
+      "keyConfidence": 0.96,
+      "keyLocked": false,
+      "keyCandidates": [
+        {
+          "key": "G",
+          "mode": "minor",
+          "camelot": "6A",
+          "corr": 2.71,
+          "votes": 1.98,
+          "familyHits": 3.56
+        },
+        {
+          "key": "A#",
+          "mode": "major",
+          "camelot": "6B",
+          "corr": 2.078,
+          "votes": 0.6,
+          "familyHits": 2.57
+        },
+        {
+          "key": "D",
+          "mode": "minor",
+          "camelot": "7A",
+          "corr": 1.799,
+          "votes": 0.99,
+          "familyHits": 2.96
+        }
+      ]
+    }
+  },
+  "tempo_pass_x5": {
+    "Pew Pew": {
+      "working_bpm": 64,
+      "tempoLocked": true,
+      "double_optional": 128,
+      "key": "C major 8B",
+      "keyLocked": true,
+      "sections": {
+        "introEnd": 23.1,
+        "outroStart": 202.0
+      },
+      "rejected": [
+        85.7
+      ]
+    },
+    "Alive": {
+      "project_bpm": 92.3,
+      "working_bpm": 59.1,
+      "locked": true,
+      "key_working": "C# minor 12A",
+      "keyLocked": true,
+      "trap": "92 rejected; primary 59.1 locked"
+    },
+    "Frank": {
+      "project_bpm": 98.4,
+      "working_bpm": 74,
+      "locked": false,
+      "trap": "Project 98.4 was weak secondary; stems lock family to ~74 (double 148 optional)",
+      "key_working": "D minor 7A (unlocked)",
+      "stem_file": "tracks/analysis/Frank_Folks_stem_tempo_key_pass.json"
+    },
+    "Got Away": {
+      "project_bpm": 130.4,
+      "candidates": [
+        {
+          "bpm": 130.4,
+          "conf": 0.19,
+          "score": 1.421,
+          "votes": 3
+        },
+        {
+          "bpm": 100,
+          "conf": 0.16,
+          "score": 0.902,
+          "votes": 2
+        },
+        {
+          "bpm": 133.4,
+          "conf": 0.19,
+          "score": 0.474,
+          "votes": 1
+        },
+        {
+          "bpm": 75.9,
+          "conf": 0.18,
+          "score": 0.467,
+          "votes": 1
+        },
+        {
+          "bpm": 83.3,
+          "conf": 0.15,
+          "score": 0.448,
+          "votes": 1
+        }
+      ],
+      "locked": false,
+      "trap": "130 vs 100 \u2014 not clean half; 130 is closer to Pew/Fireflies body tempos. Prefer ~130 until stem pass.",
+      "working_bpm": 130.4
+    },
+    "One-way": {
+      "project_bpm": 72.3,
+      "candidates": [
+        {
+          "bpm": 72.3,
+          "conf": 0.22,
+          "score": 1.479,
+          "votes": 3
+        },
+        {
+          "bpm": 96.8,
+          "conf": 0.16,
+          "score": 0.908,
+          "votes": 2
+        },
+        {
+          "bpm": 95.2,
+          "conf": 0.17,
+          "score": 0.461,
+          "votes": 1
+        },
+        {
+          "bpm": 73.2,
+          "conf": 0.16,
+          "score": 0.454,
+          "votes": 1
+        }
+      ],
+      "locked": false,
+      "trap": "72 vs 96 \u2014 half of 144 / or 96 body. Ballad often feels 72; confirm against drums if available.",
+      "working_bpm": 72.3
+    }
+  },
+  "Frank_Folks_stem": {
+    "tempo_working_bpm": 74,
+    "key_working": "D minor 7A",
+    "locked": false,
+    "lesson": "Opposite of Pew: here the half-ish ~74 is the real grid; ~98 was the mix trap."
+  },
+  "Alive_stem": {
+    "tempo_working_bpm": 59.1,
+    "key_working": "C# minor 12A",
+    "locked": false,
+    "correction": "Auto-double from Pew pattern was incorrect for Alive; primary is ~59.1."
+  },
+  "Frank_confirmed": {
+    "tempo": 73.2,
+    "tempoLocked": true,
+    "key": "D minor",
+    "camelot": "7A",
+    "keyLocked": true
+  },
+  "Alive_confirmed": {
+    "tempo": 59.1,
+    "tempoLocked": true,
+    "key": "C# minor",
+    "camelot": "12A",
+    "keyLocked": true
+  },
+  "Pew_status": {
+    "tempo": 128,
+    "tempoLocked": false,
+    "key": "C major",
+    "camelot": "8B",
+    "keyLocked": true
+  },
+  "Pew_confirmed": {
+    "tempo": 64,
+    "tempoLocked": true,
+    "double_optional": 128,
+    "key": "C major",
+    "camelot": "8B",
+    "keyLocked": true,
+    "introEndSec": 23.1,
+    "outroStartSec": 202.0
+  }
+}

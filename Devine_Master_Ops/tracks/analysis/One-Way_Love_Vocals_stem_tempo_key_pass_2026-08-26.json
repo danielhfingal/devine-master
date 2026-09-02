@@ -1,0 +1,114 @@
+{
+  "schema": "devine-stem-tempo-key-pass/v1",
+  "track": "One-Way Love_Vocals",
+  "pass": "stem-tempo-key-batch-2026-08-26",
+  "engine": "batch_stemlab \u00b7 STFT HPSS + template masks \u00b7 bass-weighted key \u00b7 drums-weighted tempo",
+  "notDemucs": true,
+  "keyLocked": false,
+  "tempoLocked": false,
+  "tempo": {},
+  "key": {
+    "Vocals": {
+      "body": [
+        {
+          "key": "C",
+          "mode": "major",
+          "camelot": "8B",
+          "corr": 0.0
+        }
+      ],
+      "mid": [
+        {
+          "key": "C",
+          "mode": "major",
+          "camelot": "8B",
+          "corr": 0.0
+        }
+      ]
+    }
+  },
+  "key_ensemble": [],
+  "key_working": {
+    "key": "C",
+    "mode": "major",
+    "camelot": "8B",
+    "locked": false,
+    "confidence": "stem-mix"
+  },
+  "tempo_working": {
+    "bpm": 147.7,
+    "locked": false,
+    "confidence": "stem-mix"
+  },
+  "mix": {
+    "lufs": -18.6,
+    "peakDb": -0.9
+  },
+  "stems": [
+    {
+      "id": "vocals",
+      "label": "Vocals",
+      "presence": 0.29,
+      "lufs": -23.9,
+      "peakDb": -6.1,
+      "key": {
+        "key": "C",
+        "mode": "major",
+        "camelot": "8B",
+        "confidence": 0.0
+      },
+      "tempo": null
+    },
+    {
+      "id": "drums",
+      "label": "Drums",
+      "presence": 0.05,
+      "lufs": -31.7,
+      "peakDb": -3.4,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "bass",
+      "label": "Bass",
+      "presence": 0.06,
+      "lufs": -31.1,
+      "peakDb": -12.6,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "guitar",
+      "label": "Guitar",
+      "presence": 0.0,
+      "lufs": -45.4,
+      "peakDb": -21.7,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "keys",
+      "label": "Keys",
+      "presence": 0.06,
+      "lufs": -30.5,
+      "peakDb": -12.5,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "other",
+      "label": "Other",
+      "presence": 0.01,
+      "lufs": -37.1,
+      "peakDb": -11.5,
+      "key": null,
+      "tempo": null
+    }
+  ],
+  "summary": {
+    "tempo": 147.7,
+    "key": "C major 8B",
+    "locked": false
+  },
+  "updatedAt": "2026-08-26T00:13:02.408Z"
+}

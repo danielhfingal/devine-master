@@ -1,8 +1,8 @@
 @echo off
 set ROOT=%~dp0
-set DESK=%ROOT%daily\DEVINE_MASTER.html
+set DESK=%ROOT%Devine_Master_Ops\daily\DEVINE_MASTER.html
 if not exist "%DESK%" (
-  echo Missing: daily\DEVINE_MASTER.html
+  echo Missing: Devine_Master_Ops\daily\DEVINE_MASTER.html
   pause
   exit /b 1
 )

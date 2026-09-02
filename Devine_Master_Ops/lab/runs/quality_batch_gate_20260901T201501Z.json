@@ -1,0 +1,344 @@
+{
+  "schema": "devine_quality_batch_v1",
+  "exportedAt": "2026-09-01T20:21:06.642754+00:00",
+  "audioRoot": "F:\\devine-master-fresh\\FLAC",
+  "mode": "gate",
+  "fileCount": 13,
+  "rows": [
+    {
+      "file": "...I\u2019ll make the world shake! _mastered.flac",
+      "path": "F:\\devine-master-fresh\\FLAC\\...I\u2019ll make the world shake! _mastered.flac",
+      "input": {
+        "lufs": -9.219051796762848,
+        "tp": -0.49662760079174184,
+        "integratedLUFS": -9.219051796762848,
+        "truePeakdBTP": -0.49662760079174184,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.497 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Espera, qu\u00ea - D. DeVine_mastered.flac",
+      "path": "F:\\devine-master-fresh\\FLAC\\Espera, qu\u00ea - D. DeVine_mastered.flac",
+      "input": {
+        "lufs": -9.721820718903992,
+        "tp": -1.044917424986584,
+        "integratedLUFS": -9.721820718903992,
+        "truePeakdBTP": -1.044917424986584,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Fireflies in Tar_mastered.flac",
+      "path": "F:\\devine-master-fresh\\FLAC\\Fireflies in Tar_mastered.flac",
+      "input": {
+        "lufs": -9.63430875966688,
+        "tp": -1.5273999018169426,
+        "integratedLUFS": -9.63430875966688,
+        "truePeakdBTP": -1.5273999018169426,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Frank & Folks_mastered.flac",
+      "path": "F:\\devine-master-fresh\\FLAC\\Frank & Folks_mastered.flac",
+      "input": {
+        "lufs": -9.917042238491478,
+        "tp": -0.24490118878136335,
+        "integratedLUFS": -9.917042238491478,
+        "truePeakdBTP": -0.24490118878136335,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.245 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Neon-Jesus_mastered.flac",
+      "path": "F:\\devine-master-fresh\\FLAC\\Neon-Jesus_mastered.flac",
+      "input": {
+        "lufs": -9.859333746110721,
+        "tp": -1.5457492657348708,
+        "integratedLUFS": -9.859333746110721,
+        "truePeakdBTP": -1.5457492657348708,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "One-way Love - I wish she dreams tonight.flac",
+      "path": "F:\\devine-master-fresh\\FLAC\\One-way Love - I wish she dreams tonight.flac",
+      "input": {
+        "lufs": -10.227746343932774,
+        "tp": -1.2733299345980955,
+        "integratedLUFS": -10.227746343932774,
+        "truePeakdBTP": -1.2733299345980955,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "ooh...ah...Alive_mastered.flac",
+      "path": "F:\\devine-master-fresh\\FLAC\\ooh...ah...Alive_mastered.flac",
+      "input": {
+        "lufs": -9.476848911593214,
+        "tp": -0.41505623697962124,
+        "integratedLUFS": -9.476848911593214,
+        "truePeakdBTP": -0.41505623697962124,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.415 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Pew Pew - General bum wing_mastered.flac",
+      "path": "F:\\devine-master-fresh\\FLAC\\Pew Pew - General bum wing_mastered.flac",
+      "input": {
+        "lufs": -9.755790275193236,
+        "tp": -1.1498476751215967,
+        "integratedLUFS": -9.755790275193236,
+        "truePeakdBTP": -1.1498476751215967,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Sorry, not sorry Deuce - Snake eyes sold, double ones, rolled!!_mastered.flac",
+      "path": "F:\\devine-master-fresh\\FLAC\\Sorry, not sorry Deuce - Snake eyes sold, double ones, rolled!!_mastered.flac",
+      "input": {
+        "lufs": -9.551656176237822,
+        "tp": -1.2103302153082627,
+        "integratedLUFS": -9.551656176237822,
+        "truePeakdBTP": -1.2103302153082627,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The Beforedays_mastered.flac",
+      "path": "F:\\devine-master-fresh\\FLAC\\The Beforedays_mastered.flac",
+      "input": {
+        "lufs": -10.032890787742852,
+        "tp": -1.3726653824316446,
+        "integratedLUFS": -10.032890787742852,
+        "truePeakdBTP": -1.3726653824316446,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The One That Got Away_mastered.flac",
+      "path": "F:\\devine-master-fresh\\FLAC\\The One That Got Away_mastered.flac",
+      "input": {
+        "lufs": -10.692053633809802,
+        "tp": -0.7767130585442841,
+        "integratedLUFS": -10.692053633809802,
+        "truePeakdBTP": -0.7767130585442841,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.777 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The Wind's Against Your Ways_mastered.flac",
+      "path": "F:\\devine-master-fresh\\FLAC\\The Wind's Against Your Ways_mastered.flac",
+      "input": {
+        "lufs": -11.739571006965908,
+        "tp": -0.8503746745448602,
+        "integratedLUFS": -11.739571006965908,
+        "truePeakdBTP": -0.8503746745448602,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.850 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Vagalumes no Alcatr\u00e3o - D. DeVine_mastered.flac",
+      "path": "F:\\devine-master-fresh\\FLAC\\Vagalumes no Alcatr\u00e3o - D. DeVine_mastered.flac",
+      "input": {
+        "lufs": -9.28500667012571,
+        "tp": -1.107888961416631,
+        "integratedLUFS": -9.28500667012571,
+        "truePeakdBTP": -1.107888961416631,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    }
+  ]
+}

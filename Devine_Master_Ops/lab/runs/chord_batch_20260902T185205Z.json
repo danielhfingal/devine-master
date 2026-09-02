@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:52:05.759231+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Ill make the world_Piano.wav",
+      "out": "tracks\\analysis\\Ill_make_the_world_Piano_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "D#m",
+          "seconds": 29.91,
+          "share": 0.253
+        },
+        {
+          "chord": "F",
+          "seconds": 18.39,
+          "share": 0.156
+        },
+        {
+          "chord": "Cm",
+          "seconds": 13.75,
+          "share": 0.116
+        }
+      ],
+      "nSegments": 54
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema": "devine-stem-tempo-key-pass/v1",
+  "track": "Neon-Jesus_Piano",
+  "pass": "stem-tempo-key-batch-2026-08-26",
+  "engine": "batch_stemlab \u00b7 STFT HPSS + template masks \u00b7 bass-weighted key \u00b7 drums-weighted tempo",
+  "notDemucs": true,
+  "keyLocked": false,
+  "tempoLocked": false,
+  "tempo": {},
+  "key": {},
+  "key_ensemble": [
+    {
+      "key": "F",
+      "mode": "minor",
+      "camelot": "4A",
+      "score": 0.939
+    },
+    {
+      "key": "F",
+      "mode": "major",
+      "camelot": "7B",
+      "score": 0.899
+    },
+    {
+      "key": "A",
+      "mode": "minor",
+      "camelot": "8A",
+      "score": 0.871
+    },
+    {
+      "key": "G#",
+      "mode": "major",
+      "camelot": "4B",
+      "score": 0.863
+    },
+    {
+      "key": "D",
+      "mode": "minor",
+      "camelot": "7A",
+      "score": 0.861
+    },
+    {
+      "key": "C#",
+      "mode": "major",
+      "camelot": "3B",
+      "score": 0.852
+    }
+  ],
+  "key_working": {
+    "key": "F",
+    "mode": "minor",
+    "camelot": "4A",
+    "locked": false,
+    "confidence": "stem-mix"
+  },
+  "tempo_working": {
+    "bpm": 166.7,
+    "locked": false,
+    "confidence": "stem-mix"
+  },
+  "mix": {
+    "lufs": -82.6,
+    "peakDb": -45.3
+  },
+  "stems": [
+    {
+      "id": "vocals",
+      "label": "Vocals",
+      "presence": 0.0,
+      "lufs": -107.6,
+      "peakDb": -64.4,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "drums",
+      "label": "Drums",
+      "presence": 0.13,
+      "lufs": -89.9,
+      "peakDb": -48.8,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "bass",
+      "label": "Bass",
+      "presence": 0.24,
+      "lufs": -87.2,
+      "peakDb": -49.5,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "guitar",
+      "label": "Guitar",
+      "presence": 0.0,
+      "lufs": -105.1,
+      "peakDb": -59.8,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "keys",
+      "label": "Keys",
+      "presence": 0.01,
+      "lufs": -102.9,
+      "peakDb": -57.4,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "other",
+      "label": "Other",
+      "presence": 0.05,
+      "lufs": -97.1,
+      "peakDb": -58.4,
+      "key": null,
+      "tempo": null
+    }
+  ],
+  "summary": {
+    "tempo": 166.7,
+    "key": "F minor 4A",
+    "locked": false
+  },
+  "updatedAt": "2026-08-26T00:09:20.037Z"
+}

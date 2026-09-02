@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:51:15.418496+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Fireflies_in_Tar_Other.wav",
+      "out": "tracks\\analysis\\Fireflies_in_Tar_Other_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "D",
+          "seconds": 105.98,
+          "share": 0.4
+        },
+        {
+          "chord": "Dm",
+          "seconds": 94.37,
+          "share": 0.357
+        },
+        {
+          "chord": "A#",
+          "seconds": 15.42,
+          "share": 0.058
+        }
+      ],
+      "nSegments": 133
+    }
+  ]
+}

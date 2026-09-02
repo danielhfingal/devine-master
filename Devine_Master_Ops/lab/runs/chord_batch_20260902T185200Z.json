@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:52:00.140377+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Ill make the world_Other.wav",
+      "out": "tracks\\analysis\\Ill_make_the_world_Other_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "A#m",
+          "seconds": 69.66,
+          "share": 0.301
+        },
+        {
+          "chord": "F",
+          "seconds": 53.22,
+          "share": 0.23
+        },
+        {
+          "chord": "D#",
+          "seconds": 29.63,
+          "share": 0.128
+        }
+      ],
+      "nSegments": 188
+    }
+  ]
+}

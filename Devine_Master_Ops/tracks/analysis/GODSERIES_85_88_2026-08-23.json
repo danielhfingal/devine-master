@@ -1,0 +1,713 @@
+{
+  "pass": "god-series-85-88-mix-2026-08-23",
+  "limitation": "No stems \u2014 mix-only onset AC + chroma. Treat as suspicion flags for ear/stem confirm, not locks.",
+  "controls": {
+    "Pew": "expect primary ~64; locked 64",
+    "Alive": "expect primary ~59; locked 59.1"
+  },
+  "results": {
+    "Espera_que_mastered": {
+      "locked_catalogue": {
+        "tempo": 85.7,
+        "key": "F# major",
+        "camelot": "2B"
+      },
+      "peaks": [
+        {
+          "bpm": 172.3,
+          "ac": 0.3657
+        },
+        {
+          "bpm": 161.5,
+          "ac": 0.3346
+        },
+        {
+          "bpm": 184.6,
+          "ac": 0.3257
+        },
+        {
+          "bpm": 152.0,
+          "ac": 0.2528
+        },
+        {
+          "bpm": 198.8,
+          "ac": 0.2434
+        },
+        {
+          "bpm": 86.1,
+          "ac": 0.1967
+        },
+        {
+          "bpm": 83.4,
+          "ac": 0.1755
+        },
+        {
+          "bpm": 143.6,
+          "ac": 0.1581
+        }
+      ],
+      "primary_peak": 172.3,
+      "band_scores": {
+        "at_locked": 0.5273,
+        "at_half": 0,
+        "at_double": 0.3657,
+        "at_55_70": 0,
+        "at_80_95": 0.5273,
+        "at_110_130": 0
+      },
+      "chroma_top": [
+        {
+          "key": "F#",
+          "mode": "minor",
+          "camelot": "11A",
+          "corr": 0.6153
+        },
+        {
+          "key": "B",
+          "mode": "minor",
+          "camelot": "10A",
+          "corr": 0.5147
+        },
+        {
+          "key": "F#",
+          "mode": "major",
+          "camelot": "2B",
+          "corr": 0.4376
+        },
+        {
+          "key": "D",
+          "mode": "major",
+          "camelot": "10B",
+          "corr": 0.4299
+        },
+        {
+          "key": "B",
+          "mode": "major",
+          "camelot": "1B",
+          "corr": 0.2894
+        }
+      ],
+      "bassPC_top": [
+        {
+          "key": "F#",
+          "mode": "minor",
+          "camelot": "11A",
+          "corr": 0.5498
+        },
+        {
+          "key": "B",
+          "mode": "major",
+          "camelot": "1B",
+          "corr": 0.5436
+        },
+        {
+          "key": "B",
+          "mode": "minor",
+          "camelot": "10A",
+          "corr": 0.5166
+        },
+        {
+          "key": "F#",
+          "mode": "major",
+          "camelot": "2B",
+          "corr": 0.4523
+        },
+        {
+          "key": "E",
+          "mode": "minor",
+          "camelot": "9A",
+          "corr": 0.3669
+        }
+      ],
+      "trap_flag": false,
+      "tempo_working_hypothesis": 172.3,
+      "note": "MIX-only god series (no stems). Controls: Pew/Alive known locks."
+    },
+    "The_Winds_Against_Your_Ways_mastered": {
+      "locked_catalogue": {
+        "tempo": 85.5,
+        "key": "F major",
+        "camelot": "7B"
+      },
+      "peaks": [
+        {
+          "bpm": 172.3,
+          "ac": 0.5919
+        },
+        {
+          "bpm": 184.6,
+          "ac": 0.5545
+        },
+        {
+          "bpm": 161.5,
+          "ac": 0.5462
+        },
+        {
+          "bpm": 86.1,
+          "ac": 0.504
+        },
+        {
+          "bpm": 198.8,
+          "ac": 0.4688
+        },
+        {
+          "bpm": 83.4,
+          "ac": 0.4613
+        },
+        {
+          "bpm": 89.1,
+          "ac": 0.4611
+        },
+        {
+          "bpm": 152.0,
+          "ac": 0.4459
+        }
+      ],
+      "primary_peak": 172.3,
+      "band_scores": {
+        "at_locked": 1.4264,
+        "at_half": 0,
+        "at_double": 0.5919,
+        "at_55_70": 0.8054,
+        "at_80_95": 1.4264,
+        "at_110_130": 0
+      },
+      "chroma_top": [
+        {
+          "key": "D",
+          "mode": "minor",
+          "camelot": "7A",
+          "corr": 0.7646
+        },
+        {
+          "key": "F",
+          "mode": "major",
+          "camelot": "7B",
+          "corr": 0.6796
+        },
+        {
+          "key": "G",
+          "mode": "minor",
+          "camelot": "6A",
+          "corr": 0.6575
+        },
+        {
+          "key": "A#",
+          "mode": "major",
+          "camelot": "6B",
+          "corr": 0.6099
+        },
+        {
+          "key": "C",
+          "mode": "major",
+          "camelot": "8B",
+          "corr": 0.4537
+        }
+      ],
+      "bassPC_top": [
+        {
+          "key": "D",
+          "mode": "minor",
+          "camelot": "7A",
+          "corr": 0.7065
+        },
+        {
+          "key": "G",
+          "mode": "minor",
+          "camelot": "6A",
+          "corr": 0.6824
+        },
+        {
+          "key": "D",
+          "mode": "major",
+          "camelot": "10B",
+          "corr": 0.5688
+        },
+        {
+          "key": "F",
+          "mode": "major",
+          "camelot": "7B",
+          "corr": 0.4846
+        },
+        {
+          "key": "A#",
+          "mode": "major",
+          "camelot": "6B",
+          "corr": 0.4635
+        }
+      ],
+      "trap_flag": false,
+      "tempo_working_hypothesis": 172.3,
+      "note": "MIX-only god series (no stems). Controls: Pew/Alive known locks."
+    },
+    "Ill_make_the_world_shake_mastered": {
+      "locked_catalogue": {
+        "tempo": 87.6,
+        "key": "A# major",
+        "camelot": "6B"
+      },
+      "peaks": [
+        {
+          "bpm": 129.2,
+          "ac": 0.3964
+        },
+        {
+          "bpm": 136.0,
+          "ac": 0.3841
+        },
+        {
+          "bpm": 123.0,
+          "ac": 0.3572
+        },
+        {
+          "bpm": 143.6,
+          "ac": 0.3281
+        },
+        {
+          "bpm": 89.1,
+          "ac": 0.3125
+        },
+        {
+          "bpm": 86.1,
+          "ac": 0.3074
+        },
+        {
+          "bpm": 66.3,
+          "ac": 0.2938
+        },
+        {
+          "bpm": 64.6,
+          "ac": 0.2887
+        }
+      ],
+      "primary_peak": 129.2,
+      "band_scores": {
+        "at_locked": 0.895,
+        "at_half": 0,
+        "at_double": 0,
+        "at_55_70": 0.5825,
+        "at_80_95": 0.895,
+        "at_110_130": 1.0409
+      },
+      "chroma_top": [
+        {
+          "key": "F",
+          "mode": "major",
+          "camelot": "7B",
+          "corr": 0.9641
+        },
+        {
+          "key": "D",
+          "mode": "minor",
+          "camelot": "7A",
+          "corr": 0.6214
+        },
+        {
+          "key": "A#",
+          "mode": "major",
+          "camelot": "6B",
+          "corr": 0.5922
+        },
+        {
+          "key": "C",
+          "mode": "major",
+          "camelot": "8B",
+          "corr": 0.5122
+        },
+        {
+          "key": "F",
+          "mode": "minor",
+          "camelot": "4A",
+          "corr": 0.5118
+        }
+      ],
+      "bassPC_top": [
+        {
+          "key": "A#",
+          "mode": "major",
+          "camelot": "6B",
+          "corr": 0.6447
+        },
+        {
+          "key": "F",
+          "mode": "major",
+          "camelot": "7B",
+          "corr": 0.573
+        },
+        {
+          "key": "A#",
+          "mode": "minor",
+          "camelot": "3A",
+          "corr": 0.479
+        },
+        {
+          "key": "D",
+          "mode": "minor",
+          "camelot": "7A",
+          "corr": 0.4235
+        },
+        {
+          "key": "G",
+          "mode": "minor",
+          "camelot": "6A",
+          "corr": 0.2189
+        }
+      ],
+      "trap_flag": false,
+      "tempo_working_hypothesis": 129.2,
+      "note": "MIX-only god series (no stems). Controls: Pew/Alive known locks."
+    },
+    "Neon_Jesus_mastered": {
+      "locked_catalogue": {
+        "tempo": 82.2,
+        "key": "B minor",
+        "camelot": "10A"
+      },
+      "peaks": [
+        {
+          "bpm": 83.4,
+          "ac": 0.6823
+        },
+        {
+          "bpm": 80.7,
+          "ac": 0.6782
+        },
+        {
+          "bpm": 86.1,
+          "ac": 0.6124
+        },
+        {
+          "bpm": 78.3,
+          "ac": 0.6003
+        },
+        {
+          "bpm": 89.1,
+          "ac": 0.4989
+        },
+        {
+          "bpm": 76.0,
+          "ac": 0.4804
+        },
+        {
+          "bpm": 92.3,
+          "ac": 0.3636
+        },
+        {
+          "bpm": 73.8,
+          "ac": 0.3407
+        }
+      ],
+      "primary_peak": 83.4,
+      "band_scores": {
+        "at_locked": 2.5732,
+        "at_half": 0,
+        "at_double": 0,
+        "at_55_70": 0,
+        "at_80_95": 2.8354,
+        "at_110_130": 0
+      },
+      "chroma_top": [
+        {
+          "key": "D",
+          "mode": "minor",
+          "camelot": "7A",
+          "corr": 0.638
+        },
+        {
+          "key": "A",
+          "mode": "minor",
+          "camelot": "8A",
+          "corr": 0.6215
+        },
+        {
+          "key": "F",
+          "mode": "major",
+          "camelot": "7B",
+          "corr": 0.5908
+        },
+        {
+          "key": "G",
+          "mode": "major",
+          "camelot": "9B",
+          "corr": 0.4911
+        },
+        {
+          "key": "C",
+          "mode": "major",
+          "camelot": "8B",
+          "corr": 0.4687
+        }
+      ],
+      "bassPC_top": [
+        {
+          "key": "E",
+          "mode": "minor",
+          "camelot": "9A",
+          "corr": 0.708
+        },
+        {
+          "key": "E",
+          "mode": "major",
+          "camelot": "12B",
+          "corr": 0.6049
+        },
+        {
+          "key": "A",
+          "mode": "minor",
+          "camelot": "8A",
+          "corr": 0.4312
+        },
+        {
+          "key": "A",
+          "mode": "major",
+          "camelot": "11B",
+          "corr": 0.4245
+        },
+        {
+          "key": "C",
+          "mode": "major",
+          "camelot": "8B",
+          "corr": 0.2964
+        }
+      ],
+      "trap_flag": false,
+      "tempo_working_hypothesis": 83.4,
+      "note": "MIX-only god series (no stems). Controls: Pew/Alive known locks."
+    },
+    "Pew_Pew_General_Bum_Wing_mastered": {
+      "locked_catalogue": {
+        "tempo": 64,
+        "key": "C major",
+        "camelot": "8B"
+      },
+      "peaks": [
+        {
+          "bpm": 64.6,
+          "ac": 0.4472
+        },
+        {
+          "bpm": 63.0,
+          "ac": 0.4362
+        },
+        {
+          "bpm": 66.3,
+          "ac": 0.3913
+        },
+        {
+          "bpm": 61.5,
+          "ac": 0.3611
+        },
+        {
+          "bpm": 68.0,
+          "ac": 0.2967
+        },
+        {
+          "bpm": 60.1,
+          "ac": 0.2539
+        },
+        {
+          "bpm": 129.2,
+          "ac": 0.2332
+        },
+        {
+          "bpm": 136.0,
+          "ac": 0.214
+        }
+      ],
+      "primary_peak": 64.6,
+      "band_scores": {
+        "at_locked": 2.1862,
+        "at_half": 0,
+        "at_double": 0.2332,
+        "at_55_70": 2.3782,
+        "at_80_95": 0,
+        "at_110_130": 0.4446
+      },
+      "chroma_top": [
+        {
+          "key": "F",
+          "mode": "major",
+          "camelot": "7B",
+          "corr": 0.8689
+        },
+        {
+          "key": "C",
+          "mode": "major",
+          "camelot": "8B",
+          "corr": 0.7813
+        },
+        {
+          "key": "A",
+          "mode": "minor",
+          "camelot": "8A",
+          "corr": 0.7507
+        },
+        {
+          "key": "D",
+          "mode": "minor",
+          "camelot": "7A",
+          "corr": 0.5106
+        },
+        {
+          "key": "C",
+          "mode": "minor",
+          "camelot": "5A",
+          "corr": 0.3773
+        }
+      ],
+      "bassPC_top": [
+        {
+          "key": "F",
+          "mode": "major",
+          "camelot": "7B",
+          "corr": 0.8601
+        },
+        {
+          "key": "A",
+          "mode": "minor",
+          "camelot": "8A",
+          "corr": 0.6275
+        },
+        {
+          "key": "D",
+          "mode": "minor",
+          "camelot": "7A",
+          "corr": 0.5028
+        },
+        {
+          "key": "A#",
+          "mode": "major",
+          "camelot": "6B",
+          "corr": 0.431
+        },
+        {
+          "key": "C",
+          "mode": "major",
+          "camelot": "8B",
+          "corr": 0.4198
+        }
+      ],
+      "trap_flag": false,
+      "tempo_working_hypothesis": 64.6,
+      "note": "MIX-only god series (no stems). Controls: Pew/Alive known locks."
+    },
+    "ooh_ah_Alive_mastered": {
+      "locked_catalogue": {
+        "tempo": 59.1,
+        "key": "C# minor",
+        "camelot": "12A"
+      },
+      "peaks": [
+        {
+          "bpm": 58.7,
+          "ac": 0.4501
+        },
+        {
+          "bpm": 60.1,
+          "ac": 0.4387
+        },
+        {
+          "bpm": 117.5,
+          "ac": 0.3915
+        },
+        {
+          "bpm": 123.0,
+          "ac": 0.3848
+        },
+        {
+          "bpm": 61.5,
+          "ac": 0.3824
+        },
+        {
+          "bpm": 112.3,
+          "ac": 0.3752
+        },
+        {
+          "bpm": 129.2,
+          "ac": 0.3624
+        },
+        {
+          "bpm": 107.7,
+          "ac": 0.3442
+        }
+      ],
+      "primary_peak": 58.7,
+      "band_scores": {
+        "at_locked": 1.6029,
+        "at_half": 0,
+        "at_double": 0.7763,
+        "at_55_70": 1.6029,
+        "at_80_95": 0,
+        "at_110_130": 1.514
+      },
+      "chroma_top": [
+        {
+          "key": "C#",
+          "mode": "minor",
+          "camelot": "12A",
+          "corr": 0.489
+        },
+        {
+          "key": "A",
+          "mode": "major",
+          "camelot": "11B",
+          "corr": 0.4015
+        },
+        {
+          "key": "A",
+          "mode": "minor",
+          "camelot": "8A",
+          "corr": 0.297
+        },
+        {
+          "key": "C#",
+          "mode": "major",
+          "camelot": "3B",
+          "corr": 0.2798
+        },
+        {
+          "key": "D",
+          "mode": "minor",
+          "camelot": "7A",
+          "corr": 0.2671
+        }
+      ],
+      "bassPC_top": [
+        {
+          "key": "C#",
+          "mode": "minor",
+          "camelot": "12A",
+          "corr": 0.5848
+        },
+        {
+          "key": "A",
+          "mode": "major",
+          "camelot": "11B",
+          "corr": 0.5264
+        },
+        {
+          "key": "F#",
+          "mode": "minor",
+          "camelot": "11A",
+          "corr": 0.4937
+        },
+        {
+          "key": "A",
+          "mode": "minor",
+          "camelot": "8A",
+          "corr": 0.3961
+        },
+        {
+          "key": "C#",
+          "mode": "major",
+          "camelot": "3B",
+          "corr": 0.3039
+        }
+      ],
+      "trap_flag": false,
+      "tempo_working_hypothesis": 58.7,
+      "note": "MIX-only god series (no stems). Controls: Pew/Alive known locks."
+    }
+  },
+  "updatedAt": "2026-08-23T20:54:04Z"
+}

@@ -1,0 +1,1014 @@
+{
+  "schema": "devine_quality_batch_v1",
+  "exportedAt": "2026-09-01T08:30:03.627120+00:00",
+  "audioRoot": "F:\\devine-master-fresh\\Audio",
+  "mode": "gate",
+  "fileCount": 39,
+  "rows": [
+    {
+      "file": "Espera_que_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Espera_que_mastered (2).mp3",
+      "input": {
+        "lufs": -9.722113498519787,
+        "tp": -1.0397854901538128,
+        "integratedLUFS": -9.722113498519787,
+        "truePeakdBTP": -1.0397854901538128,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Espera_que_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Espera_que_mastered (3).mp3",
+      "input": {
+        "lufs": -9.722113498519787,
+        "tp": -1.0397854901538128,
+        "integratedLUFS": -9.722113498519787,
+        "truePeakdBTP": -1.0397854901538128,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Espera_que_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Espera_que_mastered.mp3",
+      "input": {
+        "lufs": -9.722113498519787,
+        "tp": -1.0397854901538128,
+        "integratedLUFS": -9.722113498519787,
+        "truePeakdBTP": -1.0397854901538128,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Fireflies_in_Tar_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Fireflies_in_Tar_mastered (2).mp3",
+      "input": {
+        "lufs": -9.634669457461733,
+        "tp": -1.4830420108947417,
+        "integratedLUFS": -9.634669457461733,
+        "truePeakdBTP": -1.4830420108947417,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Fireflies_in_Tar_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Fireflies_in_Tar_mastered (3).mp3",
+      "input": {
+        "lufs": -9.634669457461733,
+        "tp": -1.4830420108947417,
+        "integratedLUFS": -9.634669457461733,
+        "truePeakdBTP": -1.4830420108947417,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Fireflies_in_Tar_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Fireflies_in_Tar_mastered.mp3",
+      "input": {
+        "lufs": -9.634669457461733,
+        "tp": -1.4830420108947417,
+        "integratedLUFS": -9.634669457461733,
+        "truePeakdBTP": -1.4830420108947417,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Frank_and_Folks_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Frank_and_Folks_mastered (2).mp3",
+      "input": {
+        "lufs": -9.917299183875722,
+        "tp": -0.2843644868952893,
+        "integratedLUFS": -9.917299183875722,
+        "truePeakdBTP": -0.2843644868952893,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.284 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Frank_and_Folks_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Frank_and_Folks_mastered (3).mp3",
+      "input": {
+        "lufs": -9.917299183875722,
+        "tp": -0.2843644868952893,
+        "integratedLUFS": -9.917299183875722,
+        "truePeakdBTP": -0.2843644868952893,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.284 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Frank_and_Folks_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Frank_and_Folks_mastered.mp3",
+      "input": {
+        "lufs": -9.917299183875722,
+        "tp": -0.2843644868952893,
+        "integratedLUFS": -9.917299183875722,
+        "truePeakdBTP": -0.2843644868952893,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.284 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Ill_make_the_world_shake_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Ill_make_the_world_shake_mastered (2).mp3",
+      "input": {
+        "lufs": -9.218494795983752,
+        "tp": -0.5377188878273624,
+        "integratedLUFS": -9.218494795983752,
+        "truePeakdBTP": -0.5377188878273624,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.538 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Ill_make_the_world_shake_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Ill_make_the_world_shake_mastered (3).mp3",
+      "input": {
+        "lufs": -9.218494795983752,
+        "tp": -0.5377188878273624,
+        "integratedLUFS": -9.218494795983752,
+        "truePeakdBTP": -0.5377188878273624,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.538 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Ill_make_the_world_shake_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Ill_make_the_world_shake_mastered.mp3",
+      "input": {
+        "lufs": -9.218494795983752,
+        "tp": -0.5377188878273624,
+        "integratedLUFS": -9.218494795983752,
+        "truePeakdBTP": -0.5377188878273624,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.538 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Neon_Jesus_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Neon_Jesus_mastered (2).mp3",
+      "input": {
+        "lufs": -9.859882111548599,
+        "tp": -1.49806708308643,
+        "integratedLUFS": -9.859882111548599,
+        "truePeakdBTP": -1.49806708308643,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Neon_Jesus_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Neon_Jesus_mastered (3).mp3",
+      "input": {
+        "lufs": -9.859882111548599,
+        "tp": -1.49806708308643,
+        "integratedLUFS": -9.859882111548599,
+        "truePeakdBTP": -1.49806708308643,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Neon_Jesus_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Neon_Jesus_mastered.mp3",
+      "input": {
+        "lufs": -9.859882111548599,
+        "tp": -1.49806708308643,
+        "integratedLUFS": -9.859882111548599,
+        "truePeakdBTP": -1.49806708308643,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "One_way_Love_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\One_way_Love_mastered (2).mp3",
+      "input": {
+        "lufs": -10.228372126167327,
+        "tp": -1.1947178897945612,
+        "integratedLUFS": -10.228372126167327,
+        "truePeakdBTP": -1.1947178897945612,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "One_way_Love_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\One_way_Love_mastered (3).mp3",
+      "input": {
+        "lufs": -10.228372126167327,
+        "tp": -1.1947178897945612,
+        "integratedLUFS": -10.228372126167327,
+        "truePeakdBTP": -1.1947178897945612,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "One_way_Love_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\One_way_Love_mastered.mp3",
+      "input": {
+        "lufs": -10.228372126167327,
+        "tp": -1.1947178897945612,
+        "integratedLUFS": -10.228372126167327,
+        "truePeakdBTP": -1.1947178897945612,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "ooh_ah_Alive_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\ooh_ah_Alive_mastered (2).mp3",
+      "input": {
+        "lufs": -9.477186076114998,
+        "tp": -0.5137829335281249,
+        "integratedLUFS": -9.477186076114998,
+        "truePeakdBTP": -0.5137829335281249,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.514 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "ooh_ah_Alive_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\ooh_ah_Alive_mastered (3).mp3",
+      "input": {
+        "lufs": -9.477186076114998,
+        "tp": -0.5137829335281249,
+        "integratedLUFS": -9.477186076114998,
+        "truePeakdBTP": -0.5137829335281249,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.514 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "ooh_ah_Alive_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\ooh_ah_Alive_mastered.mp3",
+      "input": {
+        "lufs": -9.477186076114998,
+        "tp": -0.5137829335281249,
+        "integratedLUFS": -9.477186076114998,
+        "truePeakdBTP": -0.5137829335281249,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.514 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Pew_Pew_General_Bum_Wing_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Pew_Pew_General_Bum_Wing_mastered (2).mp3",
+      "input": {
+        "lufs": -9.756096279573255,
+        "tp": -1.0893208972644914,
+        "integratedLUFS": -9.756096279573255,
+        "truePeakdBTP": -1.0893208972644914,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Pew_Pew_General_Bum_Wing_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Pew_Pew_General_Bum_Wing_mastered (3).mp3",
+      "input": {
+        "lufs": -9.756096279573255,
+        "tp": -1.0893208972644914,
+        "integratedLUFS": -9.756096279573255,
+        "truePeakdBTP": -1.0893208972644914,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Pew_Pew_General_Bum_Wing_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Pew_Pew_General_Bum_Wing_mastered.mp3",
+      "input": {
+        "lufs": -9.756096279573255,
+        "tp": -1.0893208972644914,
+        "integratedLUFS": -9.756096279573255,
+        "truePeakdBTP": -1.0893208972644914,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Snake_eyes_sold_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Snake_eyes_sold_mastered (2).mp3",
+      "input": {
+        "lufs": -9.552097818673417,
+        "tp": -1.1662283824754993,
+        "integratedLUFS": -9.552097818673417,
+        "truePeakdBTP": -1.1662283824754993,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Snake_eyes_sold_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Snake_eyes_sold_mastered (3).mp3",
+      "input": {
+        "lufs": -9.552097818673417,
+        "tp": -1.1662283824754993,
+        "integratedLUFS": -9.552097818673417,
+        "truePeakdBTP": -1.1662283824754993,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Snake_eyes_sold_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Snake_eyes_sold_mastered.mp3",
+      "input": {
+        "lufs": -9.552097818673417,
+        "tp": -1.1662283824754993,
+        "integratedLUFS": -9.552097818673417,
+        "truePeakdBTP": -1.1662283824754993,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The_Beforedays_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\The_Beforedays_mastered (2).mp3",
+      "input": {
+        "lufs": -10.033464218128584,
+        "tp": -1.4081737441536153,
+        "integratedLUFS": -10.033464218128584,
+        "truePeakdBTP": -1.4081737441536153,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The_Beforedays_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\The_Beforedays_mastered (3).mp3",
+      "input": {
+        "lufs": -10.033464218128584,
+        "tp": -1.4081737441536153,
+        "integratedLUFS": -10.033464218128584,
+        "truePeakdBTP": -1.4081737441536153,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The_Beforedays_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\The_Beforedays_mastered.mp3",
+      "input": {
+        "lufs": -10.033464218128584,
+        "tp": -1.4081737441536153,
+        "integratedLUFS": -10.033464218128584,
+        "truePeakdBTP": -1.4081737441536153,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The_One_That_Got_Away_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\The_One_That_Got_Away_mastered (2).mp3",
+      "input": {
+        "lufs": -10.692306628189417,
+        "tp": -0.7580671830122455,
+        "integratedLUFS": -10.692306628189417,
+        "truePeakdBTP": -0.7580671830122455,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.758 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The_One_That_Got_Away_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\The_One_That_Got_Away_mastered (3).mp3",
+      "input": {
+        "lufs": -10.692306628189417,
+        "tp": -0.7580671830122455,
+        "integratedLUFS": -10.692306628189417,
+        "truePeakdBTP": -0.7580671830122455,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.758 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The_One_That_Got_Away_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\The_One_That_Got_Away_mastered.mp3",
+      "input": {
+        "lufs": -10.692306628189417,
+        "tp": -0.7580671830122455,
+        "integratedLUFS": -10.692306628189417,
+        "truePeakdBTP": -0.7580671830122455,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.758 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The_Winds_Against_Your_Ways_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\The_Winds_Against_Your_Ways_mastered (2).mp3",
+      "input": {
+        "lufs": -11.739850823799,
+        "tp": -0.7261236081314051,
+        "integratedLUFS": -11.739850823799,
+        "truePeakdBTP": -0.7261236081314051,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.726 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The_Winds_Against_Your_Ways_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\The_Winds_Against_Your_Ways_mastered (3).mp3",
+      "input": {
+        "lufs": -11.739850823799,
+        "tp": -0.7261236081314051,
+        "integratedLUFS": -11.739850823799,
+        "truePeakdBTP": -0.7261236081314051,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.726 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The_Winds_Against_Your_Ways_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\The_Winds_Against_Your_Ways_mastered.mp3",
+      "input": {
+        "lufs": -11.739850823799,
+        "tp": -0.7261236081314051,
+        "integratedLUFS": -11.739850823799,
+        "truePeakdBTP": -0.7261236081314051,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.726 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Vagalumes_no_Alcatrao_mastered (2).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Vagalumes_no_Alcatrao_mastered (2).mp3",
+      "input": {
+        "lufs": -9.285259182133458,
+        "tp": -1.0591757568536597,
+        "integratedLUFS": -9.285259182133458,
+        "truePeakdBTP": -1.0591757568536597,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Vagalumes_no_Alcatrao_mastered (3).mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Vagalumes_no_Alcatrao_mastered (3).mp3",
+      "input": {
+        "lufs": -9.285259182133458,
+        "tp": -1.0591757568536597,
+        "integratedLUFS": -9.285259182133458,
+        "truePeakdBTP": -1.0591757568536597,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Vagalumes_no_Alcatrao_mastered.mp3",
+      "path": "F:\\devine-master-fresh\\Audio\\Vagalumes_no_Alcatrao_mastered.mp3",
+      "input": {
+        "lufs": -9.285259182133458,
+        "tp": -1.0591757568536597,
+        "integratedLUFS": -9.285259182133458,
+        "truePeakdBTP": -1.0591757568536597,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T17:39:46.132173+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Fireflies in Tar_mastered.wav",
+      "error": "[Errno 2] No such file or directory: 'F:\\\\devine-master-fresh\\\\Audio\\\\WAV\\\\WAV Devine\\\\Fireflies in Tar_mastered.wav'"
+    }
+  ]
+}

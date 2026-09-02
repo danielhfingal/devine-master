@@ -1,0 +1,321 @@
+{
+  "schema": "devine_quality_batch_v1",
+  "exportedAt": "2026-09-01T20:11:06.157388+00:00",
+  "audioRoot": "F:\\devine-master-fresh\\Audio\\WAV",
+  "mode": "gate",
+  "fileCount": 13,
+  "rows": [
+    {
+      "file": "...I\u2019ll make the world shake! _mastered.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\...I\u2019ll make the world shake! _mastered.wav",
+      "input": {
+        "lufs": -9.219052364769112,
+        "tp": -0.49663417899368323,
+        "integratedLUFS": -9.219052364769112,
+        "truePeakdBTP": -0.49663417899368323,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.497 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Espera, qu\u00ea - D. DeVine_mastered.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\Espera, qu\u00ea - D. DeVine_mastered.wav",
+      "input": {
+        "lufs": -9.721821444222451,
+        "tp": -1.045135734250865,
+        "integratedLUFS": -9.721821444222451,
+        "truePeakdBTP": -1.045135734250865,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Fireflies in Tar_mastered.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\Fireflies in Tar_mastered.wav",
+      "input": {
+        "lufs": -9.634309388726168,
+        "tp": -1.5284443595651276,
+        "integratedLUFS": -9.634309388726168,
+        "truePeakdBTP": -1.5284443595651276,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Frank & Folks_mastered.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\Frank & Folks_mastered.wav",
+      "input": {
+        "lufs": -9.917042844415437,
+        "tp": -0.24539751565524037,
+        "integratedLUFS": -9.917042844415437,
+        "truePeakdBTP": -0.24539751565524037,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.245 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Neon-Jesus_mastered.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\Neon-Jesus_mastered.wav",
+      "input": {
+        "lufs": -9.859418890473775,
+        "tp": -1.5221578281320536,
+        "integratedLUFS": -9.859418890473775,
+        "truePeakdBTP": -1.5221578281320536,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "One-way Love - I wish she dreams tonight.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\One-way Love - I wish she dreams tonight.wav",
+      "input": {
+        "lufs": -10.227746708831067,
+        "tp": -1.2737689852844798,
+        "integratedLUFS": -10.227746708831067,
+        "truePeakdBTP": -1.2737689852844798,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "ooh...ah...Alive_mastered.wav",
+      "error": "Error opening 'F:\\\\devine-master-fresh\\\\Audio\\\\WAV\\\\ooh...ah...Alive_mastered.wav': Format not recognised."
+    },
+    {
+      "file": "Pew Pew - General bum wing_mastered.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\Pew Pew - General bum wing_mastered.wav",
+      "input": {
+        "lufs": -9.755790959393563,
+        "tp": -1.1494198023363893,
+        "integratedLUFS": -9.755790959393563,
+        "truePeakdBTP": -1.1494198023363893,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Sorry, not sorry Deuce - Snake eyes sold, double ones, rolled!!_mastered.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\Sorry, not sorry Deuce - Snake eyes sold, double ones, rolled!!_mastered.wav",
+      "input": {
+        "lufs": -9.551656820654255,
+        "tp": -1.2101819551269184,
+        "integratedLUFS": -9.551656820654255,
+        "truePeakdBTP": -1.2101819551269184,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The Beforedays_mastered.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\The Beforedays_mastered.wav",
+      "input": {
+        "lufs": -10.033010749811174,
+        "tp": -1.42159931174033,
+        "integratedLUFS": -10.033010749811174,
+        "truePeakdBTP": -1.42159931174033,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 48000,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The One That Got Away_mastered.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\The One That Got Away_mastered.wav",
+      "input": {
+        "lufs": -10.692053537651516,
+        "tp": -0.7770029312149068,
+        "integratedLUFS": -10.692053537651516,
+        "truePeakdBTP": -0.7770029312149068,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.777 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The Wind's Against Your Ways_mastered.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\The Wind's Against Your Ways_mastered.wav",
+      "input": {
+        "lufs": -11.739571001078696,
+        "tp": -0.8512585807822721,
+        "integratedLUFS": -11.739571001078696,
+        "truePeakdBTP": -0.8512585807822721,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": false,
+        "streamingEligible": false,
+        "hardFails": [
+          "True Peak -0.851 dBTP > -1.0+0.05"
+        ],
+        "softWarns": [],
+        "hardFailCount": 1,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Vagalumes no Alcatr\u00e3o - D. DeVine_mastered.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\Vagalumes no Alcatr\u00e3o - D. DeVine_mastered.wav",
+      "input": {
+        "lufs": -9.285007299852083,
+        "tp": -1.1086253577166532,
+        "integratedLUFS": -9.285007299852083,
+        "truePeakdBTP": -1.1086253577166532,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:53:13.886406+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "ooh ah_Vocals.wav",
+      "out": "tracks\\analysis\\ooh_ah_Vocals_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "C#",
+          "seconds": 43.56,
+          "share": 0.238
+        },
+        {
+          "chord": "C#m",
+          "seconds": 41.42,
+          "share": 0.227
+        },
+        {
+          "chord": "Bm",
+          "seconds": 17.74,
+          "share": 0.097
+        }
+      ],
+      "nSegments": 68
+    }
+  ]
+}

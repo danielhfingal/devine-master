@@ -1,0 +1,199 @@
+{
+  "schema": "devine-stem-tempo-key-pass/v1",
+  "track": "Pew Pew_Vocals",
+  "pass": "stem-tempo-key-batch-2026-08-26",
+  "engine": "batch_stemlab \u00b7 STFT HPSS + template masks \u00b7 bass-weighted key \u00b7 drums-weighted tempo",
+  "notDemucs": true,
+  "keyLocked": false,
+  "tempoLocked": false,
+  "tempo": {},
+  "key": {
+    "Vocals": {
+      "body": [
+        {
+          "key": "D",
+          "mode": "major",
+          "camelot": "10B",
+          "corr": 0.923
+        },
+        {
+          "key": "D",
+          "mode": "minor",
+          "camelot": "7A",
+          "corr": 0.922
+        },
+        {
+          "key": "B",
+          "mode": "minor",
+          "camelot": "10A",
+          "corr": 0.922
+        },
+        {
+          "key": "F",
+          "mode": "minor",
+          "camelot": "4A",
+          "corr": 0.908
+        },
+        {
+          "key": "G",
+          "mode": "major",
+          "camelot": "9B",
+          "corr": 0.905
+        }
+      ],
+      "mid": [
+        {
+          "key": "D",
+          "mode": "major",
+          "camelot": "10B",
+          "corr": 0.923
+        },
+        {
+          "key": "D",
+          "mode": "minor",
+          "camelot": "7A",
+          "corr": 0.922
+        },
+        {
+          "key": "B",
+          "mode": "minor",
+          "camelot": "10A",
+          "corr": 0.922
+        },
+        {
+          "key": "F",
+          "mode": "minor",
+          "camelot": "4A",
+          "corr": 0.908
+        },
+        {
+          "key": "G",
+          "mode": "major",
+          "camelot": "9B",
+          "corr": 0.905
+        }
+      ]
+    }
+  },
+  "key_ensemble": [
+    {
+      "key": "E",
+      "mode": "major",
+      "camelot": "12B",
+      "score": 0.892
+    },
+    {
+      "key": "E",
+      "mode": "minor",
+      "camelot": "9A",
+      "score": 0.871
+    },
+    {
+      "key": "C#",
+      "mode": "minor",
+      "camelot": "12A",
+      "score": 0.864
+    },
+    {
+      "key": "B",
+      "mode": "major",
+      "camelot": "1B",
+      "score": 0.851
+    },
+    {
+      "key": "C",
+      "mode": "major",
+      "camelot": "8B",
+      "score": 0.85
+    },
+    {
+      "key": "A",
+      "mode": "minor",
+      "camelot": "8A",
+      "score": 0.85
+    }
+  ],
+  "key_working": {
+    "key": "E",
+    "mode": "major",
+    "camelot": "12B",
+    "locked": false,
+    "confidence": "stem-mix"
+  },
+  "tempo_working": {
+    "bpm": 136.0,
+    "locked": false,
+    "confidence": "stem-mix"
+  },
+  "mix": {
+    "lufs": -20.9,
+    "peakDb": -0.5
+  },
+  "stems": [
+    {
+      "id": "vocals",
+      "label": "Vocals",
+      "presence": 0.35,
+      "lufs": -25.5,
+      "peakDb": -5.2,
+      "key": {
+        "key": "D",
+        "mode": "major",
+        "camelot": "10B",
+        "confidence": 0.28
+      },
+      "tempo": null
+    },
+    {
+      "id": "drums",
+      "label": "Drums",
+      "presence": 0.01,
+      "lufs": -40.5,
+      "peakDb": -3.6,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "bass",
+      "label": "Bass",
+      "presence": 0.02,
+      "lufs": -37.1,
+      "peakDb": -13.6,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "guitar",
+      "label": "Guitar",
+      "presence": 0.0,
+      "lufs": -47.4,
+      "peakDb": -19.0,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "keys",
+      "label": "Keys",
+      "presence": 0.07,
+      "lufs": -32.4,
+      "peakDb": -10.4,
+      "key": null,
+      "tempo": null
+    },
+    {
+      "id": "other",
+      "label": "Other",
+      "presence": 0.01,
+      "lufs": -43.4,
+      "peakDb": -15.3,
+      "key": null,
+      "tempo": null
+    }
+  ],
+  "summary": {
+    "tempo": 136.0,
+    "key": "E major 12B",
+    "locked": false
+  },
+  "updatedAt": "2026-08-26T00:19:02.143Z"
+}

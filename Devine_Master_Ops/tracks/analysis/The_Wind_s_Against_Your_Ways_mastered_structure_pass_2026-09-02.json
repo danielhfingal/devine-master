@@ -1,0 +1,268 @@
+{
+  "schema": "devine-structure-pass/v1",
+  "track": "The Wind's Against Your Ways_mastered",
+  "source": "F:\\devine-master-fresh\\Audio\\WAV\\The Wind's Against Your Ways_mastered.wav",
+  "pass": "structure-novelty-v1-2026-09-02",
+  "engine": "rms_flux_novelty_peakpick",
+  "hints": {
+    "bpm": null
+  },
+  "measurement": {
+    "sr": 22050,
+    "durationSec": 247.68,
+    "hop": 1024,
+    "minSepSec": 8.0,
+    "estimatedBars44": null
+  },
+  "summary": {
+    "nSections": 25,
+    "labels": [
+      "bridge",
+      "chorus",
+      "intro",
+      "outro",
+      "verse"
+    ],
+    "boundariesSec": [
+      0.0,
+      11.889,
+      22.895,
+      33.715,
+      45.79,
+      56.007,
+      65.155,
+      73.236,
+      81.874,
+      91.162,
+      101.564,
+      111.084,
+      119.072,
+      129.335,
+      137.648,
+      145.636,
+      157.06,
+      165.14,
+      173.128,
+      181.162,
+      189.196,
+      198.531,
+      206.518,
+      219.382,
+      227.695,
+      247.68
+    ]
+  },
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 11.889,
+      "duration": 11.889,
+      "energy": 0.15964,
+      "label": "intro",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 11.889,
+      "end": 22.895,
+      "duration": 11.006,
+      "energy": 0.154797,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 22.895,
+      "end": 33.715,
+      "duration": 10.82,
+      "energy": 0.164166,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 33.715,
+      "end": 45.79,
+      "duration": 12.075,
+      "energy": 0.159682,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 45.79,
+      "end": 56.007,
+      "duration": 10.217,
+      "energy": 0.163176,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 56.007,
+      "end": 65.155,
+      "duration": 9.148,
+      "energy": 0.205237,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 65.155,
+      "end": 73.236,
+      "duration": 8.081,
+      "energy": 0.213327,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 73.236,
+      "end": 81.874,
+      "duration": 8.638,
+      "energy": 0.219375,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 81.874,
+      "end": 91.162,
+      "duration": 9.288,
+      "energy": 0.218481,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 91.162,
+      "end": 101.564,
+      "duration": 10.402,
+      "energy": 0.196978,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 101.564,
+      "end": 111.084,
+      "duration": 9.52,
+      "energy": 0.211274,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 111.084,
+      "end": 119.072,
+      "duration": 7.988,
+      "energy": 0.202925,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 119.072,
+      "end": 129.335,
+      "duration": 10.263,
+      "energy": 0.200062,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 129.335,
+      "end": 137.648,
+      "duration": 8.313,
+      "energy": 0.211388,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 137.648,
+      "end": 145.636,
+      "duration": 7.988,
+      "energy": 0.212273,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 145.636,
+      "end": 157.06,
+      "duration": 11.424,
+      "energy": 0.209842,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 157.06,
+      "end": 165.14,
+      "duration": 8.08,
+      "energy": 0.211612,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 165.14,
+      "end": 173.128,
+      "duration": 7.988,
+      "energy": 0.209826,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 173.128,
+      "end": 181.162,
+      "duration": 8.034,
+      "energy": 0.216818,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 181.162,
+      "end": 189.196,
+      "duration": 8.034,
+      "energy": 0.227444,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 189.196,
+      "end": 198.531,
+      "duration": 9.335,
+      "energy": 0.219813,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 198.531,
+      "end": 206.518,
+      "duration": 7.987,
+      "energy": 0.226157,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 206.518,
+      "end": 219.382,
+      "duration": 12.864,
+      "energy": 0.210938,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 219.382,
+      "end": 227.695,
+      "duration": 8.313,
+      "energy": 0.214803,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 227.695,
+      "end": 247.68,
+      "duration": 19.985,
+      "energy": 0.114332,
+      "label": "outro",
+      "labelStatus": "provisional"
+    }
+  ],
+  "quality": {
+    "earRequired": false,
+    "boundaryStatus": "machine",
+    "labelStatus": "provisional",
+    "notes": [
+      "Boundaries primary; labels heuristic.",
+      "BPM snaps to bar grid when provided."
+    ],
+    "refuse": "Do not lock labels without human gate."
+  },
+  "updatedAt": "2026-09-02T19:06:07.624959+00:00"
+}

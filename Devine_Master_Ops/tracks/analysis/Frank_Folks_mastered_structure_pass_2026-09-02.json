@@ -1,0 +1,232 @@
+{
+  "schema": "devine-structure-pass/v1",
+  "track": "Frank & Folks_mastered",
+  "source": "F:\\devine-master-fresh\\Audio\\WAV\\Frank & Folks_mastered.wav",
+  "pass": "structure-novelty-v1-2026-09-02",
+  "engine": "rms_flux_novelty_peakpick",
+  "hints": {
+    "bpm": null
+  },
+  "measurement": {
+    "sr": 22050,
+    "durationSec": 189.696,
+    "hop": 1024,
+    "minSepSec": 8.0,
+    "estimatedBars44": null
+  },
+  "summary": {
+    "nSections": 21,
+    "labels": [
+      "bridge",
+      "chorus",
+      "intro",
+      "outro",
+      "verse"
+    ],
+    "boundariesSec": [
+      0.0,
+      13.746,
+      22.709,
+      32.74,
+      40.914,
+      49.041,
+      58.375,
+      71.843,
+      80.062,
+      89.025,
+      97.013,
+      105.001,
+      113.035,
+      123.948,
+      132.214,
+      140.388,
+      148.608,
+      156.735,
+      165.001,
+      173.36,
+      181.534,
+      189.696
+    ]
+  },
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 13.746,
+      "duration": 13.746,
+      "energy": 0.150554,
+      "label": "intro",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 13.746,
+      "end": 22.709,
+      "duration": 8.963,
+      "energy": 0.220573,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 22.709,
+      "end": 32.74,
+      "duration": 10.031,
+      "energy": 0.205609,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 32.74,
+      "end": 40.914,
+      "duration": 8.174,
+      "energy": 0.225608,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 40.914,
+      "end": 49.041,
+      "duration": 8.127,
+      "energy": 0.276476,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 49.041,
+      "end": 58.375,
+      "duration": 9.334,
+      "energy": 0.276582,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 58.375,
+      "end": 71.843,
+      "duration": 13.468,
+      "energy": 0.200498,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 71.843,
+      "end": 80.062,
+      "duration": 8.219,
+      "energy": 0.299271,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 80.062,
+      "end": 89.025,
+      "duration": 8.963,
+      "energy": 0.255567,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 89.025,
+      "end": 97.013,
+      "duration": 7.988,
+      "energy": 0.170566,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 97.013,
+      "end": 105.001,
+      "duration": 7.988,
+      "energy": 0.266334,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 105.001,
+      "end": 113.035,
+      "duration": 8.034,
+      "energy": 0.260873,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 113.035,
+      "end": 123.948,
+      "duration": 10.913,
+      "energy": 0.19116,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 123.948,
+      "end": 132.214,
+      "duration": 8.266,
+      "energy": 0.14414,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 132.214,
+      "end": 140.388,
+      "duration": 8.174,
+      "energy": 0.294397,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 140.388,
+      "end": 148.608,
+      "duration": 8.22,
+      "energy": 0.304358,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 148.608,
+      "end": 156.735,
+      "duration": 8.127,
+      "energy": 0.297019,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 156.735,
+      "end": 165.001,
+      "duration": 8.266,
+      "energy": 0.329248,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 165.001,
+      "end": 173.36,
+      "duration": 8.359,
+      "energy": 0.180249,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 173.36,
+      "end": 181.534,
+      "duration": 8.174,
+      "energy": 0.388529,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 181.534,
+      "end": 189.696,
+      "duration": 8.162,
+      "energy": 0.195664,
+      "label": "outro",
+      "labelStatus": "provisional"
+    }
+  ],
+  "quality": {
+    "earRequired": false,
+    "boundaryStatus": "machine",
+    "labelStatus": "provisional",
+    "notes": [
+      "Boundaries primary; labels heuristic.",
+      "BPM snaps to bar grid when provided."
+    ],
+    "refuse": "Do not lock labels without human gate."
+  },
+  "updatedAt": "2026-09-02T19:06:02.006503+00:00"
+}

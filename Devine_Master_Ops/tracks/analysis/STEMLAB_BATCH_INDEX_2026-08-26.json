@@ -1,0 +1,627 @@
+{
+  "schema": "devine-stemlab-session-index/v1",
+  "session": "batch-2026-08-26T002536Z",
+  "count": 77,
+  "ok": 77,
+  "skipped": 0,
+  "errors": 0,
+  "passes": [
+    {
+      "track": "Espera_que_mastered (2)",
+      "source": "F:\\devine-master-fresh\\Audio\\Espera_que_mastered (2).mp3",
+      "status": "ok",
+      "outputs": [
+        "Espera_que_mastered_2_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Espera_que_mastered (3)",
+      "source": "F:\\devine-master-fresh\\Audio\\Espera_que_mastered (3).mp3",
+      "status": "ok",
+      "outputs": [
+        "Espera_que_mastered_3_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Espera_que_mastered",
+      "source": "F:\\devine-master-fresh\\Audio\\Espera_que_mastered.mp3",
+      "status": "ok",
+      "outputs": [
+        "Espera_que_mastered_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Espere Que_Bass",
+      "source": "F:\\devine-master-fresh\\Audio\\Espere Que_Bass.wav",
+      "status": "ok",
+      "outputs": [
+        "Espere_Que_Bass_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Espere Que_Drums",
+      "source": "F:\\devine-master-fresh\\Audio\\Espere Que_Drums.wav",
+      "status": "ok",
+      "outputs": [
+        "Espere_Que_Drums_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Espere Que_Guitar",
+      "source": "F:\\devine-master-fresh\\Audio\\Espere Que_Guitar.wav",
+      "status": "ok",
+      "outputs": [
+        "Espere_Que_Guitar_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Espere Que_Instrumental",
+      "source": "F:\\devine-master-fresh\\Audio\\Espere Que_Instrumental.wav",
+      "status": "ok",
+      "outputs": [
+        "Espere_Que_Instrumental_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Espere Que_Vocals",
+      "source": "F:\\devine-master-fresh\\Audio\\Espere Que_Vocals.wav",
+      "status": "ok",
+      "outputs": [
+        "Espere_Que_Vocals_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Fireflies_in_Tar_mastered (2)",
+      "source": "F:\\devine-master-fresh\\Audio\\Fireflies_in_Tar_mastered (2).mp3",
+      "status": "ok",
+      "outputs": [
+        "Fireflies_in_Tar_mastered_2_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Fireflies_in_Tar_mastered (3)",
+      "source": "F:\\devine-master-fresh\\Audio\\Fireflies_in_Tar_mastered (3).mp3",
+      "status": "ok",
+      "outputs": [
+        "Fireflies_in_Tar_mastered_3_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Fireflies_in_Tar_mastered",
+      "source": "F:\\devine-master-fresh\\Audio\\Fireflies_in_Tar_mastered.mp3",
+      "status": "ok",
+      "outputs": [
+        "Fireflies_in_Tar_mastered_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Frank & Folks_Bass",
+      "source": "F:\\devine-master-fresh\\Audio\\Frank & Folks_Bass.wav",
+      "status": "ok",
+      "outputs": [
+        "Frank_Folks_Bass_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Frank & Folks_Drums",
+      "source": "F:\\devine-master-fresh\\Audio\\Frank & Folks_Drums.wav",
+      "status": "ok",
+      "outputs": [
+        "Frank_Folks_Drums_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Frank & Folks_Instrumental",
+      "source": "F:\\devine-master-fresh\\Audio\\Frank & Folks_Instrumental.wav",
+      "status": "ok",
+      "outputs": [
+        "Frank_Folks_Instrumental_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Frank & Folks_Other",
+      "source": "F:\\devine-master-fresh\\Audio\\Frank & Folks_Other.wav",
+      "status": "ok",
+      "outputs": [
+        "Frank_Folks_Other_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Frank & Folks_Vocals",
+      "source": "F:\\devine-master-fresh\\Audio\\Frank & Folks_Vocals.wav",
+      "status": "ok",
+      "outputs": [
+        "Frank_Folks_Vocals_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Frank_and_Folks_mastered (2)",
+      "source": "F:\\devine-master-fresh\\Audio\\Frank_and_Folks_mastered (2).mp3",
+      "status": "ok",
+      "outputs": [
+        "Frank_and_Folks_mastered_2_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Frank_and_Folks_mastered (3)",
+      "source": "F:\\devine-master-fresh\\Audio\\Frank_and_Folks_mastered (3).mp3",
+      "status": "ok",
+      "outputs": [
+        "Frank_and_Folks_mastered_3_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Frank_and_Folks_mastered",
+      "source": "F:\\devine-master-fresh\\Audio\\Frank_and_Folks_mastered.mp3",
+      "status": "ok",
+      "outputs": [
+        "Frank_and_Folks_mastered_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Ill make the world_Bass",
+      "source": "F:\\devine-master-fresh\\Audio\\Ill make the world_Bass.wav",
+      "status": "ok",
+      "outputs": [
+        "Ill_make_the_world_Bass_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Ill make the world_Drums",
+      "source": "F:\\devine-master-fresh\\Audio\\Ill make the world_Drums.wav",
+      "status": "ok",
+      "outputs": [
+        "Ill_make_the_world_Drums_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Ill make the world_Instrumental",
+      "source": "F:\\devine-master-fresh\\Audio\\Ill make the world_Instrumental.wav",
+      "status": "ok",
+      "outputs": [
+        "Ill_make_the_world_Instrumental_stem_tempo_key_pass_2026-08-25.json"
+      ]
+    },
+    {
+      "track": "Ill make the world_Other",
+      "source": "F:\\devine-master-fresh\\Audio\\Ill make the world_Other.wav",
+      "status": "ok",
+      "outputs": [
+        "Ill_make_the_world_Other_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Ill make the world_Piano",
+      "source": "F:\\devine-master-fresh\\Audio\\Ill make the world_Piano.wav",
+      "status": "ok",
+      "outputs": [
+        "Ill_make_the_world_Piano_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Ill make the world_Vocals",
+      "source": "F:\\devine-master-fresh\\Audio\\Ill make the world_Vocals.wav",
+      "status": "ok",
+      "outputs": [
+        "Ill_make_the_world_Vocals_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Ill_make_the_world_shake_mastered (2)",
+      "source": "F:\\devine-master-fresh\\Audio\\Ill_make_the_world_shake_mastered (2).mp3",
+      "status": "ok",
+      "outputs": [
+        "Ill_make_the_world_shake_mastered_2_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Ill_make_the_world_shake_mastered (3)",
+      "source": "F:\\devine-master-fresh\\Audio\\Ill_make_the_world_shake_mastered (3).mp3",
+      "status": "ok",
+      "outputs": [
+        "Ill_make_the_world_shake_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Ill_make_the_world_shake_mastered",
+      "source": "F:\\devine-master-fresh\\Audio\\Ill_make_the_world_shake_mastered.mp3",
+      "status": "ok",
+      "outputs": [
+        "Ill_make_the_world_shake_mastered_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Neon-Jesus_Bass",
+      "source": "F:\\devine-master-fresh\\Audio\\Neon-Jesus_Bass.wav",
+      "status": "ok",
+      "outputs": [
+        "Neon-Jesus_Bass_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Neon-Jesus_Drums",
+      "source": "F:\\devine-master-fresh\\Audio\\Neon-Jesus_Drums.wav",
+      "status": "ok",
+      "outputs": [
+        "Neon-Jesus_Drums_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Neon-Jesus_Instrumental",
+      "source": "F:\\devine-master-fresh\\Audio\\Neon-Jesus_Instrumental.wav",
+      "status": "ok",
+      "outputs": [
+        "Neon-Jesus_Instrumental_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Neon-Jesus_Other",
+      "source": "F:\\devine-master-fresh\\Audio\\Neon-Jesus_Other.wav",
+      "status": "ok",
+      "outputs": [
+        "Neon-Jesus_Other_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Neon-Jesus_Piano",
+      "source": "F:\\devine-master-fresh\\Audio\\Neon-Jesus_Piano.wav",
+      "status": "ok",
+      "outputs": [
+        "Neon-Jesus_Piano_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Neon-Jesus_Vocals",
+      "source": "F:\\devine-master-fresh\\Audio\\Neon-Jesus_Vocals.wav",
+      "status": "ok",
+      "outputs": [
+        "Neon-Jesus_Vocals_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Neon_Jesus_mastered (2)",
+      "source": "F:\\devine-master-fresh\\Audio\\Neon_Jesus_mastered (2).mp3",
+      "status": "ok",
+      "outputs": [
+        "Neon_Jesus_mastered_2_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Neon_Jesus_mastered (3)",
+      "source": "F:\\devine-master-fresh\\Audio\\Neon_Jesus_mastered (3).mp3",
+      "status": "ok",
+      "outputs": [
+        "Neon_Jesus_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Neon_Jesus_mastered",
+      "source": "F:\\devine-master-fresh\\Audio\\Neon_Jesus_mastered.mp3",
+      "status": "ok",
+      "outputs": [
+        "Neon_Jesus_mastered_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "One-Way Love_Bass",
+      "source": "F:\\devine-master-fresh\\Audio\\One-Way Love_Bass.wav",
+      "status": "ok",
+      "outputs": [
+        "One-Way_Love_Bass_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "One-Way Love_Drums",
+      "source": "F:\\devine-master-fresh\\Audio\\One-Way Love_Drums.wav",
+      "status": "ok",
+      "outputs": [
+        "One-Way_Love_Drums_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "One-Way Love_Instrumental",
+      "source": "F:\\devine-master-fresh\\Audio\\One-Way Love_Instrumental.mp3",
+      "status": "ok",
+      "outputs": [
+        "One-Way_Love_Instrumental_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "One-Way Love_Other",
+      "source": "F:\\devine-master-fresh\\Audio\\One-Way Love_Other.wav",
+      "status": "ok",
+      "outputs": [
+        "One-Way_Love_Other_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "One-Way Love_Piano",
+      "source": "F:\\devine-master-fresh\\Audio\\One-Way Love_Piano.wav",
+      "status": "ok",
+      "outputs": [
+        "One-Way_Love_Piano_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "One-Way Love_Vocals",
+      "source": "F:\\devine-master-fresh\\Audio\\One-Way Love_Vocals.mp3",
+      "status": "ok",
+      "outputs": [
+        "One-Way_Love_Vocals_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "One_way_Love_mastered (2)",
+      "source": "F:\\devine-master-fresh\\Audio\\One_way_Love_mastered (2).mp3",
+      "status": "ok",
+      "outputs": [
+        "One_way_Love_mastered_2_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "One_way_Love_mastered (3)",
+      "source": "F:\\devine-master-fresh\\Audio\\One_way_Love_mastered (3).mp3",
+      "status": "ok",
+      "outputs": [
+        "One_way_Love_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "One_way_Love_mastered",
+      "source": "F:\\devine-master-fresh\\Audio\\One_way_Love_mastered.mp3",
+      "status": "ok",
+      "outputs": [
+        "One_way_Love_mastered_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "ooh ah_Bass",
+      "source": "F:\\devine-master-fresh\\Audio\\ooh ah_Bass.wav",
+      "status": "ok",
+      "outputs": [
+        "ooh_ah_Bass_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "ooh ah_Drums",
+      "source": "F:\\devine-master-fresh\\Audio\\ooh ah_Drums.wav",
+      "status": "ok",
+      "outputs": [
+        "ooh_ah_Drums_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "ooh ah_Instrumental",
+      "source": "F:\\devine-master-fresh\\Audio\\ooh ah_Instrumental.wav",
+      "status": "ok",
+      "outputs": [
+        "ooh_ah_Instrumental_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "ooh ah_Other",
+      "source": "F:\\devine-master-fresh\\Audio\\ooh ah_Other.wav",
+      "status": "ok",
+      "outputs": [
+        "ooh_ah_Other_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "ooh ah_Vocals",
+      "source": "F:\\devine-master-fresh\\Audio\\ooh ah_Vocals.wav",
+      "status": "ok",
+      "outputs": [
+        "ooh_ah_Vocals_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "ooh_ah_Alive_mastered (2)",
+      "source": "F:\\devine-master-fresh\\Audio\\ooh_ah_Alive_mastered (2).mp3",
+      "status": "ok",
+      "outputs": [
+        "ooh_ah_Alive_mastered_2_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "ooh_ah_Alive_mastered (3)",
+      "source": "F:\\devine-master-fresh\\Audio\\ooh_ah_Alive_mastered (3).mp3",
+      "status": "ok",
+      "outputs": [
+        "ooh_ah_Alive_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "ooh_ah_Alive_mastered",
+      "source": "F:\\devine-master-fresh\\Audio\\ooh_ah_Alive_mastered.mp3",
+      "status": "ok",
+      "outputs": [
+        "ooh_ah_Alive_mastered_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Pew Pew_Bass",
+      "source": "F:\\devine-master-fresh\\Audio\\Pew Pew_Bass.wav",
+      "status": "ok",
+      "outputs": [
+        "Pew_Pew_Bass_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Pew Pew_Drums",
+      "source": "F:\\devine-master-fresh\\Audio\\Pew Pew_Drums.wav",
+      "status": "ok",
+      "outputs": [
+        "Pew_Pew_Drums_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Pew Pew_Instrumental",
+      "source": "F:\\devine-master-fresh\\Audio\\Pew Pew_Instrumental.wav",
+      "status": "ok",
+      "outputs": [
+        "Pew_Pew_Instrumental_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Pew Pew_Other",
+      "source": "F:\\devine-master-fresh\\Audio\\Pew Pew_Other.wav",
+      "status": "ok",
+      "outputs": [
+        "Pew_Pew_Other_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Pew Pew_Vocals",
+      "source": "F:\\devine-master-fresh\\Audio\\Pew Pew_Vocals.wav",
+      "status": "ok",
+      "outputs": [
+        "Pew_Pew_Vocals_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Pew_Pew_General_Bum_Wing_mastered (2)",
+      "source": "F:\\devine-master-fresh\\Audio\\Pew_Pew_General_Bum_Wing_mastered (2).mp3",
+      "status": "ok",
+      "outputs": [
+        "Pew_Pew_General_Bum_Wing_mastered_2_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Pew_Pew_General_Bum_Wing_mastered (3)",
+      "source": "F:\\devine-master-fresh\\Audio\\Pew_Pew_General_Bum_Wing_mastered (3).mp3",
+      "status": "ok",
+      "outputs": [
+        "Pew_Pew_General_Bum_Wing_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Pew_Pew_General_Bum_Wing_mastered",
+      "source": "F:\\devine-master-fresh\\Audio\\Pew_Pew_General_Bum_Wing_mastered.mp3",
+      "status": "ok",
+      "outputs": [
+        "Pew_Pew_General_Bum_Wing_mastered_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Snake_eyes_sold_mastered (2)",
+      "source": "F:\\devine-master-fresh\\Audio\\Snake_eyes_sold_mastered (2).mp3",
+      "status": "ok",
+      "outputs": [
+        "Snake_eyes_sold_mastered_2_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Snake_eyes_sold_mastered (3)",
+      "source": "F:\\devine-master-fresh\\Audio\\Snake_eyes_sold_mastered (3).mp3",
+      "status": "ok",
+      "outputs": [
+        "Snake_eyes_sold_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Snake_eyes_sold_mastered",
+      "source": "F:\\devine-master-fresh\\Audio\\Snake_eyes_sold_mastered.mp3",
+      "status": "ok",
+      "outputs": [
+        "Snake_eyes_sold_mastered_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "The_Beforedays_mastered (2)",
+      "source": "F:\\devine-master-fresh\\Audio\\The_Beforedays_mastered (2).mp3",
+      "status": "ok",
+      "outputs": [
+        "The_Beforedays_mastered_2_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "The_Beforedays_mastered (3)",
+      "source": "F:\\devine-master-fresh\\Audio\\The_Beforedays_mastered (3).mp3",
+      "status": "ok",
+      "outputs": [
+        "The_Beforedays_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "The_Beforedays_mastered",
+      "source": "F:\\devine-master-fresh\\Audio\\The_Beforedays_mastered.mp3",
+      "status": "ok",
+      "outputs": [
+        "The_Beforedays_mastered_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "The_One_That_Got_Away_mastered (2)",
+      "source": "F:\\devine-master-fresh\\Audio\\The_One_That_Got_Away_mastered (2).mp3",
+      "status": "ok",
+      "outputs": [
+        "The_One_That_Got_Away_mastered_2_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "The_One_That_Got_Away_mastered (3)",
+      "source": "F:\\devine-master-fresh\\Audio\\The_One_That_Got_Away_mastered (3).mp3",
+      "status": "ok",
+      "outputs": [
+        "The_One_That_Got_Away_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "The_One_That_Got_Away_mastered",
+      "source": "F:\\devine-master-fresh\\Audio\\The_One_That_Got_Away_mastered.mp3",
+      "status": "ok",
+      "outputs": [
+        "The_One_That_Got_Away_mastered_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "The_Winds_Against_Your_Ways_mastered (2)",
+      "source": "F:\\devine-master-fresh\\Audio\\The_Winds_Against_Your_Ways_mastered (2).mp3",
+      "status": "ok",
+      "outputs": [
+        "The_Winds_Against_Your_Ways_mastered_2_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "The_Winds_Against_Your_Ways_mastered (3)",
+      "source": "F:\\devine-master-fresh\\Audio\\The_Winds_Against_Your_Ways_mastered (3).mp3",
+      "status": "ok",
+      "outputs": [
+        "The_Winds_Against_Your_Ways_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "The_Winds_Against_Your_Ways_mastered",
+      "source": "F:\\devine-master-fresh\\Audio\\The_Winds_Against_Your_Ways_mastered.mp3",
+      "status": "ok",
+      "outputs": [
+        "The_Winds_Against_Your_Ways_mastered_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Vagalumes_no_Alcatrao_mastered (2)",
+      "source": "F:\\devine-master-fresh\\Audio\\Vagalumes_no_Alcatrao_mastered (2).mp3",
+      "status": "ok",
+      "outputs": [
+        "Vagalumes_no_Alcatrao_mastered_2_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Vagalumes_no_Alcatrao_mastered (3)",
+      "source": "F:\\devine-master-fresh\\Audio\\Vagalumes_no_Alcatrao_mastered (3).mp3",
+      "status": "ok",
+      "outputs": [
+        "Vagalumes_no_Alcatrao_mastered_3_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    },
+    {
+      "track": "Vagalumes_no_Alcatrao_mastered",
+      "source": "F:\\devine-master-fresh\\Audio\\Vagalumes_no_Alcatrao_mastered.mp3",
+      "status": "ok",
+      "outputs": [
+        "Vagalumes_no_Alcatrao_mastered_stem_tempo_key_pass_2026-08-26.json"
+      ]
+    }
+  ],
+  "updatedAt": "2026-08-26T00:25:36Z"
+}

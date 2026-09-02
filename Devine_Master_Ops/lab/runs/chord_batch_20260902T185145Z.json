@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:51:45.220680+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Frank & Folks_Vocals.wav",
+      "out": "tracks\\analysis\\Frank_Folks_Vocals_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "D",
+          "seconds": 25.26,
+          "share": 0.214
+        },
+        {
+          "chord": "G",
+          "seconds": 23.78,
+          "share": 0.202
+        },
+        {
+          "chord": "Dm",
+          "seconds": 17.37,
+          "share": 0.147
+        }
+      ],
+      "nSegments": 66
+    }
+  ]
+}

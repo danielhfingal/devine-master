@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:53:33.701923+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Pew Pew_Vocals.wav",
+      "out": "tracks\\analysis\\Pew_Pew_Vocals_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "F",
+          "seconds": 106.07,
+          "share": 0.492
+        },
+        {
+          "chord": "C",
+          "seconds": 24.8,
+          "share": 0.115
+        },
+        {
+          "chord": "A#",
+          "seconds": 23.31,
+          "share": 0.108
+        }
+      ],
+      "nSegments": 105
+    }
+  ]
+}

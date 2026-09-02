@@ -1,0 +1,711 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-01T23:52:43.324355+00:00",
+  "count": 32,
+  "rows": [
+    {
+      "file": "Espera, qu\u00ea - D. DeVine_mastered_S3b_g-1.6_DEVINE.wav",
+      "out": "tracks\\analysis\\Espera_qu\u00ea_-_D._DeVine_mastered_S3b_g-1.6_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "Bm",
+          "seconds": 82.76,
+          "share": 0.374
+        },
+        {
+          "chord": "Em",
+          "seconds": 49.23,
+          "share": 0.222
+        },
+        {
+          "chord": "F#",
+          "seconds": 40.22,
+          "share": 0.182
+        }
+      ],
+      "nSegments": 183
+    },
+    {
+      "file": "Espera, qu\u00ea_mastered_S3b_DEVINE.wav",
+      "out": "tracks\\analysis\\Espera_qu\u00ea_mastered_S3b_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "Bm",
+          "seconds": 80.71,
+          "share": 0.364
+        },
+        {
+          "chord": "Em",
+          "seconds": 48.02,
+          "share": 0.217
+        },
+        {
+          "chord": "F#",
+          "seconds": 46.25,
+          "share": 0.209
+        }
+      ],
+      "nSegments": 184
+    },
+    {
+      "file": "Frank & Folks_mastered_DEVINE.wav",
+      "out": "tracks\\analysis\\Frank_Folks_mastered_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "D",
+          "seconds": 111.36,
+          "share": 0.547
+        },
+        {
+          "chord": "Dm",
+          "seconds": 70.96,
+          "share": 0.348
+        },
+        {
+          "chord": "G",
+          "seconds": 9.2,
+          "share": 0.045
+        }
+      ],
+      "nSegments": 151
+    },
+    {
+      "file": "Frank & Folks_mastered_S3b_g-1.9_DEVINE (1).wav",
+      "out": "tracks\\analysis\\Frank_Folks_mastered_S3b_g-1.9_DEVINE_1__chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "D",
+          "seconds": 110.9,
+          "share": 0.544
+        },
+        {
+          "chord": "Dm",
+          "seconds": 71.52,
+          "share": 0.351
+        },
+        {
+          "chord": "G",
+          "seconds": 9.2,
+          "share": 0.045
+        }
+      ],
+      "nSegments": 152
+    },
+    {
+      "file": "I\u2019ll make the world shake! _mastered_DEVINE.wav",
+      "out": "tracks\\analysis\\I_ll_make_the_world_shake__mastered_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "A#m",
+          "seconds": 60.19,
+          "share": 0.257
+        },
+        {
+          "chord": "F",
+          "seconds": 49.13,
+          "share": 0.21
+        },
+        {
+          "chord": "D#",
+          "seconds": 34.18,
+          "share": 0.146
+        }
+      ],
+      "nSegments": 176
+    },
+    {
+      "file": "I\u2019ll make the world shake! _mastered_S3_DEVINE (1).wav",
+      "out": "tracks\\analysis\\I_ll_make_the_world_shake__mastered_S3_DEVINE_1__chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "A#m",
+          "seconds": 65.11,
+          "share": 0.28
+        },
+        {
+          "chord": "F",
+          "seconds": 53.41,
+          "share": 0.23
+        },
+        {
+          "chord": "D#",
+          "seconds": 32.23,
+          "share": 0.139
+        }
+      ],
+      "nSegments": 160
+    },
+    {
+      "file": "I\u2019ll make the world shake! _mastered_S3b_DEVINE.wav",
+      "out": "tracks\\analysis\\I_ll_make_the_world_shake__mastered_S3b_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "A#m",
+          "seconds": 61.39,
+          "share": 0.265
+        },
+        {
+          "chord": "F",
+          "seconds": 48.95,
+          "share": 0.211
+        },
+        {
+          "chord": "D#",
+          "seconds": 33.99,
+          "share": 0.147
+        }
+      ],
+      "nSegments": 157
+    },
+    {
+      "file": "Neon-Jesus_mastered_S3b_DEVINE.wav",
+      "out": "tracks\\analysis\\Neon-Jesus_mastered_S3b_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "E",
+          "seconds": 90.19,
+          "share": 0.344
+        },
+        {
+          "chord": "Em",
+          "seconds": 77.46,
+          "share": 0.296
+        },
+        {
+          "chord": "G",
+          "seconds": 30.74,
+          "share": 0.117
+        }
+      ],
+      "nSegments": 252
+    },
+    {
+      "file": "ooh...ah...Alive_mastered_DEVINE.wav",
+      "out": "tracks\\analysis\\ooh...ah...Alive_mastered_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "C#m",
+          "seconds": 90.09,
+          "share": 0.412
+        },
+        {
+          "chord": "C#",
+          "seconds": 50.9,
+          "share": 0.233
+        },
+        {
+          "chord": "F#m",
+          "seconds": 23.31,
+          "share": 0.107
+        }
+      ],
+      "nSegments": 165
+    },
+    {
+      "file": "Pew Pew - General bum wing_mastered_S3b_DEVINE.wav",
+      "out": "tracks\\analysis\\Pew_Pew_-_General_bum_wing_mastered_S3b_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "F",
+          "seconds": 83.78,
+          "share": 0.384
+        },
+        {
+          "chord": "A#",
+          "seconds": 44.21,
+          "share": 0.203
+        },
+        {
+          "chord": "Fm",
+          "seconds": 32.88,
+          "share": 0.151
+        }
+      ],
+      "nSegments": 162
+    },
+    {
+      "file": "Pew Pew - General bum wing_mastered_S3b_g-1.3_DEVINE.wav",
+      "out": "tracks\\analysis\\Pew_Pew_-_General_bum_wing_mastered_S3b_g-1.3_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "F",
+          "seconds": 86.75,
+          "share": 0.391
+        },
+        {
+          "chord": "A#",
+          "seconds": 44.58,
+          "share": 0.201
+        },
+        {
+          "chord": "Fm",
+          "seconds": 35.29,
+          "share": 0.159
+        }
+      ],
+      "nSegments": 172
+    },
+    {
+      "file": "The One That Got Away_mastered__S3_DEVINE (1).wav",
+      "out": "tracks\\analysis\\The_One_That_Got_Away_mastered__S3_DEVINE_1__chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "Dm",
+          "seconds": 62.69,
+          "share": 0.281
+        },
+        {
+          "chord": "D",
+          "seconds": 47.65,
+          "share": 0.214
+        },
+        {
+          "chord": "A#",
+          "seconds": 43.1,
+          "share": 0.193
+        }
+      ],
+      "nSegments": 175
+    },
+    {
+      "file": "The One That Got Away_mastered_DEVINE.wav",
+      "out": "tracks\\analysis\\The_One_That_Got_Away_mastered_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "Dm",
+          "seconds": 71.61,
+          "share": 0.321
+        },
+        {
+          "chord": "D",
+          "seconds": 44.12,
+          "share": 0.198
+        },
+        {
+          "chord": "A#",
+          "seconds": 42.63,
+          "share": 0.191
+        }
+      ],
+      "nSegments": 177
+    },
+    {
+      "file": "The Wind's Against Your Ways_mastered_DEVINE.wav",
+      "out": "tracks\\analysis\\The_Wind_s_Against_Your_Ways_mastered_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "Gm",
+          "seconds": 94.18,
+          "share": 0.352
+        },
+        {
+          "chord": "F",
+          "seconds": 53.87,
+          "share": 0.201
+        },
+        {
+          "chord": "D#",
+          "seconds": 37.71,
+          "share": 0.141
+        }
+      ],
+      "nSegments": 218
+    },
+    {
+      "file": "Vagalumes no Alcatr\u00e3o - D. DeVine_mastered.wav",
+      "out": "tracks\\analysis\\Vagalumes_no_Alcatr\u00e3o_-_D._DeVine_mastered_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "E",
+          "seconds": 57.59,
+          "share": 0.244
+        },
+        {
+          "chord": "Em",
+          "seconds": 55.64,
+          "share": 0.235
+        },
+        {
+          "chord": "Bm",
+          "seconds": 34.83,
+          "share": 0.147
+        }
+      ],
+      "nSegments": 166
+    },
+    {
+      "file": "Vagalumes no Alcatr\u00e3o - D. DeVine_mastered_S3b_g-2.0_DEVINE.wav",
+      "out": "tracks\\analysis\\Vagalumes_no_Alcatr\u00e3o_-_D._DeVine_mastered_S3b_g-2.0_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "E",
+          "seconds": 61.02,
+          "share": 0.258
+        },
+        {
+          "chord": "Em",
+          "seconds": 58.42,
+          "share": 0.247
+        },
+        {
+          "chord": "Bm",
+          "seconds": 30.37,
+          "share": 0.128
+        }
+      ],
+      "nSegments": 166
+    },
+    {
+      "file": "Espera, qu\u00ea - D. DeVine_mastered_S3b_g-1.6_DEVINE.wav",
+      "out": "tracks\\analysis\\Espera_qu\u00ea_-_D._DeVine_mastered_S3b_g-1.6_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "Bm",
+          "seconds": 82.76,
+          "share": 0.374
+        },
+        {
+          "chord": "Em",
+          "seconds": 49.23,
+          "share": 0.222
+        },
+        {
+          "chord": "F#",
+          "seconds": 40.22,
+          "share": 0.182
+        }
+      ],
+      "nSegments": 183
+    },
+    {
+      "file": "Espera, qu\u00ea_mastered_S3b_DEVINE.wav",
+      "out": "tracks\\analysis\\Espera_qu\u00ea_mastered_S3b_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "Bm",
+          "seconds": 80.71,
+          "share": 0.364
+        },
+        {
+          "chord": "Em",
+          "seconds": 48.02,
+          "share": 0.217
+        },
+        {
+          "chord": "F#",
+          "seconds": 46.25,
+          "share": 0.209
+        }
+      ],
+      "nSegments": 184
+    },
+    {
+      "file": "Frank & Folks_mastered_DEVINE.wav",
+      "out": "tracks\\analysis\\Frank_Folks_mastered_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "D",
+          "seconds": 111.36,
+          "share": 0.547
+        },
+        {
+          "chord": "Dm",
+          "seconds": 70.96,
+          "share": 0.348
+        },
+        {
+          "chord": "G",
+          "seconds": 9.2,
+          "share": 0.045
+        }
+      ],
+      "nSegments": 151
+    },
+    {
+      "file": "Frank & Folks_mastered_S3b_g-1.9_DEVINE (1).wav",
+      "out": "tracks\\analysis\\Frank_Folks_mastered_S3b_g-1.9_DEVINE_1__chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "D",
+          "seconds": 110.9,
+          "share": 0.544
+        },
+        {
+          "chord": "Dm",
+          "seconds": 71.52,
+          "share": 0.351
+        },
+        {
+          "chord": "G",
+          "seconds": 9.2,
+          "share": 0.045
+        }
+      ],
+      "nSegments": 152
+    },
+    {
+      "file": "I\u2019ll make the world shake! _mastered_DEVINE.wav",
+      "out": "tracks\\analysis\\I_ll_make_the_world_shake__mastered_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "A#m",
+          "seconds": 60.19,
+          "share": 0.257
+        },
+        {
+          "chord": "F",
+          "seconds": 49.13,
+          "share": 0.21
+        },
+        {
+          "chord": "D#",
+          "seconds": 34.18,
+          "share": 0.146
+        }
+      ],
+      "nSegments": 176
+    },
+    {
+      "file": "I\u2019ll make the world shake! _mastered_S3_DEVINE (1).wav",
+      "out": "tracks\\analysis\\I_ll_make_the_world_shake__mastered_S3_DEVINE_1__chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "A#m",
+          "seconds": 65.11,
+          "share": 0.28
+        },
+        {
+          "chord": "F",
+          "seconds": 53.41,
+          "share": 0.23
+        },
+        {
+          "chord": "D#",
+          "seconds": 32.23,
+          "share": 0.139
+        }
+      ],
+      "nSegments": 160
+    },
+    {
+      "file": "I\u2019ll make the world shake! _mastered_S3b_DEVINE.wav",
+      "out": "tracks\\analysis\\I_ll_make_the_world_shake__mastered_S3b_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "A#m",
+          "seconds": 61.39,
+          "share": 0.265
+        },
+        {
+          "chord": "F",
+          "seconds": 48.95,
+          "share": 0.211
+        },
+        {
+          "chord": "D#",
+          "seconds": 33.99,
+          "share": 0.147
+        }
+      ],
+      "nSegments": 157
+    },
+    {
+      "file": "Neon-Jesus_mastered_S3b_DEVINE.wav",
+      "out": "tracks\\analysis\\Neon-Jesus_mastered_S3b_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "E",
+          "seconds": 90.19,
+          "share": 0.344
+        },
+        {
+          "chord": "Em",
+          "seconds": 77.46,
+          "share": 0.296
+        },
+        {
+          "chord": "G",
+          "seconds": 30.74,
+          "share": 0.117
+        }
+      ],
+      "nSegments": 252
+    },
+    {
+      "file": "ooh...ah...Alive_mastered_DEVINE.wav",
+      "out": "tracks\\analysis\\ooh...ah...Alive_mastered_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "C#m",
+          "seconds": 90.09,
+          "share": 0.412
+        },
+        {
+          "chord": "C#",
+          "seconds": 50.9,
+          "share": 0.233
+        },
+        {
+          "chord": "F#m",
+          "seconds": 23.31,
+          "share": 0.107
+        }
+      ],
+      "nSegments": 165
+    },
+    {
+      "file": "Pew Pew - General bum wing_mastered_S3b_DEVINE.wav",
+      "out": "tracks\\analysis\\Pew_Pew_-_General_bum_wing_mastered_S3b_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "F",
+          "seconds": 83.78,
+          "share": 0.384
+        },
+        {
+          "chord": "A#",
+          "seconds": 44.21,
+          "share": 0.203
+        },
+        {
+          "chord": "Fm",
+          "seconds": 32.88,
+          "share": 0.151
+        }
+      ],
+      "nSegments": 162
+    },
+    {
+      "file": "Pew Pew - General bum wing_mastered_S3b_g-1.3_DEVINE.wav",
+      "out": "tracks\\analysis\\Pew_Pew_-_General_bum_wing_mastered_S3b_g-1.3_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "F",
+          "seconds": 86.75,
+          "share": 0.391
+        },
+        {
+          "chord": "A#",
+          "seconds": 44.58,
+          "share": 0.201
+        },
+        {
+          "chord": "Fm",
+          "seconds": 35.29,
+          "share": 0.159
+        }
+      ],
+      "nSegments": 172
+    },
+    {
+      "file": "The One That Got Away_mastered__S3_DEVINE (1).wav",
+      "out": "tracks\\analysis\\The_One_That_Got_Away_mastered__S3_DEVINE_1__chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "Dm",
+          "seconds": 62.69,
+          "share": 0.281
+        },
+        {
+          "chord": "D",
+          "seconds": 47.65,
+          "share": 0.214
+        },
+        {
+          "chord": "A#",
+          "seconds": 43.1,
+          "share": 0.193
+        }
+      ],
+      "nSegments": 175
+    },
+    {
+      "file": "The One That Got Away_mastered_DEVINE.wav",
+      "out": "tracks\\analysis\\The_One_That_Got_Away_mastered_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "Dm",
+          "seconds": 71.61,
+          "share": 0.321
+        },
+        {
+          "chord": "D",
+          "seconds": 44.12,
+          "share": 0.198
+        },
+        {
+          "chord": "A#",
+          "seconds": 42.63,
+          "share": 0.191
+        }
+      ],
+      "nSegments": 177
+    },
+    {
+      "file": "The Wind's Against Your Ways_mastered_DEVINE.wav",
+      "out": "tracks\\analysis\\The_Wind_s_Against_Your_Ways_mastered_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "Gm",
+          "seconds": 94.18,
+          "share": 0.352
+        },
+        {
+          "chord": "F",
+          "seconds": 53.87,
+          "share": 0.201
+        },
+        {
+          "chord": "D#",
+          "seconds": 37.71,
+          "share": 0.141
+        }
+      ],
+      "nSegments": 218
+    },
+    {
+      "file": "Vagalumes no Alcatr\u00e3o - D. DeVine_mastered.wav",
+      "out": "tracks\\analysis\\Vagalumes_no_Alcatr\u00e3o_-_D._DeVine_mastered_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "E",
+          "seconds": 57.59,
+          "share": 0.244
+        },
+        {
+          "chord": "Em",
+          "seconds": 55.64,
+          "share": 0.235
+        },
+        {
+          "chord": "Bm",
+          "seconds": 34.83,
+          "share": 0.147
+        }
+      ],
+      "nSegments": 166
+    },
+    {
+      "file": "Vagalumes no Alcatr\u00e3o - D. DeVine_mastered_S3b_g-2.0_DEVINE.wav",
+      "out": "tracks\\analysis\\Vagalumes_no_Alcatr\u00e3o_-_D._DeVine_mastered_S3b_g-2.0_DEVINE_chord_pass_2026-09-01.json",
+      "topChords": [
+        {
+          "chord": "E",
+          "seconds": 61.02,
+          "share": 0.258
+        },
+        {
+          "chord": "Em",
+          "seconds": 58.42,
+          "share": 0.247
+        },
+        {
+          "chord": "Bm",
+          "seconds": 30.37,
+          "share": 0.128
+        }
+      ],
+      "nSegments": 166
+    }
+  ]
+}

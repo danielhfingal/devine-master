@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:54:17.447536+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "The_Beforedays_Vocals.wav",
+      "out": "tracks\\analysis\\The_Beforedays_Vocals_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "D#",
+          "seconds": 44.21,
+          "share": 0.223
+        },
+        {
+          "chord": "F",
+          "seconds": 28.42,
+          "share": 0.143
+        },
+        {
+          "chord": "A#",
+          "seconds": 23.5,
+          "share": 0.118
+        }
+      ],
+      "nSegments": 84
+    }
+  ]
+}

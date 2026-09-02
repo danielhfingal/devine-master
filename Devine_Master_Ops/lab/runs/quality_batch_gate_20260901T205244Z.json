@@ -1,0 +1,209 @@
+{
+  "schema": "devine_quality_batch_v1",
+  "exportedAt": "2026-09-01T20:56:30.990216+00:00",
+  "audioRoot": "F:\\devine-master-fresh\\Audio\\WAV\\WAV Devine",
+  "mode": "gate",
+  "fileCount": 8,
+  "rows": [
+    {
+      "file": "Frank & Folks_mastered_DEVINE.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\WAV Devine\\Frank & Folks_mastered_DEVINE.wav",
+      "input": {
+        "lufs": -10.097256073251119,
+        "tp": -2.8142579769802385,
+        "integratedLUFS": -10.097256073251119,
+        "truePeakdBTP": -2.8142579769802385,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "I\u2019ll make the world shake! _mastered_DEVINE.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\WAV Devine\\I\u2019ll make the world shake! _mastered_DEVINE.wav",
+      "input": {
+        "lufs": -9.199593247617461,
+        "tp": -1.0586803931006066,
+        "integratedLUFS": -9.199593247617461,
+        "truePeakdBTP": -1.0586803931006066,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "I\u2019ll make the world shake! _mastered_S3_DEVINE (1).wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\WAV Devine\\I\u2019ll make the world shake! _mastered_S3_DEVINE (1).wav",
+      "input": {
+        "lufs": -9.35334831001159,
+        "tp": -1.058823092394619,
+        "integratedLUFS": -9.35334831001159,
+        "truePeakdBTP": -1.058823092394619,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "ooh...ah...Alive_mastered_DEVINE.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\WAV Devine\\ooh...ah...Alive_mastered_DEVINE.wav",
+      "input": {
+        "lufs": -10.095689357571473,
+        "tp": -3.0223122652480168,
+        "integratedLUFS": -10.095689357571473,
+        "truePeakdBTP": -3.0223122652480168,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The One That Got Away_mastered__S3_DEVINE (1).wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\WAV Devine\\The One That Got Away_mastered__S3_DEVINE (1).wav",
+      "input": {
+        "lufs": -10.285688613880845,
+        "tp": -1.0587552514543062,
+        "integratedLUFS": -10.285688613880845,
+        "truePeakdBTP": -1.0587552514543062,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The One That Got Away_mastered_DEVINE.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\WAV Devine\\The One That Got Away_mastered_DEVINE.wav",
+      "input": {
+        "lufs": -9.878729266562432,
+        "tp": -1.0587178221968117,
+        "integratedLUFS": -9.878729266562432,
+        "truePeakdBTP": -1.0587178221968117,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "The Wind's Against Your Ways_mastered_DEVINE.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\WAV Devine\\The Wind's Against Your Ways_mastered_DEVINE.wav",
+      "input": {
+        "lufs": -10.172147549862729,
+        "tp": -1.0588113956429692,
+        "integratedLUFS": -10.172147549862729,
+        "truePeakdBTP": -1.0588113956429692,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    },
+    {
+      "file": "Vagalumes no Alcatr\u00e3o - D. DeVine_mastered.wav",
+      "path": "F:\\devine-master-fresh\\Audio\\WAV\\WAV Devine\\Vagalumes no Alcatr\u00e3o - D. DeVine_mastered.wav",
+      "input": {
+        "lufs": -9.285007299852083,
+        "tp": -1.1086253577166532,
+        "integratedLUFS": -9.285007299852083,
+        "truePeakdBTP": -1.1086253577166532,
+        "method": "BS.1770-4-style+cubicTP4x",
+        "windowNote": "centre_60s",
+        "sampleRate": 44100,
+        "channels": 2
+      },
+      "mode": "gate",
+      "engine": "quality_batch_python_v1",
+      "measurement_spec": "bs1770-4+tp4x-v1-python",
+      "validation": {
+        "safetyPass": true,
+        "streamingEligible": true,
+        "hardFails": [],
+        "softWarns": [],
+        "hardFailCount": 0,
+        "softWarnCount": 0
+      }
+    }
+  ]
+}

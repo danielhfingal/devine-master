@@ -1,0 +1,27 @@
+{
+  "schema": "devine-stemlab-session-index/v1",
+  "session": "postbatch-analyse-20260826T213807Z",
+  "source": "tracks/stems contract folders",
+  "count": 3,
+  "ok": 0,
+  "skipped": 3,
+  "errors": 0,
+  "passes": [
+    {
+      "track_id": "Espera_que_mastered",
+      "status": "skipped",
+      "path": "Espera_que_mastered_stem_tempo_key_pass_2026-08-25.json"
+    },
+    {
+      "track_id": "Espera_que_mastered_2",
+      "status": "skipped",
+      "path": "Espera_que_mastered_2_stem_tempo_key_pass_2026-08-25.json"
+    },
+    {
+      "track_id": "Espera_que_mastered_3",
+      "status": "skipped",
+      "path": "Espera_que_mastered_3_stem_tempo_key_pass_2026-08-25.json"
+    }
+  ],
+  "updatedAt": "2026-08-26T21:38:07.207Z"
+}

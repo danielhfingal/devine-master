@@ -1,0 +1,70 @@
+{
+  "pass": "god-series-85-88-mix-2026-08-23",
+  "updatedAt": "2026-08-23T20:54:46Z",
+  "controls_ok": {
+    "Pew": "mix AC primary 64.6 \u2248 locked 64 \u2713",
+    "Alive": "mix AC primary 58.7 \u2248 locked 59.1 \u2713 (also 117 secondary)"
+  },
+  "findings": [
+    {
+      "title": "Espera qu\u00ea",
+      "locked_tempo": 85.7,
+      "locked_key": "F# major 2B",
+      "mix_tempo_primary": 172.3,
+      "mix_tempo_also": [
+        86.1
+      ],
+      "tempo_flag": "WATCH \u2014 primary AC is ~172 (double of 86). 86 present but weaker. Ear: 86 vs 172.",
+      "mix_key": "F# minor 11A (chroma+bassPC)",
+      "key_flag": "SUSPECT mode \u2014 analysis prefers F# minor over locked F# major. Ear drone A/B.",
+      "action": "T3 ear tempo; K4 ear key mode major vs minor",
+      "do_not_auto_change": true
+    },
+    {
+      "title": "The Wind's Against Your Ways",
+      "locked_tempo": 85.5,
+      "locked_key": "F major 7B",
+      "mix_tempo_primary": 172.3,
+      "mix_tempo_also": [
+        86.1,
+        83.4
+      ],
+      "tempo_flag": "86 family STRONG (AC 0.50) + 172 strong. Locked 85.5 plausible; confirm not half of 172 only.",
+      "mix_key": "D minor 7A / F major 7B",
+      "key_flag": "OK family \u2014 F maj locked is runner-up to D min (relative). Keep F unless ear prefers D min.",
+      "action": "Light ear check only",
+      "do_not_auto_change": true
+    },
+    {
+      "title": "I'll make the world shake",
+      "locked_tempo": 87.6,
+      "locked_key": "A# major 6B",
+      "mix_tempo_primary": 129.2,
+      "mix_tempo_also": [
+        89.1,
+        86.1,
+        136
+      ],
+      "tempo_flag": "SUSPECT \u2014 primary ~129, locked 87.6 secondary. Same trap class as old Pew 85. Ear: 87 vs 129.",
+      "mix_key": "F major (chroma) / A# major (bassPC)",
+      "key_flag": "OK family \u2014 A# maj matches bassPC; F maj is relative neighbourhood.",
+      "action": "T3 ear 87 vs 129 \u2014 highest priority in this group",
+      "do_not_auto_change": true
+    },
+    {
+      "title": "Neon-Jesus",
+      "locked_tempo": 82.2,
+      "locked_key": "B minor 10A",
+      "mix_tempo_primary": 83.4,
+      "mix_tempo_also": [
+        80.7,
+        86.1
+      ],
+      "tempo_flag": "OK \u2014 primary ~83 matches lock 82.2",
+      "mix_key": "D minor (chroma) / E minor (bassPC)",
+      "key_flag": "SUSPECT \u2014 mix does not surface B minor on top. Stem pass recommended before any key change.",
+      "action": "Stem pack for key; tempo likely fine",
+      "do_not_auto_change": true
+    }
+  ]
+}

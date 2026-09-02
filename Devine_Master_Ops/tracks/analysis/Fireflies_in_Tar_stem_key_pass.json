@@ -1,0 +1,169 @@
+{
+  "track": "Fireflies in Tar",
+  "pass": "stem-key-2026-08-23",
+  "keyLocked": false,
+  "ensemble_top": [
+    {
+      "key": "D",
+      "mode": "minor",
+      "camelot": "7A",
+      "score": 15.7248
+    },
+    {
+      "key": "F",
+      "mode": "major",
+      "camelot": "7B",
+      "score": 8.0039
+    },
+    {
+      "key": "A",
+      "mode": "minor",
+      "camelot": "8A",
+      "score": 6.969
+    },
+    {
+      "key": "D",
+      "mode": "major",
+      "camelot": "10B",
+      "score": 6.4132
+    },
+    {
+      "key": "C",
+      "mode": "major",
+      "camelot": "8B",
+      "score": 4.3963
+    },
+    {
+      "key": "A",
+      "mode": "major",
+      "camelot": "11B",
+      "score": 3.8236
+    },
+    {
+      "key": "G",
+      "mode": "major",
+      "camelot": "9B",
+      "score": 0.6904
+    }
+  ],
+  "per_stem_body_mid": {
+    "Bass": [
+      {
+        "key": "D",
+        "mode": "minor",
+        "camelot": "7A",
+        "corr": 0.7743
+      },
+      {
+        "key": "F",
+        "mode": "major",
+        "camelot": "7B",
+        "corr": 0.7202
+      },
+      {
+        "key": "A",
+        "mode": "minor",
+        "camelot": "8A",
+        "corr": 0.5959
+      },
+      {
+        "key": "C",
+        "mode": "major",
+        "camelot": "8B",
+        "corr": 0.559
+      }
+    ],
+    "Instrumental": [
+      {
+        "key": "D",
+        "mode": "minor",
+        "camelot": "7A",
+        "corr": 0.8166
+      },
+      {
+        "key": "F",
+        "mode": "major",
+        "camelot": "7B",
+        "corr": 0.7184
+      },
+      {
+        "key": "A",
+        "mode": "minor",
+        "camelot": "8A",
+        "corr": 0.5966
+      },
+      {
+        "key": "C",
+        "mode": "major",
+        "camelot": "8B",
+        "corr": 0.5064
+      }
+    ],
+    "Other": [
+      {
+        "key": "D",
+        "mode": "major",
+        "camelot": "10B",
+        "corr": 0.7433
+      },
+      {
+        "key": "D",
+        "mode": "minor",
+        "camelot": "7A",
+        "corr": 0.6815
+      },
+      {
+        "key": "A",
+        "mode": "major",
+        "camelot": "11B",
+        "corr": 0.4746
+      },
+      {
+        "key": "A",
+        "mode": "minor",
+        "camelot": "8A",
+        "corr": 0.3932
+      }
+    ],
+    "Vocals": [
+      {
+        "key": "D",
+        "mode": "major",
+        "camelot": "10B",
+        "corr": 0.6987
+      },
+      {
+        "key": "D",
+        "mode": "minor",
+        "camelot": "7A",
+        "corr": 0.6102
+      },
+      {
+        "key": "A",
+        "mode": "major",
+        "camelot": "11B",
+        "corr": 0.5456
+      },
+      {
+        "key": "A",
+        "mode": "minor",
+        "camelot": "8A",
+        "corr": 0.4286
+      }
+    ]
+  },
+  "recommendation": {
+    "preferred_working": {
+      "key": "D",
+      "mode": "minor",
+      "camelot": "7A"
+    },
+    "runner_up": {
+      "key": "F",
+      "mode": "major",
+      "camelot": "7B"
+    },
+    "note": "Bass-weighted stem ensemble. KEY NOT LOCKED."
+  },
+  "updatedAt": "2026-08-23T18:37:08Z"
+}

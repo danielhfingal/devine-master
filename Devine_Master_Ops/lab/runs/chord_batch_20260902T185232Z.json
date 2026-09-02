@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:52:32.844021+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Neon-Jesus_Piano.wav",
+      "out": "tracks\\analysis\\Neon-Jesus_Piano_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "Cm",
+          "seconds": 31.67,
+          "share": 0.3
+        },
+        {
+          "chord": "C#m",
+          "seconds": 23.22,
+          "share": 0.22
+        },
+        {
+          "chord": "D#m",
+          "seconds": 11.89,
+          "share": 0.113
+        }
+      ],
+      "nSegments": 82
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:52:22.081842+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Neon-Jesus_Instrumental.wav",
+      "out": "tracks\\analysis\\Neon-Jesus_Instrumental_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "E",
+          "seconds": 91.58,
+          "share": 0.355
+        },
+        {
+          "chord": "Em",
+          "seconds": 72.07,
+          "share": 0.279
+        },
+        {
+          "chord": "G",
+          "seconds": 29.81,
+          "share": 0.115
+        }
+      ],
+      "nSegments": 266
+    }
+  ]
+}

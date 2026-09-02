@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:55:22.178099+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Vagalumes_no_Alcatrao_Vocals.wav",
+      "out": "tracks\\analysis\\Vagalumes_no_Alcatrao_Vocals_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "G",
+          "seconds": 40.5,
+          "share": 0.217
+        },
+        {
+          "chord": "F#m",
+          "seconds": 34.74,
+          "share": 0.186
+        },
+        {
+          "chord": "B",
+          "seconds": 27.59,
+          "share": 0.148
+        }
+      ],
+      "nSegments": 78
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-01T23:55:02.212712+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "<Fireflies_print_or_mastered>.wav",
+      "error": "[Errno 22] Invalid argument: 'F:\\\\devine-master-fresh\\\\Audio\\\\WAV\\\\WAV Devine\\\\<Fireflies_print_or_mastered>.wav'"
+    }
+  ]
+}

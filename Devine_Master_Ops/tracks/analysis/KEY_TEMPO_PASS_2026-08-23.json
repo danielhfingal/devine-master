@@ -1,0 +1,158 @@
+{
+  "schema": "devine_key_tempo_pass_v0",
+  "updatedAt": "2026-08-23T18:16:57Z",
+  "policy": {
+    "keyLock": "never lock without explicit user confirm",
+    "tempoLock": "only when conf high and candidates stable"
+  },
+  "tracks": {
+    "Fireflies in Tar": {
+      "tempo": {
+        "bpm": 135,
+        "locked": true,
+        "confidence": 0.97
+      },
+      "key_machine": {
+        "key": "G",
+        "mode": "minor",
+        "camelot": "6A",
+        "confidence": 0.51
+      },
+      "key_working": {
+        "key": "D",
+        "mode": "minor",
+        "camelot": "7A",
+        "status": "unlocked alternate / ear lean"
+      },
+      "next": "Chord/bass A/B on body; then decide lock"
+    },
+    "Pew Pew - General bum wing": {
+      "tempo": {
+        "bpm": 85.7,
+        "locked": false,
+        "confidence": 0.19,
+        "alts": [
+          83.3,
+          127.6
+        ]
+      },
+      "key_machine": {
+        "key": "C",
+        "mode": "major",
+        "camelot": "8B",
+        "confidence": 0.96
+      },
+      "key_alts": [
+        {
+          "key": "F",
+          "mode": "major",
+          "camelot": "7B"
+        }
+      ],
+      "next": "Tempo unstable — check half-time vs 86 vs ~128; key C/F major cluster looks solid"
+    },
+    "ooh...ah...Alive": {
+      "tempo": {
+        "bpm": 92.3,
+        "locked": false,
+        "confidence": 0.21,
+        "alts": [
+          117.6,
+          116.6
+        ]
+      },
+      "key_machine": {
+        "key": "G#",
+        "mode": "minor",
+        "camelot": "1A",
+        "confidence": 0.95
+      },
+      "key_alts": [
+        {
+          "key": "B",
+          "mode": "major",
+          "camelot": "1B"
+        },
+        {
+          "key": "C#",
+          "mode": "minor",
+          "camelot": "12A"
+        }
+      ],
+      "next": "Tempo 92 vs ~117 double-check; key 1A family stable"
+    },
+    "Frank & Folks": {
+      "tempo": {
+        "bpm": 98.4,
+        "locked": false,
+        "confidence": 0.33,
+        "alts": [
+          73.2
+        ]
+      },
+      "key_machine": {
+        "key": "E",
+        "mode": "major",
+        "camelot": "12B",
+        "confidence": 0.96
+      },
+      "key_alts": [
+        {
+          "key": "A",
+          "mode": "major",
+          "camelot": "11B"
+        }
+      ],
+      "next": "Tempo 98 vs 73; key E/A major related — unlock until arrangement pass"
+    },
+    "The One That Got Away": {
+      "tempo": {
+        "bpm": 130.4,
+        "locked": false,
+        "confidence": 0.25,
+        "alts": [
+          100,
+          133.4
+        ]
+      },
+      "key_machine": {
+        "key": "A",
+        "mode": "minor",
+        "camelot": "8A",
+        "confidence": 0.96
+      },
+      "key_alts": [],
+      "next": "Key A minor strong; tempo needs ear confirm (130 vs 100)"
+    },
+    "One-way Love": {
+      "tempo": {
+        "bpm": 72.3,
+        "locked": false,
+        "confidence": 0.34,
+        "alts": [
+          96.8,
+          95.2
+        ]
+      },
+      "key_machine": {
+        "key": "G",
+        "mode": "minor",
+        "camelot": "6A",
+        "confidence": 0.96
+      },
+      "key_alts": [
+        {
+          "key": "D",
+          "mode": "minor",
+          "camelot": "7A"
+        },
+        {
+          "key": "A#",
+          "mode": "major",
+          "camelot": "6B"
+        }
+      ],
+      "next": "G minor vs D minor (same ambiguity family as Fireflies); tempo 72 vs 96"
+    }
+  }
+}

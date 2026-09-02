@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:51:54.941935+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Ill make the world_Instrumental.wav",
+      "out": "tracks\\analysis\\Ill_make_the_world_Instrumental_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "A#m",
+          "seconds": 65.94,
+          "share": 0.282
+        },
+        {
+          "chord": "F",
+          "seconds": 38.82,
+          "share": 0.166
+        },
+        {
+          "chord": "Fm",
+          "seconds": 36.59,
+          "share": 0.157
+        }
+      ],
+      "nSegments": 197
+    }
+  ]
+}

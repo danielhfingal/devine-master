@@ -1,0 +1,259 @@
+{
+  "schema": "devine-structure-pass/v1",
+  "track": "The One That Got Away_mastered__S3_DEVINE (1)",
+  "source": "F:\\devine-master-fresh\\Audio\\WAV\\WAV Devine\\The One That Got Away_mastered__S3_DEVINE (1).wav",
+  "pass": "structure-novelty-v1-2026-09-02",
+  "engine": "rms_flux_novelty_peakpick",
+  "hints": {
+    "bpm": null
+  },
+  "measurement": {
+    "sr": 22050,
+    "durationSec": 206.72,
+    "hop": 1024,
+    "minSepSec": 8.0,
+    "estimatedBars44": null
+  },
+  "summary": {
+    "nSections": 24,
+    "labels": [
+      "bridge",
+      "chorus",
+      "intro",
+      "outro",
+      "verse"
+    ],
+    "boundariesSec": [
+      0.0,
+      9.567,
+      20.526,
+      29.118,
+      37.105,
+      49.366,
+      57.957,
+      66.316,
+      74.536,
+      82.756,
+      90.744,
+      99.474,
+      108.669,
+      116.703,
+      125.063,
+      133.05,
+      141.084,
+      149.862,
+      159.335,
+      167.369,
+      175.45,
+      183.716,
+      191.983,
+      200.202,
+      206.72
+    ]
+  },
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 9.567,
+      "duration": 9.567,
+      "energy": 0.039824,
+      "label": "intro",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 9.567,
+      "end": 20.526,
+      "duration": 10.959,
+      "energy": 0.100008,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 20.526,
+      "end": 29.118,
+      "duration": 8.592,
+      "energy": 0.130119,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 29.118,
+      "end": 37.105,
+      "duration": 7.987,
+      "energy": 0.122357,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 37.105,
+      "end": 49.366,
+      "duration": 12.261,
+      "energy": 0.114876,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 49.366,
+      "end": 57.957,
+      "duration": 8.591,
+      "energy": 0.313569,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 57.957,
+      "end": 66.316,
+      "duration": 8.359,
+      "energy": 0.246328,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 66.316,
+      "end": 74.536,
+      "duration": 8.22,
+      "energy": 0.358152,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 74.536,
+      "end": 82.756,
+      "duration": 8.22,
+      "energy": 0.240688,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 82.756,
+      "end": 90.744,
+      "duration": 7.988,
+      "energy": 0.188557,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 90.744,
+      "end": 99.474,
+      "duration": 8.73,
+      "energy": 0.256728,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 99.474,
+      "end": 108.669,
+      "duration": 9.195,
+      "energy": 0.294782,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 108.669,
+      "end": 116.703,
+      "duration": 8.034,
+      "energy": 0.333194,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 116.703,
+      "end": 125.063,
+      "duration": 8.36,
+      "energy": 0.355126,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 125.063,
+      "end": 133.05,
+      "duration": 7.987,
+      "energy": 0.356166,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 133.05,
+      "end": 141.084,
+      "duration": 8.034,
+      "energy": 0.175608,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 141.084,
+      "end": 149.862,
+      "duration": 8.778,
+      "energy": 0.100496,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 149.862,
+      "end": 159.335,
+      "duration": 9.473,
+      "energy": 0.085614,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 159.335,
+      "end": 167.369,
+      "duration": 8.034,
+      "energy": 0.316499,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 167.369,
+      "end": 175.45,
+      "duration": 8.081,
+      "energy": 0.250244,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 175.45,
+      "end": 183.716,
+      "duration": 8.266,
+      "energy": 0.367794,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 183.716,
+      "end": 191.983,
+      "duration": 8.267,
+      "energy": 0.248006,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 191.983,
+      "end": 200.202,
+      "duration": 8.219,
+      "energy": 0.366711,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 200.202,
+      "end": 206.72,
+      "duration": 6.518,
+      "energy": 0.100837,
+      "label": "outro",
+      "labelStatus": "provisional"
+    }
+  ],
+  "quality": {
+    "earRequired": false,
+    "boundaryStatus": "machine",
+    "labelStatus": "provisional",
+    "notes": [
+      "Boundaries primary; labels heuristic.",
+      "BPM snaps to bar grid when provided."
+    ],
+    "refuse": "Do not lock labels without human gate."
+  },
+  "updatedAt": "2026-09-02T19:06:16.086371+00:00"
+}

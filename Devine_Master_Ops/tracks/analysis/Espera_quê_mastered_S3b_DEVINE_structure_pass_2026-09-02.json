@@ -1,0 +1,259 @@
+{
+  "schema": "devine-structure-pass/v1",
+  "track": "Espera, qu\u00ea_mastered_S3b_DEVINE",
+  "source": "F:\\devine-master-fresh\\Audio\\WAV\\WAV Devine\\Espera, qu\u00ea_mastered_S3b_DEVINE.wav",
+  "pass": "structure-novelty-v1-2026-09-02",
+  "engine": "rms_flux_novelty_peakpick",
+  "hints": {
+    "bpm": null
+  },
+  "measurement": {
+    "sr": 22050,
+    "durationSec": 204.44,
+    "hop": 1024,
+    "minSepSec": 8.0,
+    "estimatedBars44": null
+  },
+  "summary": {
+    "nSections": 24,
+    "labels": [
+      "bridge",
+      "chorus",
+      "intro",
+      "outro",
+      "verse"
+    ],
+    "boundariesSec": [
+      0.0,
+      10.774,
+      19.18,
+      27.492,
+      35.712,
+      44.35,
+      52.709,
+      60.697,
+      68.731,
+      76.812,
+      85.217,
+      94.645,
+      103.422,
+      111.642,
+      119.769,
+      127.849,
+      135.883,
+      145.078,
+      153.159,
+      161.982,
+      170.109,
+      179.908,
+      190.45,
+      200.295,
+      204.44
+    ]
+  },
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 10.774,
+      "duration": 10.774,
+      "energy": 0.061132,
+      "label": "intro",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 10.774,
+      "end": 19.18,
+      "duration": 8.406,
+      "energy": 0.19202,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 19.18,
+      "end": 27.492,
+      "duration": 8.312,
+      "energy": 0.189736,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 27.492,
+      "end": 35.712,
+      "duration": 8.22,
+      "energy": 0.199855,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 35.712,
+      "end": 44.35,
+      "duration": 8.638,
+      "energy": 0.205954,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 44.35,
+      "end": 52.709,
+      "duration": 8.359,
+      "energy": 0.220418,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 52.709,
+      "end": 60.697,
+      "duration": 7.988,
+      "energy": 0.207067,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 60.697,
+      "end": 68.731,
+      "duration": 8.034,
+      "energy": 0.247437,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 68.731,
+      "end": 76.812,
+      "duration": 8.081,
+      "energy": 0.238069,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 76.812,
+      "end": 85.217,
+      "duration": 8.405,
+      "energy": 0.203714,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 85.217,
+      "end": 94.645,
+      "duration": 9.428,
+      "energy": 0.23492,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 94.645,
+      "end": 103.422,
+      "duration": 8.777,
+      "energy": 0.223532,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 103.422,
+      "end": 111.642,
+      "duration": 8.22,
+      "energy": 0.23013,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 111.642,
+      "end": 119.769,
+      "duration": 8.127,
+      "energy": 0.246863,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 119.769,
+      "end": 127.849,
+      "duration": 8.08,
+      "energy": 0.223245,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 127.849,
+      "end": 135.883,
+      "duration": 8.034,
+      "energy": 0.230323,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 135.883,
+      "end": 145.078,
+      "duration": 9.195,
+      "energy": 0.260353,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 145.078,
+      "end": 153.159,
+      "duration": 8.081,
+      "energy": 0.262442,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 153.159,
+      "end": 161.982,
+      "duration": 8.823,
+      "energy": 0.171476,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 161.982,
+      "end": 170.109,
+      "duration": 8.127,
+      "energy": 0.148721,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 170.109,
+      "end": 179.908,
+      "duration": 9.799,
+      "energy": 0.194455,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 179.908,
+      "end": 190.45,
+      "duration": 10.542,
+      "energy": 0.22086,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 190.45,
+      "end": 200.295,
+      "duration": 9.845,
+      "energy": 0.214654,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 200.295,
+      "end": 204.44,
+      "duration": 4.145,
+      "energy": 0.070693,
+      "label": "outro",
+      "labelStatus": "provisional"
+    }
+  ],
+  "quality": {
+    "earRequired": false,
+    "boundaryStatus": "machine",
+    "labelStatus": "provisional",
+    "notes": [
+      "Boundaries primary; labels heuristic.",
+      "BPM snaps to bar grid when provided."
+    ],
+    "refuse": "Do not lock labels without human gate."
+  },
+  "updatedAt": "2026-09-02T19:06:08.988353+00:00"
+}

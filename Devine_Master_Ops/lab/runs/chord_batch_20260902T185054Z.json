@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:50:54.799339+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Espere Que_Guitar.wav",
+      "out": "tracks\\analysis\\Espere_Que_Guitar_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "Bm",
+          "seconds": 93.34,
+          "share": 0.427
+        },
+        {
+          "chord": "F#",
+          "seconds": 50.62,
+          "share": 0.231
+        },
+        {
+          "chord": "Em",
+          "seconds": 41.05,
+          "share": 0.188
+        }
+      ],
+      "nSegments": 164
+    }
+  ]
+}

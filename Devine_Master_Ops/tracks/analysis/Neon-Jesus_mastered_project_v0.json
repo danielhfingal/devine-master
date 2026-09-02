@@ -1,0 +1,163 @@
+{
+  "schema": "devine-project/v0",
+  "id": "dp_phase3_neon-jesus_mastered",
+  "createdAt": "2026-08-26T22:06:40.148Z",
+  "updatedAt": "2026-08-26T22:06:40.148Z",
+  "title": "Neon-Jesus mastered",
+  "source": {
+    "fileName": "Neon-Jesus_mastered",
+    "origin": "phase3-structure-pilot",
+    "durationSec": 200.0,
+    "sampleRate": null,
+    "channels": null,
+    "track_id": "Neon-Jesus_mastered"
+  },
+  "master": null,
+  "lyrics": {
+    "matched": false,
+    "title": null,
+    "sectionLabels": [
+      "Intro",
+      "Verse",
+      "Chorus",
+      "Verse",
+      "Bridge",
+      "Chorus"
+    ]
+  },
+  "analysis": {
+    "tempoBpm": 83.4,
+    "tempoConfidence": "stem-drums",
+    "tempoEstimated": 83.4,
+    "tempoLocked": false,
+    "tempoLockedBpm": null,
+    "tempoCandidates": [
+      {
+        "bpm": 83.4,
+        "score": 1.0,
+        "source": "tempo_working"
+      },
+      {
+        "bpm": 86,
+        "score": 1.2,
+        "source": "stem-drums-family"
+      },
+      {
+        "bpm": 117,
+        "score": 0.3228,
+        "source": "stem-drums-family"
+      },
+      {
+        "bpm": 120,
+        "score": 0.3228,
+        "source": "stem-drums-family"
+      },
+      {
+        "bpm": 160,
+        "score": 0.2753,
+        "source": "stem-drums-family"
+      },
+      {
+        "bpm": 128,
+        "score": 0.1987,
+        "source": "stem-drums-family"
+      }
+    ],
+    "timeSig": "4/4",
+    "key": "G#",
+    "mode": "minor",
+    "keyConfidence": "stem-bass",
+    "camelot": "1A",
+    "keyEstimated": "G# minor",
+    "keyLocked": false,
+    "keyLockedValue": null,
+    "keyCandidates": [
+      {
+        "key": "G#",
+        "mode": "minor",
+        "camelot": "1A",
+        "score": 0.678,
+        "source": "key_ensemble"
+      },
+      {
+        "key": "B",
+        "mode": "major",
+        "camelot": "1B",
+        "score": 0.65,
+        "source": "key_ensemble"
+      },
+      {
+        "key": "B",
+        "mode": "minor",
+        "camelot": "10A",
+        "score": 0.563,
+        "source": "key_ensemble"
+      },
+      {
+        "key": "E",
+        "mode": "major",
+        "camelot": "12B",
+        "score": 0.454,
+        "source": "key_ensemble"
+      },
+      {
+        "key": "E",
+        "mode": "minor",
+        "camelot": "9A",
+        "score": 0.195,
+        "source": "key_ensemble"
+      },
+      {
+        "key": "G",
+        "mode": "major",
+        "camelot": "9B",
+        "score": 0.156,
+        "source": "key_ensemble"
+      }
+    ],
+    "chroma": null,
+    "sections": [
+      {
+        "name": "Intro",
+        "startSec": 0.0,
+        "endSec": 16.0
+      },
+      {
+        "name": "Verse",
+        "startSec": 16.0,
+        "endSec": 56.0
+      },
+      {
+        "name": "Chorus",
+        "startSec": 56.0,
+        "endSec": 96.0
+      },
+      {
+        "name": "Verse",
+        "startSec": 96.0,
+        "endSec": 124.0
+      },
+      {
+        "name": "Bridge",
+        "startSec": 124.0,
+        "endSec": 160.0
+      },
+      {
+        "name": "Chorus",
+        "startSec": 160.0,
+        "endSec": 200.0
+      }
+    ],
+    "method": "phase3-structure \u00b7 stem-drums novelty + analysis pass"
+  },
+  "stems": [],
+  "midi": [],
+  "chords": [],
+  "notes": "Phase 3 pilot \u2014 structure + project from stems/analysis. Not locked.",
+  "phase3": {
+    "track_id": "Neon-Jesus_mastered",
+    "stem_dir": null,
+    "section_source": "heuristic-grid",
+    "pilot": true
+  }
+}

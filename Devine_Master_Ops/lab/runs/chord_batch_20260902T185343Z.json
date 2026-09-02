@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:53:43.130714+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "Sorry, not sorry Deuce - Snake eyes sold, double ones, rolled!!_Other.wav",
+      "out": "tracks\\analysis\\Sorry_not_sorry_Deuce_-_Snake_eyes_sold_double_ones_rolled__Other_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "D#",
+          "seconds": 120.56,
+          "share": 0.611
+        },
+        {
+          "chord": "D#m",
+          "seconds": 51.36,
+          "share": 0.26
+        },
+        {
+          "chord": "C#m",
+          "seconds": 9.38,
+          "share": 0.048
+        }
+      ],
+      "nSegments": 123
+    }
+  ]
+}

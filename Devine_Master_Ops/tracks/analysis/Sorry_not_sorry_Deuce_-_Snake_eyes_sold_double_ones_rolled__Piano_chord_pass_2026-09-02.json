@@ -1,0 +1,114 @@
+{
+  "schema": "devine-chord-pass/v1",
+  "track": "Sorry, not sorry Deuce - Snake eyes sold, double ones, rolled!!_Piano",
+  "source": "F:\\devine-master-fresh\\Audio\\Sorry, not sorry Deuce - Snake eyes sold, double ones, rolled!!_Piano.wav",
+  "pass": "chord-chroma-v1-2026-09-02",
+  "engine": "chroma_triad_templates",
+  "measurement": {
+    "sr": 22050,
+    "hop": 2048,
+    "durationSec": 201.888,
+    "confFloor": 0.55,
+    "minSegSec": 0.4
+  },
+  "hints": {
+    "bpm": null,
+    "key": null
+  },
+  "summary": {
+    "topChords": [],
+    "coverageSec": 0.0,
+    "nSegments": 13,
+    "nLabeled": 0
+  },
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 35.48009070294785,
+      "chord": "N",
+      "confidence": 0.5916273024525545
+    },
+    {
+      "start": 35.38721088435374,
+      "end": 36.13024943310658,
+      "chord": "N",
+      "confidence": 0.5766026149764657
+    },
+    {
+      "start": 36.03736961451247,
+      "end": 59.16444444444445,
+      "chord": "N",
+      "confidence": 0.5908234252192295
+    },
+    {
+      "start": 59.07156462585034,
+      "end": 71.0530612244898,
+      "chord": "N",
+      "confidence": 0.5858732948867149
+    },
+    {
+      "start": 70.9601814058957,
+      "end": 73.93233560090702,
+      "chord": "N",
+      "confidence": 0.5907278729790757
+    },
+    {
+      "start": 73.83945578231292,
+      "end": 84.89215419501133,
+      "chord": "N",
+      "confidence": 0.5891648475719684
+    },
+    {
+      "start": 84.79927437641723,
+      "end": 94.73741496598639,
+      "chord": "N",
+      "confidence": 0.5908532084552551
+    },
+    {
+      "start": 94.64453514739229,
+      "end": 107.18331065759637,
+      "chord": "N",
+      "confidence": 0.5784905921035315
+    },
+    {
+      "start": 107.09043083900227,
+      "end": 130.58902494331065,
+      "chord": "N",
+      "confidence": 0.603557741678254
+    },
+    {
+      "start": 130.49614512471655,
+      "end": 166.34775510204082,
+      "chord": "N",
+      "confidence": 0.587062047321483
+    },
+    {
+      "start": 166.25487528344672,
+      "end": 170.5273469387755,
+      "chord": "N",
+      "confidence": 0.5861028525795562
+    },
+    {
+      "start": 170.4344671201814,
+      "end": 180.27972789115645,
+      "chord": "N",
+      "confidence": 0.6071181266699789
+    },
+    {
+      "start": 180.18684807256236,
+      "end": 201.92072562358277,
+      "chord": "N",
+      "confidence": 0.5477765779267737
+    }
+  ],
+  "quality": {
+    "earRequired": false,
+    "notes": [
+      "Triad-only model (maj/min). Sevenths/slash chords not labeled.",
+      "Low confidence -> chord N.",
+      "Key hint is soft prior only."
+    ],
+    "refuse": "No single global chord without timeline; timeline is authoritative."
+  },
+  "updatedAt": "2026-09-02T18:53:48.039536+00:00"
+}

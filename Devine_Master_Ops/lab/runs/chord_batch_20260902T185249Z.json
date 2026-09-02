@@ -1,0 +1,29 @@
+{
+  "schema": "devine_chord_batch_v1",
+  "exportedAt": "2026-09-02T18:52:49.173021+00:00",
+  "count": 1,
+  "rows": [
+    {
+      "file": "One-Way Love_Other.wav",
+      "out": "tracks\\analysis\\One-Way_Love_Other_chord_pass_2026-09-02.json",
+      "topChords": [
+        {
+          "chord": "G",
+          "seconds": 72.17,
+          "share": 0.298
+        },
+        {
+          "chord": "Gm",
+          "seconds": 66.13,
+          "share": 0.273
+        },
+        {
+          "chord": "C",
+          "seconds": 29.91,
+          "share": 0.124
+        }
+      ],
+      "nSegments": 177
+    }
+  ]
+}

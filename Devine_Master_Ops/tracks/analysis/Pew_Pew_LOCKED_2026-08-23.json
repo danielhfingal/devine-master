@@ -1,0 +1,382 @@
+{
+  "schema": "devine-project/v0",
+  "id": "dp_mt69fmxu_fk5gx",
+  "createdAt": "2026-08-23T20:29:01.026Z",
+  "updatedAt": "2026-08-23T20:39:04Z",
+  "title": "Pew Pew - General bum wing_mastered",
+  "source": {
+    "fileName": "Pew Pew - General bum wing_mastered",
+    "origin": "import",
+    "durationSec": 210.144,
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "master": {
+    "at": "2026-08-23T20:29:14.064Z",
+    "lufs": -9.180013565237527,
+    "truePeak": null,
+    "preset": null
+  },
+  "lyrics": {
+    "matched": false,
+    "title": null,
+    "sectionLabels": []
+  },
+  "analysis": {
+    "tempoBpm": 64,
+    "tempoConfidence": 0.19,
+    "tempoEstimated": 85.7,
+    "tempoLocked": true,
+    "tempoLockedBpm": 64,
+    "tempoCandidates": [
+      {
+        "bpm": 85.7,
+        "conf": 0.12,
+        "score": 1.277,
+        "votes": 3
+      },
+      {
+        "bpm": 83.3,
+        "conf": 0.1,
+        "score": 1.239,
+        "votes": 3
+      },
+      {
+        "bpm": 127.6,
+        "conf": 0.1,
+        "score": 0.415,
+        "votes": 1
+      },
+      {
+        "bpm": 84.5,
+        "conf": 0.1,
+        "score": 0.415,
+        "votes": 1
+      },
+      {
+        "bpm": 93.8,
+        "conf": 0.08,
+        "score": 0.402,
+        "votes": 1
+      }
+    ],
+    "timeSig": "4/4",
+    "key": "C",
+    "mode": "major",
+    "keyConfidence": 0.95,
+    "camelot": "8B",
+    "keyEstimated": "C major",
+    "keyLocked": true,
+    "keyLockedValue": "C major",
+    "keyCandidates": [
+      {
+        "key": "C",
+        "mode": "major",
+        "camelot": "8B",
+        "corr": 2.912,
+        "votes": 2.3,
+        "familyHits": 4.05
+      },
+      {
+        "key": "F",
+        "mode": "major",
+        "camelot": "7B",
+        "corr": 2.559,
+        "votes": 1.76,
+        "familyHits": 4.05
+      }
+    ],
+    "chroma": null,
+    "sections": [
+      {
+        "name": "Intro",
+        "startSec": 0,
+        "endSec": 23.1,
+        "source": "user-corrected",
+        "note": "Was 6.3s machine vocal-onset; real intro to 23.1s"
+      },
+      {
+        "name": "Body",
+        "startSec": 23.1,
+        "endSec": 202.0,
+        "source": "user-corrected"
+      },
+      {
+        "name": "Outro",
+        "startSec": 202.0,
+        "endSec": 210.14,
+        "source": "user-corrected",
+        "note": "Was 187s; real outro ~3:22–end (202–210.1s)"
+      }
+    ],
+    "method": "body-ensemble-bpm-v1 + lyrics+sections + vocal-onset + key-early-downweight + key-chroma-ks",
+    "segmentVotes": [
+      {
+        "seg": 1,
+        "t0": 0,
+        "t1": 40,
+        "bpm": 63.8,
+        "tconf": 0.13,
+        "key": "C",
+        "mode": "major",
+        "camelot": "8B",
+        "kconf": 0.42,
+        "keyWeight": 0
+      },
+      {
+        "seg": 2,
+        "t0": 25,
+        "t1": 65,
+        "bpm": 93.8,
+        "tconf": 0.08,
+        "key": "F",
+        "mode": "minor",
+        "camelot": "4A",
+        "kconf": 0.39,
+        "keyWeight": 0
+      },
+      {
+        "seg": 3,
+        "t0": 50,
+        "t1": 90,
+        "bpm": 84.5,
+        "tconf": 0.09,
+        "key": "G",
+        "mode": "major",
+        "camelot": "9B",
+        "kconf": 0.54,
+        "keyWeight": 0
+      },
+      {
+        "seg": 4,
+        "t0": 75,
+        "t1": 115,
+        "bpm": 83.3,
+        "tconf": 0.1,
+        "key": "F",
+        "mode": "major",
+        "camelot": "7B",
+        "kconf": 0.41,
+        "keyWeight": 0
+      },
+      {
+        "seg": 5,
+        "t0": 100,
+        "t1": 140,
+        "bpm": 82.2,
+        "tconf": 0.08,
+        "key": "F",
+        "mode": "major",
+        "camelot": "7B",
+        "kconf": 0.4,
+        "keyWeight": 0
+      },
+      {
+        "seg": 6,
+        "t0": 125,
+        "t1": 165,
+        "bpm": 85.7,
+        "tconf": 0.09,
+        "key": "G",
+        "mode": "major",
+        "camelot": "9B",
+        "kconf": 0.46,
+        "keyWeight": 0
+      },
+      {
+        "seg": 7,
+        "t0": 150,
+        "t1": 190,
+        "bpm": 85.7,
+        "tconf": 0.1,
+        "key": "C",
+        "mode": "major",
+        "camelot": "8B",
+        "kconf": 0.45,
+        "keyWeight": 0
+      },
+      {
+        "seg": 8,
+        "t0": 175,
+        "t1": 210.1,
+        "bpm": 89.6,
+        "tconf": 0.08,
+        "key": "G",
+        "mode": "minor",
+        "camelot": "6A",
+        "kconf": 0.42,
+        "keyWeight": 0
+      }
+    ],
+    "keyWindows": [
+      {
+        "t0": 15,
+        "t1": 43,
+        "key": "C",
+        "mode": "major",
+        "camelot": "8B",
+        "conf": 0.56,
+        "structureWeight": 1
+      },
+      {
+        "t0": 29,
+        "t1": 57,
+        "key": "F",
+        "mode": "major",
+        "camelot": "7B",
+        "conf": 0.51,
+        "structureWeight": 1
+      },
+      {
+        "t0": 43,
+        "t1": 71,
+        "key": "C",
+        "mode": "major",
+        "camelot": "8B",
+        "conf": 0.33,
+        "structureWeight": 1
+      },
+      {
+        "t0": 57,
+        "t1": 85,
+        "key": "F",
+        "mode": "major",
+        "camelot": "7B",
+        "conf": 0.54,
+        "structureWeight": 1
+      },
+      {
+        "t0": 71,
+        "t1": 99,
+        "key": "C",
+        "mode": "major",
+        "camelot": "8B",
+        "conf": 0.47,
+        "structureWeight": 1
+      },
+      {
+        "t0": 127,
+        "t1": 155,
+        "key": "F",
+        "mode": "major",
+        "camelot": "7B",
+        "conf": 0.29,
+        "structureWeight": 1
+      },
+      {
+        "t0": 155,
+        "t1": 183,
+        "key": "C",
+        "mode": "major",
+        "camelot": "8B",
+        "conf": 0.79,
+        "structureWeight": 0.63
+      }
+    ],
+    "bpmWindows": [
+      {
+        "t0": 15,
+        "t1": 47,
+        "bpm": 63.8,
+        "family": 127.6,
+        "conf": 0.1
+      },
+      {
+        "t0": 31,
+        "t1": 63,
+        "bpm": 93.8,
+        "family": 93.8,
+        "conf": 0.08
+      },
+      {
+        "t0": 47,
+        "t1": 79,
+        "bpm": 84.5,
+        "family": 84.5,
+        "conf": 0.1
+      },
+      {
+        "t0": 63,
+        "t1": 95,
+        "bpm": 83.3,
+        "family": 83.3,
+        "conf": 0.11
+      },
+      {
+        "t0": 79,
+        "t1": 111,
+        "bpm": 83.3,
+        "family": 83.3,
+        "conf": 0.1
+      },
+      {
+        "t0": 95,
+        "t1": 127,
+        "bpm": 90.9,
+        "family": 90.9,
+        "conf": 0.07
+      },
+      {
+        "t0": 111,
+        "t1": 143,
+        "bpm": 89.6,
+        "family": 89.6,
+        "conf": 0.08
+      },
+      {
+        "t0": 127,
+        "t1": 159,
+        "bpm": 83.3,
+        "family": 83.3,
+        "conf": 0.08
+      },
+      {
+        "t0": 143,
+        "t1": 175,
+        "bpm": 85.7,
+        "family": 85.7,
+        "conf": 0.12
+      },
+      {
+        "t0": 159,
+        "t1": 191,
+        "bpm": 85.7,
+        "family": 85.7,
+        "conf": 0.12
+      },
+      {
+        "t0": 148.4,
+        "t1": 180.4,
+        "bpm": 85.7,
+        "family": 85.7,
+        "conf": 0.11
+      }
+    ],
+    "segmentVoteMeta": {
+      "count": 8,
+      "bpmAgreement": 0.27,
+      "keyFamilyAgreement": 1,
+      "keyModeClarity": 0.57,
+      "keyMethod": "body-ensemble-camelot-v4",
+      "bodyRange": [
+        3,
+        192.4
+      ],
+      "valleyRange": [
+        170.4,
+        180.4
+      ],
+      "method": "body-ensemble-bpm-v1 + body-ensemble-key-v4"
+    },
+    "vocalOnsetSec": 23.1,
+    "outroOnsetSec": 202.0,
+    "keyWorking": "C",
+    "modeWorking": "major",
+    "camelotWorking": "8B",
+    "tempoNote": "Locked 64 = stem strongest AC (~63.8). 128 is double-feel optional; 85.7 rejected."
+  },
+  "stems": [],
+  "midi": [],
+  "chords": [],
+  "notes": "LOCKED: Tempo 64 BPM (stem AC primary; 128=double optional; 85.7 rejected). Key C major 8B. Sections user-corrected: Intro 0–23.1s; Body 23.1–202s; Outro 202–210.1s."
+}

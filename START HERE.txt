@@ -1,12 +1,10 @@
 # DEVINE MASTER — START HERE
 
-Daily home: `F:\devine-master-fresh\Devine_Master_Ops\`
+Daily home: F:\devine-master-fresh\Devine_Master_Ops\
 
----
+Only this file:
+  F:\devine-master-fresh\Devine_Master_Ops\daily\DEVINE_MASTER.html
 
-## Open the desk
-
-**Only this file:**
-
-```text
-F:\devine-master-fresh\Devine_Master_Ops\daily\DEVINE_MASTER.html
+Build: v20260901lab-trinity-quality-s2  (QUALITY-S2)
+S1 closed. S2 open.
+F: is source of truth. Do not git pull onto daily HTML.

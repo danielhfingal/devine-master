@@ -1,0 +1,259 @@
+{
+  "schema": "devine-structure-pass/v1",
+  "track": "Sorry, not sorry Deuce - Snake eyes sold, double ones, rolled!!_mastered",
+  "source": "F:\\devine-master-fresh\\Audio\\WAV\\Sorry, not sorry Deuce - Snake eyes sold, double ones, rolled!!_mastered.wav",
+  "pass": "structure-novelty-v1-2026-09-02",
+  "engine": "rms_flux_novelty_peakpick",
+  "hints": {
+    "bpm": null
+  },
+  "measurement": {
+    "sr": 22050,
+    "durationSec": 201.888,
+    "hop": 1024,
+    "minSepSec": 8.0,
+    "estimatedBars44": null
+  },
+  "summary": {
+    "nSections": 24,
+    "labels": [
+      "bridge",
+      "chorus",
+      "intro",
+      "outro",
+      "verse"
+    ],
+    "boundariesSec": [
+      0.0,
+      8.081,
+      16.161,
+      24.335,
+      32.322,
+      40.542,
+      48.623,
+      56.796,
+      64.923,
+      73.004,
+      81.131,
+      89.397,
+      97.524,
+      105.604,
+      113.824,
+      121.858,
+      129.846,
+      138.019,
+      146.1,
+      154.088,
+      162.447,
+      170.574,
+      178.654,
+      187.431,
+      201.888
+    ]
+  },
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 8.081,
+      "duration": 8.081,
+      "energy": 0.117316,
+      "label": "intro",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 8.081,
+      "end": 16.161,
+      "duration": 8.08,
+      "energy": 0.178663,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 16.161,
+      "end": 24.335,
+      "duration": 8.174,
+      "energy": 0.177728,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 24.335,
+      "end": 32.322,
+      "duration": 7.987,
+      "energy": 0.200274,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 32.322,
+      "end": 40.542,
+      "duration": 8.22,
+      "energy": 0.30989,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 40.542,
+      "end": 48.623,
+      "duration": 8.081,
+      "energy": 0.29123,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 48.623,
+      "end": 56.796,
+      "duration": 8.173,
+      "energy": 0.311709,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 56.796,
+      "end": 64.923,
+      "duration": 8.127,
+      "energy": 0.299994,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 64.923,
+      "end": 73.004,
+      "duration": 8.081,
+      "energy": 0.291585,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 73.004,
+      "end": 81.131,
+      "duration": 8.127,
+      "energy": 0.282551,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 81.131,
+      "end": 89.397,
+      "duration": 8.266,
+      "energy": 0.310722,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 89.397,
+      "end": 97.524,
+      "duration": 8.127,
+      "energy": 0.296311,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 97.524,
+      "end": 105.604,
+      "duration": 8.08,
+      "energy": 0.282893,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 105.604,
+      "end": 113.824,
+      "duration": 8.22,
+      "energy": 0.278239,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 113.824,
+      "end": 121.858,
+      "duration": 8.034,
+      "energy": 0.298793,
+      "label": "chorus",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 121.858,
+      "end": 129.846,
+      "duration": 7.988,
+      "energy": 0.291193,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 129.846,
+      "end": 138.019,
+      "duration": 8.173,
+      "energy": 0.270113,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 138.019,
+      "end": 146.1,
+      "duration": 8.081,
+      "energy": 0.278938,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 146.1,
+      "end": 154.088,
+      "duration": 7.988,
+      "energy": 0.262419,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 154.088,
+      "end": 162.447,
+      "duration": 8.359,
+      "energy": 0.270743,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 162.447,
+      "end": 170.574,
+      "duration": 8.127,
+      "energy": 0.268139,
+      "label": "bridge",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 170.574,
+      "end": 178.654,
+      "duration": 8.08,
+      "energy": 0.286571,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 178.654,
+      "end": 187.431,
+      "duration": 8.777,
+      "energy": 0.28176,
+      "label": "verse",
+      "labelStatus": "provisional"
+    },
+    {
+      "start": 187.431,
+      "end": 201.888,
+      "duration": 14.457,
+      "energy": 0.18455,
+      "label": "outro",
+      "labelStatus": "provisional"
+    }
+  ],
+  "quality": {
+    "earRequired": false,
+    "boundaryStatus": "machine",
+    "labelStatus": "provisional",
+    "notes": [
+      "Boundaries primary; labels heuristic.",
+      "BPM snaps to bar grid when provided."
+    ],
+    "refuse": "Do not lock labels without human gate."
+  },
+  "updatedAt": "2026-09-02T19:06:05.151526+00:00"
+}
