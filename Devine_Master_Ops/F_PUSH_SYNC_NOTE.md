@@ -1,17 +1,12 @@
-# Repo update (2026-08-28)
+# Repo sync (2026-09-02)
 
-Pushed to main:
-- INSTALL_FROM_F.md (refresh)
-- expand_large_modules.py
+GitHub last push was 2026-08-28. F: Ops is newer (QUALITY-S2 desk + lab).
 
-After `git pull` on F:
+**F: is source of truth. Do not `git pull` onto daily HTML.**
+
+To publish the live F: tree (lab + analysis JSON + desk):
 
 ```powershell
-cd F:\devine-master-fresh\Devine_Master_Ops\tools\stem_bridge
-python .\expand_large_modules.py
+cd F:\devine-master-fresh
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Devine_Master_Ops\SYNC_FROM_F.ps1
 ```
-
-If writers are not yet on main, expand from F_PUSH_shelf_desk zip or copy
-stem_bridge.py / catalogue_*.py from Ops on a machine that has the full set.
-
-Capture :8765 · Stem bridge :8766
